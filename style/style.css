@@ -1,8 +1,17 @@
 @import url(components/banner.css);
 @import url(components/navbar.css);
 @import url(components/buttons.css);
+@import url(components/cards.css);
+@import url(components/icons.css);
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
 
+/* COLORS */
+:root {
+  --color-principal: #F2CD5D;
+  --color-secundario: #5F38CC;
+  --color-headers: #353535;
+  --color-paragraphs: #363636;
+}
 
 body {
   margin: 0;
@@ -11,11 +20,18 @@ body {
 
 p {
   font-family: 'Nunito', sans-serif;
+  color: var(--color-paragraphs);
 }
 
 h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
+  color: var(--color-headers);
 }
+
+h1 {
+  font-weight: 700px;
+}
+
 
 a {
   color: black;

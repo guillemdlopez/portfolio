@@ -1,0 +1,34 @@
+.window-icons {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.window-icons i {
+  margin-right: 6px;
+  font-size: 20px;
+}
+
+.window-close {
+  color: #7B0000
+;
+
+}
+
+.window-minimize {
+  color: #A17501;
+}
+
+.window-open {
+  color: #0A8425
+;
+}
+
+.contact-icons {
+  position: absolute;
+  right: 360px;
+  top: 105px;
+}
+
+.contact-icons i {
+  font-size: 82px;
+}

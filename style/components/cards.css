@@ -1,0 +1,33 @@
+.card-banner {
+  background-color: white;
+  width: 761px;
+  padding: 30px 50px;
+  position: absolute;
+  bottom: 188px;
+  z-index: auto;
+}
+
+.card-banner p {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.card-purple {
+  background-color: var(--color-secundario);
+  height: 400px;
+  width: 764px;
+  position: absolute;
+  left: 200px;
+  top: 140px;
+}
+
+.card-transparent {
+  background-color: var(--color-principal);
+  border: 1px solid black;
+  width: 761px;
+  position: absolute;
+  height: 400px;
+  left: 240px;
+  top: 110px;
+}

@@ -1,4 +1,11 @@
 .banner {
-  background-color: #F2CD5D;
+  background-color: var(--color-principal);
   height: 100vh;
+  position: relative;
+}
+
+.banner h1 {
+  font-size: 100px;
+  color: var(--color-headers)
+  font-weight: lighter;
 }
