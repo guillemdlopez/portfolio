@@ -11,6 +11,7 @@
   --color-secundario: #5F38CC;
   --color-headers: #353535;
   --color-paragraphs: #363636;
+  --color-subtitles: rgba(91, 71, 210, 0.6);
 }
 
 body {
@@ -32,6 +33,10 @@ h1 {
   font-weight: 700px;
 }
 
+h4 {
+  color: var(--color-subtitles)
+}
+
 
 a {
   color: black;
@@ -40,4 +45,14 @@ a {
 a:hover {
   text-decoration: none;
   color: black;
+}
+
+/* SECTIONS */
+
+.about-me {
+  margin-top: 80px;
+}
+
+.about-me p {
+  line-height: 45px;
 }
