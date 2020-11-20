@@ -4,6 +4,9 @@
 @import url(components/cards.css);
 @import url(components/icons.css);
 @import url(components/avatar.css);
+@import url(components/footer.css);
+
+/* ROBOTO AND NUNITO */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
 
 /* COLORS */
@@ -11,7 +14,7 @@
   --color-principal: #F2CD5D;
   --color-secundario: #5F38CC;
   --color-headers: #353535;
-  --color-paragraphs: #363636;
+  --color-paragraphs: #494949;
   --color-subtitles: rgba(91, 71, 210, 0.6);
 }
 
@@ -35,7 +38,7 @@ h1 {
   font-weight: 700px;
 }
 
-h4 {
+.subtitle {
   color: var(--color-subtitles)
 }
 
@@ -56,9 +59,18 @@ a:hover {
 }
 
 .bio p {
-  line-height: 45px;
+  line-height: 34px;
 }
 
 .bio {
   width: 40%;
+}
+
+.my-value {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.my-value p {
+  line-height: 34px;
 }
