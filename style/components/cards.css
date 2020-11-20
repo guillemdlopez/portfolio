@@ -92,3 +92,8 @@
 .value {
   margin-top: 60px;
 }
+
+.value-card:hover {
+  transition: transform 0.4s;
+  transform: translateY(-14px);
+}
