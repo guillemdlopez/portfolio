@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  height: 60px;
+  position: sticky;
+  top: 0px;
+  background: #F2CD5D;
+}
+
+.navbar-links p {
+  margin-left: 40px;
+  margin-bottom: 0px;
+}
+

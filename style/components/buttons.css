@@ -1,0 +1,10 @@
+.btn-contact {
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+
+.btn-contact:hover {
+  background-color: black;
+  color: #F2CD5D;
+}
