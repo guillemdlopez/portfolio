@@ -8,3 +8,19 @@
   background-color: black;
   color: #F2CD5D;
 }
+
+.btn-download-cv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding: 10px 20px;
+  width: 20%;
+  margin: 60px auto;
+  font-weight: bold;
+}
+
+.btn-download-cv:hover {
+  background-color: black;
+  color: #F2CD5D;
+}

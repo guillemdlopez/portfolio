@@ -45,7 +45,9 @@ h1 {
 
 
 a {
+  display: block;
   color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 a:hover {
