@@ -102,18 +102,11 @@ a:hover {
 .highlight {
   background-color: rgba(91, 71, 210, 0.3);
   padding: 10px 10px;
+  font-weight: bold;
 }
 
 
-/* MEDIA QUERIES */
-
-@media (max-width: 1199px) {
-  .card-contact-details-content {
-    align-items: start;
-
-  }
-
-}
+/* RESPONSIVE DESIGN */
 
 /* IPAD PRO */
 @media (max-width: 1024px) {
