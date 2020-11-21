@@ -27,6 +27,7 @@ p {
   font-family: 'Nunito', sans-serif;
   color: var(--color-paragraphs);
   margin-bottom: 0px;
+  font-size: 18px;
 }
 
 h1, h2, h3, h4 {
@@ -69,6 +70,13 @@ a:hover {
 .my-value {
   margin-top: 80px;
   margin-bottom: 80px;
+  background-image: url(../images/background2.png);
+  background-size: cover;
+}
+
+.my-value h2 {
+  font-weight: bold;
+  font-size: 50px;
 }
 
 .my-value p {
