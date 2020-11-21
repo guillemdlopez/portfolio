@@ -9,3 +9,7 @@
   color: var(--color-headers)
   font-weight: lighter;
 }
+
+.card-banner .window-icons i {
+  font-size: 20px;
+}

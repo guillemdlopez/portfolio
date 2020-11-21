@@ -32,6 +32,13 @@
   top: 110px;
 }
 
+/* CARDS CONTAINER */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
 /* CARD CONTACT DETAILS (ABOUT ME) */
 
 .card-contact-details {
@@ -90,11 +97,48 @@
   background: white;
 }
 
-.value {
+/*.value {
   margin-top: 60px;
-}
+}*/
 
 .value-card:hover {
   transition: transform 0.4s;
   transform: translateY(-14px);
 }
+
+
+/* CV CARDS */
+
+.cv-card-languages, .cv-card-experience {
+  background-color: white;
+  width: 25%;
+  padding: 20px 30px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+}
+
+.cv-card-languages:hover, .cv-card-education:hover, .cv-card-skills:hover, .cv-card-experience:hover {
+  transition: transform 0.4s;
+  transform: translateY(-14px);
+}
+
+.cv-card-languages h1, .cv-card-experience h1{
+  margin-top: 200px;
+}
+
+.cv-card-education, .cv-card-skills {
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  width: 96%;
+  margin-left: 10px;
+}
+
+.cv-card-education {
+  margin-bottom: 20px;
+}
+
+.cv-education-skills {
+  flex-grow: 1;
+  margin: 0px
+}
+

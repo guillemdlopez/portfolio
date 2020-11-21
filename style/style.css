@@ -75,10 +75,18 @@ a:hover {
 }
 
 .my-value h2 {
-  font-weight: bold;
   font-size: 50px;
 }
 
 .my-value p {
   line-height: 34px;
+}
+
+.wrapper-cv {
+  background-color: var(--color-principal);
+  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  height: 100vh;
+  margin-top: 150px;
 }
