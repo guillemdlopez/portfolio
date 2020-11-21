@@ -24,6 +24,7 @@
   </div>
   <div class="banner"> <!--BANNER -->
     <div class="container"> <!--- CONTAINER --->
+      <div class="banner-cards">
         <div class="card-transparent"></div>
         <div class="card-purple"></div>
         <div class="card-banner"> <!--- CARD WITH NAME --->
@@ -35,22 +36,23 @@
           <h1>Guillem Delás López</h1>
           <p>Barcelona-based Fullstack Developer</p>
         </div>
-        <div class="contact-icons d-flex flex-column">
-          <a href="https://github.com/guillemdlopez" target="blank"><i class="fab fa-github-square"></i></a>
-          <a href="https://www.hackerrank.com/guillemdelas" target="blank"><i class="fab fa-hackerrank"></i></a>
-          <a href="https://www.linkedin.com/in/guillemdelas/" target="blank"><i class="fab fa-linkedin"></i></a>
-          <a href=""><i class="fab fa-discord"></i></a>
-          <a href="mailto: guillemdelas@hotmail.com"><i class="fas fa-envelope-square"></i></a>
-        </div>
-      </div> <!--- CONTAINER --->
-    </div>
+      </div>
+      <div class="contact-icons d-flex flex-column">
+        <a href="https://github.com/guillemdlopez" target="blank" class="contact-link" data-number-link="1"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.hackerrank.com/guillemdelas" target="blank" class="contact-link" data-number-link="2"><i class="fab fa-hackerrank"></i></a>
+        <a href="https://www.linkedin.com/in/guillemdelas/" target="blank" class="contact-link" data-number-link="3"><i class="fab fa-linkedin"></i></a>
+        <a href="" class="contact-link" data-number-link="4"><i class="fab fa-discord"></i></a>
+        <a href="mailto: guillemdelas@hotmail.com" class="contact-link" data-number-link="5"><i class="fas fa-envelope-square"></i></a>
+      </div>
+    </div> <!--- CONTAINER --->
+  </div>
 
     <div class="container"> <!---PAGE CONTENT -->
       <!-- ABOUT ME --->
       <div class="about-me" id="about-me">
         <h4 class="small font-weight-bolder subtitle">ABOUT ME</h4>
         <h2>Hi, nice to meet you! 👋</h2>
-        <div class="d-flex justify-content-between">
+        <div class="about-me-content">
           <div class="bio">
             <p class="mt-4">Hello, I'm Guillem Delás! A Fullstack Junior Web Developer. I am passionate
               about technology and its power to make a positive impact in the world
@@ -70,9 +72,9 @@
               <i class="fas fa-circle window-minimize"></i>
               <i class="fas fa-circle window-open"></i>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="card-contact-details-content">
               <img src="images/profile.jpg" alt="" class="avatar">
-              <div class="ml-4">
+              <div class="card-contact-details-no-img">
                 <h2 class="font-weight-bolder mb-0">Guillem Delás López</h2>
                 <p class="mt-0 mb-3">FullStack Junior Web Developer</p>
                 <div class="purple-bar mb-4"></div>
@@ -101,7 +103,7 @@
       <div class="my-value">
         <div class="container">
           <h2 class="text-center"><span style="color: var(--color-secundario)">Quick</span> lerner. <span style="color: var(--color-secundario)">Curious</span> by nature. <br> <span style="color: var(--color-secundario)">Hard</span> worker.</h2>
-          <div class="cards">
+          <div class="value-cards">
             <div class="value-card">
               <div class="window-icons">
                 <i class="fas fa-circle window-close"></i>
@@ -142,7 +144,7 @@
           <h4 class="small font-weight-bolder subtitle">RESUME</h4>
           <h2>Take a look at my CV 🤓</h2>
           <p>Here you can take a look at some sections of my resume. Just click on it if you're curious!</p>
-          <div class="cards">
+          <div class="cv-cards">
             <div class="cv-card-languages">
               <div class="window-icons">
                 <i class="fas fa-circle window-close"></i>

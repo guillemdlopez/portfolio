@@ -13,3 +13,10 @@
 .card-banner .window-icons i {
   font-size: 20px;
 }
+
+@media (max-width: 1200px) {
+  .card-contact-details {
+    width: 50%
+  }
+
+}

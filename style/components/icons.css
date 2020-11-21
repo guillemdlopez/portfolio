@@ -9,8 +9,7 @@
 }
 
 .window-close {
-  color: #7B0000
-;
+  color: #7B0000;
 
 }
 
@@ -25,12 +24,12 @@
 
 .contact-icons {
   position: absolute;
-  right: 24%;
-  top: 105px;
+  right: 25.5%;
+  top: 13.5%;
 }
 
 .contact-icons i {
-  font-size: 74px;
+  font-size: 64px;
 }
 
 .download {

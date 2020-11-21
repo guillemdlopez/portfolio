@@ -1,10 +1,13 @@
+.banner-cards {
+  z-index: auto;
+}
+
 .card-banner {
   background-color: white;
   width: 761px;
   padding: 30px 50px;
   position: absolute;
-  bottom: 188px;
-  z-index: auto;
+  top: 23%;
 }
 
 .card-banner p {
@@ -18,8 +21,8 @@
   height: 400px;
   width: 764px;
   position: absolute;
-  left: 200px;
-  top: 140px;
+  left: 14%;
+  top: 18%;
 }
 
 .card-transparent {
@@ -28,12 +31,12 @@
   width: 761px;
   position: absolute;
   height: 400px;
-  left: 240px;
-  top: 110px;
+  left: 16.5%;
+  top: 14%;
 }
 
 /* CARDS CONTAINER */
-.cards {
+.value-cards, .cv-cards {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -46,7 +49,16 @@
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   width: 50%;
   padding: 30px 30px;
-  height: 368px;
+  height: 50%;
+}
+
+.card-contact-details-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-contact-details-no-img {
+  margin-left: 20px;
 }
 .card-contact-details-phone i, .card-contact-details-location i {
   color: var(--color-secundario);
@@ -97,10 +109,6 @@
   background: white;
 }
 
-/*.value {
-  margin-top: 60px;
-}*/
-
 .value-card:hover {
   transition: transform 0.4s;
   transform: translateY(-14px);
@@ -130,7 +138,7 @@
   padding: 20px 30px;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   width: 96%;
-  margin-left: 10px;
+  margin-left: 11px;
 }
 
 .cv-card-education {

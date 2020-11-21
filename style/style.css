@@ -61,6 +61,11 @@ a:hover {
   margin-top: 100px;
 }
 
+.about-me-content {
+  display: flex;
+  justify-content: space-between;
+}
+
 .bio p {
   line-height: 34px;
 }
@@ -91,4 +96,48 @@ a:hover {
   padding-bottom: 80px;
   height: 100vh;
   margin-top: 150px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1199px) {
+  .card-contact-details-content {
+    align-items: start;
+
+  }
+
+}
+
+@media (max-width: 991px) {
+  .bio {
+    width: 100%;
+  }
+
+  .about-me-content {
+    display: block;
+  }
+
+  .card-contact-details {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .value-cards {
+    display: block;
+  }
+  .value-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .cv-cards {
+    display: block;
+  }
+
+  .cv-card-languages, .cv-education-skills, .cv-card-skills, .cv-card-experience {
+    width: 100%;
+    height: 20%;
+  }
+
 }
