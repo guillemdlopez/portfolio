@@ -1,3 +1,4 @@
+/* COMPONENTS */
 @import url(components/banner.css);
 @import url(components/navbar.css);
 @import url(components/buttons.css);
@@ -6,16 +7,20 @@
 @import url(components/avatar.css);
 @import url(components/footer.css);
 
-/* ROBOTO AND NUNITO */
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
 
 /* COLORS */
 :root {
-  --color-principal: #F2CD5D;
+  --color-principal: rgb(242, 205, 93);
   --color-secundario: #5F38CC;
   --color-headers: #353535;
   --color-paragraphs: #494949;
   --color-subtitles: rgba(91, 71, 210, 0.6);
+}
+
+.hidden {
+  display: none;
 }
 
 body {
@@ -56,6 +61,11 @@ a:hover {
 }
 
 /* SECTIONS */
+
+.navbar-small-devices {
+  display: none;
+}
+
 
 .about-me {
   margin-top: 100px;
@@ -111,6 +121,10 @@ a:hover {
 /* IPAD PRO */
 @media (max-width: 1024px) {
   /* BANNER */
+  .navbar-small-devices {
+    display: none;
+  }
+
   .banner h1 {
     font-size: 81px;
   }
@@ -312,12 +326,26 @@ a:hover {
 
 @media (max-width: 414px) {
   /* navbar */
+  .navbar-small-devices {
+    display: block;
+  }
+
+  .sections {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar {
+    display: none;
+  }
+
   .flex-grow-1 {
     display: none;
   }
 
   .card-banner {
-    width: 100%;
+    width: 93%;
     top: 10%;
   }
 
@@ -330,7 +358,17 @@ a:hover {
   }
 
   .card-purple {
-    display: none;
+    width: 88%;
+  }
+
+  .contact-icons i {
+    color: white;
+    font-size: 50px;
+  }
+
+  .contact-icons {
+    left: 32%;
+    bottom: 56%;
   }
 
 
@@ -358,6 +396,15 @@ a:hover {
 
   .card-contact-details-location {
     display: block;
+  }
+
+  .download-cv {
+    justify-content: center;
+  }
+
+  .purple-bar {
+    margin: 0 auto;
+    width: 78%;
   }
 
   .my-value h2 {

@@ -2,6 +2,7 @@
   font-weight: bold;
   border: 1px solid black;
   padding: 10px 20px;
+  margin-left: 40px;
 }
 
 .btn-contact:hover {
@@ -24,4 +25,9 @@
 .btn-download-cv:hover {
   background-color: black;
   color: #F2CD5D;
+}
+
+button {
+  border: none;
+  background-color: transparent;
 }

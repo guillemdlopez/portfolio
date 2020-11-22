@@ -3,13 +3,39 @@
   height: 68px;
   position: sticky;
   top: 0px;
-  background: #F2CD5D;
+  background: var(--color-principal);
   /* opacity: 0.8; */
   z-index: 1;
 }
 
-.navbar-links p {
+.navbar-links a {
   margin-left: 40px;
   margin-bottom: 0px;
 }
+
+/* NAVBAR PHONE */
+.navbar-phone {
+  display: flex;
+  height: 68px;
+  position: sticky;
+  top: 0px;
+  background: var(--color-principal);
+  z-index: 1;
+  text-align: right;
+}
+
+.burger-menu {
+  font-size: 34px;
+  margin-top: 20px;
+}
+
+.sections {
+  background-color: var(--color-principal);
+  height: 100vh;
+  text-align: center;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
 
