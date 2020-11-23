@@ -41,3 +41,6 @@ linksSections.forEach(link => {
     menu.classList.add('hidden')
   })
 })
+
+/* SROLLING */
+

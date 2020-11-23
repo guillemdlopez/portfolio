@@ -13,6 +13,12 @@
   margin-bottom: 0px;
 }
 
+.navbar-links {
+  display: flex;
+  align-items: center;
+  text-align: end;
+}
+
 /* NAVBAR PHONE */
 .navbar-phone {
   display: flex;
