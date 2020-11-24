@@ -114,10 +114,15 @@ const linkDecoration = function (entries, observer) {
   const [entry] = entries;
   // console.log(entry);
   const links = document.querySelectorAll('a[data-link]')
-  if (!entry.isIntersecting) return;
+
 
   if (entry.isIntersecting) {
-    const hrefLink = entry.target.id
+    const hrefLink = entry.target.id;
+    links.forEach(link => {
+      link.dataset.link === entry.target.id ? link.classList.add('underline-link') : false
+    })
+  } else {
+    const hrefLink = entry.target.id;
     links.forEach(link => {
       link.dataset.link === entry.target.id ? link.classList.add('underline-link') : link.classList.remove('underline-link')
     })
@@ -126,7 +131,7 @@ const linkDecoration = function (entries, observer) {
 
 const underlineLinks = new IntersectionObserver(linkDecoration, {
   root: null,
-  threshold: 0.10,
+  threshold: 0,
 })
 
 sections.forEach(section => {
