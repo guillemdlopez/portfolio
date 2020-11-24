@@ -1,0 +1,11 @@
+.img-flatify {
+  width: 30%;
+  margin-left: 40px;
+  filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.25));
+}
+
+.img-games-master {
+  width: 30%;
+  margin-right: 40px;
+  filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.25));
+}

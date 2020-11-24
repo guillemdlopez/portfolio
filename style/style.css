@@ -7,6 +7,7 @@
 @import url(components/avatar.css);
 @import url(components/footer.css);
 @import url(components/modal.css);
+@import url(components/images.css);
 
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap');
@@ -46,6 +47,7 @@ h1 {
 }
 
 .subtitle {
+  font-weight: bold;
   color: var(--color-subtitles)
 }
 
@@ -67,6 +69,7 @@ a:hover {
 
 /* SECTIONS */
 
+/* ABOUT ME */
 .about-me {
   margin-top: 50px;
   padding-top: 80px;
@@ -85,6 +88,7 @@ a:hover {
   width: 40%;
 }
 
+/* MY VALUE */
 .my-value {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -101,6 +105,7 @@ a:hover {
   line-height: 34px;
 }
 
+/* CV */
 .wrapper-cv {
   background-color: var(--color-principal);
   margin-bottom: 100px;
@@ -114,6 +119,40 @@ a:hover {
   background-color: rgba(91, 71, 210, 0.3);
   padding: 10px 10px;
   font-weight: bold;
+}
+
+/* PROJECTS */
+
+/*.projects .card {
+  background: none;
+  box-shadow: none;
+  border: none;
+}*/
+
+.flatify {
+  display: flex;
+  justify-content: center;
+}
+
+.games-master {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.projects {
+  margin-top: 40px;
+}
+
+#projects {
+  padding-top: 80px;
+  background-image: url(../images/background-projects.png);
+  background-size: cover;
+  padding-bottom: 150px;
+}
+
+.project-description {
+  line-height: 34px;
 }
 
 /* effect */
@@ -199,7 +238,7 @@ a:hover {
   .value-cards {
     display: block;
   }
-  .value-card {
+  .card {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -296,7 +335,7 @@ a:hover {
   .value-cards {
     display: block;
   }
-  .value-card {
+  .card {
     width: 100%;
     margin-bottom: 30px;
   }
