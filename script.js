@@ -118,29 +118,17 @@ const linkDecoration = function (entries, observer) {
   links.forEach(link => {
     if (entry.isIntersecting && link.dataset.link === entry.target.id) {
       link.classList.add('underline-link')
+      unobserver.observe(entry.target)
     }
     else {
       link.classList.remove('underline-link')
     }
   })
-
-
-  // if (entry.isIntersecting) {
-  //   const hrefLink = entry.target.id;
-  //   links.forEach(link => {
-  //     link.dataset.link === entry.target.id ? link.classList.add('underline-link') : false
-  //   })
-  // } else {
-  //   const hrefLink = entry.target.id;
-  //   links.forEach(link => {
-  //     link.dataset.link === entry.target.id ? link.classList.add('underline-link') : link.classList.remove('underline-link')
-  //   })
-  // }
 }
 
 const underlineLinks = new IntersectionObserver(linkDecoration, {
   root: null,
-  threshold: 0,
+  threshold: 0.20,
 })
 
 sections.forEach(section => {
