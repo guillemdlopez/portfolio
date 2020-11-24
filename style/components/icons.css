@@ -37,3 +37,7 @@
 .download {
   font-size: 34px;
 }
+
+.contact-icons a {
+  display: block;
+}

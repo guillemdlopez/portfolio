@@ -1,8 +1,8 @@
-// EVENT DELEGATION ON CONTACT LINKS//
-
 const contactLinks = document.querySelectorAll('.contact-link')
 const contactDiv = document.querySelector('.contact-icons')
-// console.log(contactLinks, contactDiv)
+const navLinks = document.querySelector('.navbar-links')
+const sections = document.querySelectorAll('section')
+
 
 contactLinks.forEach(link => {
   link.addEventListener('mouseenter', (e) => {
@@ -43,4 +43,33 @@ linksSections.forEach(link => {
 })
 
 /* SROLLING */
+const initScrolling = function() {
+  navLinks.addEventListener('click', (e) => {
+    e.preventDefault()
+    const id = e.target.getAttribute('href');
+    const section = document.querySelector(id)
+    section.scrollIntoView({behavior: 'smooth'})
+  })
+}
+initScrolling();
+
+
+/* SECTIONS EFFECT */
+const loadSection = function(entries, observer) {
+  const [entry] = entries;
+  console.log(entry.target)
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove('hidden-section');
+  observer.unobserve(entry.target)
+}
+
+const sectionObserver = new IntersectionObserver(loadSection, {
+  root: null,
+  threshold: 0.15,
+})
+
+sections.forEach(section => {
+  sectionObserver.observe(section);
+})
 

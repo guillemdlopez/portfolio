@@ -60,15 +60,19 @@ a:hover {
   color: black;
 }
 
-/* SECTIONS */
-
 .navbar-small-devices {
   display: none;
 }
 
+/* SECTIONS */
+
+.section {
+  transition: transform 1s, opacity 1s
+}
 
 .about-me {
-  margin-top: 100px;
+  margin-top: 50px;
+  padding-top: 80px;
 }
 
 .about-me-content {
@@ -113,6 +117,12 @@ a:hover {
   background-color: rgba(91, 71, 210, 0.3);
   padding: 10px 10px;
   font-weight: bold;
+}
+
+/* effect */
+.hidden-section {
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 

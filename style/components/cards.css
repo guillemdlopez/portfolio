@@ -141,6 +141,11 @@
   margin-left: 11px;
 }
 
+.cv-card-title {
+  display: flex;
+  justify-content: end;
+}
+
 .cv-card-education {
   margin-bottom: 20px;
 }
