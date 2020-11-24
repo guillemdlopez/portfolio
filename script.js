@@ -110,25 +110,24 @@ bannerObserver.observe(banner)
 
 
 /* NAVBAR LINKS SELECTION */
-const linkDecoration = function (entries, observer) {
+const linkDecoration = function (entries) {
   const [entry] = entries;
-  console.log(entry);
+  // console.log(entry);
   const links = document.querySelectorAll('a[data-link]')
+   // console.log(entry)
 
   links.forEach(link => {
-    if (entry.isIntersecting && link.dataset.link === entry.target.id) {
-      link.classList.add('underline-link')
-      unobserver.observe(entry.target)
-    }
-    else {
-      link.classList.remove('underline-link')
-    }
+    link.dataset.link === entry.target.id ? link.classList.add('underline-link') : link.classList.remove('underline-link');
+  //   }
+  //   else {
+  //     link.dataset.link === entry.target.id ? link.classList.remove('underline-link') : false;
+  //   }
   })
 }
 
 const underlineLinks = new IntersectionObserver(linkDecoration, {
   root: null,
-  threshold: 0.20,
+  threshold: 0.50,
 })
 
 sections.forEach(section => {
