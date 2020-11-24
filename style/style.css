@@ -66,10 +66,6 @@ a:hover {
 
 /* SECTIONS */
 
-.section {
-  transition: transform 1s, opacity 1s
-}
-
 .about-me {
   margin-top: 50px;
   padding-top: 80px;
@@ -120,6 +116,10 @@ a:hover {
 }
 
 /* effect */
+.section {
+  transition: transform 1s, opacity 1s
+}
+
 .hidden-section {
   opacity: 0;
   transform: translateY(40px);
