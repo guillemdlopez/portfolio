@@ -9,7 +9,7 @@ const btnCloseModal = document.querySelectorAll('.btn-close-modal')
 const modals = document.querySelectorAll('.cv-modal')
 const banner = document.querySelector('.banner')
 const navbar = document.querySelector('.navbar')
-
+const links = document.querySelectorAll('a[data-link]')
 // console.log(cvCardsDiv, cvCards, modalOverlay, btnCloseModal, banner, navbar);
 
 /* NAVBAR PHONE */
@@ -112,21 +112,30 @@ bannerObserver.observe(banner)
 /* NAVBAR LINKS SELECTION */
 const linkDecoration = function (entries, observer) {
   const [entry] = entries;
-  // console.log(entry);
+  console.log(entry);
   const links = document.querySelectorAll('a[data-link]')
 
+  links.forEach(link => {
+    if (entry.isIntersecting && link.dataset.link === entry.target.id) {
+      link.classList.add('underline-link')
+    }
+    else {
+      link.classList.remove('underline-link')
+    }
+  })
 
-  if (entry.isIntersecting) {
-    const hrefLink = entry.target.id;
-    links.forEach(link => {
-      link.dataset.link === entry.target.id ? link.classList.add('underline-link') : false
-    })
-  } else {
-    const hrefLink = entry.target.id;
-    links.forEach(link => {
-      link.dataset.link === entry.target.id ? link.classList.add('underline-link') : link.classList.remove('underline-link')
-    })
-  }
+
+  // if (entry.isIntersecting) {
+  //   const hrefLink = entry.target.id;
+  //   links.forEach(link => {
+  //     link.dataset.link === entry.target.id ? link.classList.add('underline-link') : false
+  //   })
+  // } else {
+  //   const hrefLink = entry.target.id;
+  //   links.forEach(link => {
+  //     link.dataset.link === entry.target.id ? link.classList.add('underline-link') : link.classList.remove('underline-link')
+  //   })
+  // }
 }
 
 const underlineLinks = new IntersectionObserver(linkDecoration, {
