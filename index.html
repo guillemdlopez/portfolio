@@ -10,6 +10,7 @@
 
   <title>Guillem Delás - FullStack Developer</title>
   <link rel="icon" type="image/png" href="images/emoji.png">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <div class="navbar-small-devices">
@@ -66,6 +67,7 @@
     </div> <!--- CONTAINER --->
   </div>
 
+  <main>
       <!-- ABOUT ME --->
     <section class="section about-me hidden-section" id="about-me">
       <div class="container"> <!---PAGE CONTENT -->
@@ -118,97 +120,200 @@
       </div> <!---PAGE CONTENT -->
     </section>
 
-      <!-- MY VALUE --->
-      <section class="section my-value hidden-section" id="my-value">
+    <!-- MY VALUE --->
+    <section class="section my-value hidden-section" id="my-value">
+      <div class="container">
+        <h2 class="text-center"><span class="highlight" style="color: var(--color-secundario)">Quick</span> lerner. <span class="highlight" style="color: var(--color-secundario)">Curious</span> by nature. <br> <span class="highlight" style="color: var(--color-secundario)">Hard</span> worker.</h2>
+        <div class="value-cards">
+          <div class="value-card">
+            <div class="window-icons">
+              <i class="fas fa-circle window-close"></i>
+              <i class="fas fa-circle window-minimize"></i>
+              <i class="fas fa-circle window-open"></i>
+            </div>
+            <h4 class="value">Quick lerner</h4>
+            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="window-icons">
+              <i class="fas fa-circle window-close"></i>
+              <i class="fas fa-circle window-minimize"></i>
+              <i class="fas fa-circle window-open"></i>
+            </div>
+            <h4 class="value">Curious by nature</h4>
+            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="window-icons">
+              <i class="fas fa-circle window-close"></i>
+              <i class="fas fa-circle window-minimize"></i>
+              <i class="fas fa-circle window-open"></i>
+            </div>
+            <h4 class="value">Hard worker</h4>
+            <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME --->
+    <section class="section wrapper-cv hidden-section" id="cv">
+      <div class="container">
+        <h4 class="small font-weight-bolder subtitle">RESUME</h4>
+        <h2>Take a look at my CV 🤓</h2>
+        <p>Here you can take a look at some sections of my resume. Just click on it if you're curious!</p>
+        <div class="cv-cards">
+          <div class="cv-card cv-card-languages" data-cv="languages">
+            <div class="window-icons">
+              <i class="fas fa-circle window-close"></i>
+              <i class="fas fa-circle window-minimize"></i>
+              <i class="fas fa-circle window-open"></i>
+            </div>
+            <h1 class="cv-card-title">Languages</h1>
+          </div>
+          <div class="cv-education-skills">
+            <div class="cv-card cv-card-education" data-cv="education">
+              <div class="window-icons">
+                <i class="fas fa-circle window-close"></i>
+                <i class="fas fa-circle window-minimize"></i>
+                <i class="fas fa-circle window-open"></i>
+              </div>
+              <h1 class="cv-card-title">Education</h1>
+            </div>
+            <div class="cv-card cv-card-skills" data-cv="skills">
+              <div class="window-icons">
+                <i class="fas fa-circle window-close"></i>
+                <i class="fas fa-circle window-minimize"></i>
+                <i class="fas fa-circle window-open"></i>
+              </div>
+              <h1 class="cv-card-title">Skills</h1>
+            </div>
+          </div>
+            <div class="cv-card cv-card-experience" data-cv="experience">
+            <div class="window-icons">
+              <i class="fas fa-circle window-close"></i>
+              <i class="fas fa-circle window-minimize"></i>
+              <i class="fas fa-circle window-open"></i>
+            </div>
+            <h1 class="cv-card-title">Experience</h1>
+          </div>
+        </div> <!-- CARDS DIV -->
+        <a href="files/Guillem_Delas_CV.pdf" target="blank" class="btn-download-cv text-center">
+          <i class="fas fa-file-download download"></i>
+          Download my CV
+        </a>
+      </div>
+      <!-- MODAL WINDOWS -->
+        <div class="overlay hidden"></div>
         <div class="container">
-          <h2 class="text-center"><span class="highlight" style="color: var(--color-secundario)">Quick</span> lerner. <span class="highlight" style="color: var(--color-secundario)">Curious</span> by nature. <br> <span class="highlight" style="color: var(--color-secundario)">Hard</span> worker.</h2>
-          <div class="value-cards">
-            <div class="value-card">
-              <div class="window-icons">
+          <!-- MODAL LANGUAGES -->
+          <div class="modal-languages cv-modal hidden">
+            <div class="modal-header">
+              <div class="window-icons flex-grow-1">
                 <i class="fas fa-circle window-close"></i>
                 <i class="fas fa-circle window-minimize"></i>
                 <i class="fas fa-circle window-open"></i>
               </div>
-              <h4 class="value">Quick lerner</h4>
-              <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-              </p>
             </div>
-            <div class="value-card">
-              <div class="window-icons">
-                <i class="fas fa-circle window-close"></i>
-                <i class="fas fa-circle window-minimize"></i>
-                <i class="fas fa-circle window-open"></i>
+            <button class="btn-close-modal">&times;</button>
+            <div class="cv-modal-content">
+              <div class="spanish">
+                <div class="language-level">
+                  <h4>Spanish</h4>
+                  <div class="level"></div>
+                </div>
+                <p>Native</p>
               </div>
-              <h4 class="value">Curious by nature</h4>
-              <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-              </p>
+
+              <div class="catalan">
+                <div class="language-level">
+                  <h4>Catalan</h4>
+                  <div class="level"></div>
+                </div>
+                <p>Native</p>
+              </div>
+
+              <div class="english">
+                <div class="language-level">
+                  <h4>English</h4>
+                  <div class="level"></div>
+                </div>
+                <p>First Certificate of Cambridge (B2.2)</p>
+              </div>
+
+              <div class="german">
+                <div class="language-level">
+                  <h4>German</h4>
+                  <div class="level"></div>
+                </div>
+                <p>Blended Learning Kurs im Goethe-Institut (B1.3)</p>
+              </div>
             </div>
-            <div class="value-card">
-              <div class="window-icons">
+          </div>
+
+          <!-- MODAL ECUCATION -->
+          <div class="modal-education cv-modal hidden">
+            <div class="modal-header">
+              <div class="window-icons flex-grow-1">
                 <i class="fas fa-circle window-close"></i>
                 <i class="fas fa-circle window-minimize"></i>
                 <i class="fas fa-circle window-open"></i>
               </div>
-              <h4 class="value">Hard worker</h4>
-              <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-              </p>
+            </div>
+            <button class="btn-close-modal">&times;</button>
+            <div class="cv-modal-content">
+              <h4>Web Development, <i style="font-weight: lighter;" >Le Wagon Barcelona</i></h4>
+              <p>08/2020 - 10/2020</p>
+              <p class="education-description">9-week full-time intensive coding bootcamp learning HTML, <br>
+                CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails. <br>
+                Designed, implemented and shipped to production a clone of AirBnB and a Rails prototype called Flatify.</p>
+            </div>
+            <div class="cv-modal-content">
+              <h4>Audiovisual Communication, <i style="font-weight: lighter;" > <br> Universitat Autònoma de Barcelona</i></h4>
+              <p>09/2014 - 06/2018</p>
+              <p class="education-description">Bachelor’s Degree in Audiovisual Communication and got a Special Award <br> for Bachelo’rs Degree.</p>
+            </div>
+          </div>
+
+          <!-- MODAL SKILLS -->
+          <div class="modal-skills cv-modal hidden">
+            <div class="modal-header">
+              <div class="window-icons flex-grow-1">
+                <i class="fas fa-circle window-close"></i>
+                <i class="fas fa-circle window-minimize"></i>
+                <i class="fas fa-circle window-open"></i>
+              </div>
+            </div>
+            <button class="btn-close-modal">&times;</button>
+            <div class="cv-modal-content">
+              <h4>Frontend</h4>
+              <p>JavaScript, HTML, CSS, SCSS, React, Bootstrap</p>
+              <h4>Backend</h4>
+              <p>Ruby, Ruby on Rails, Node.js</p>
+              <h4>Tools</h4>
+              <p>RSpec, Github, Figma, Git, Adobe InDesgin, Adobe Premiere, Adobe Photoshop, Adobe Xd</p>
+            </div>
+          </div>
+
+          <!-- MODAL EXPERIENCE -->
+          <div class="modal-experience cv-modal hidden">
+            <div class="modal-header">
+              <div class="window-icons flex-grow-1">
+                <i class="fas fa-circle window-close"></i>
+                <i class="fas fa-circle window-minimize"></i>
+                <i class="fas fa-circle window-open"></i>
+              </div>
+            </div>
+            <button class="btn-close-modal">&times;</button>
+            <div class="cv-modal-content">
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- RESUME --->
-      <section class="section wrapper-cv hidden-section" id="cv">
-        <div class="container">
-          <h4 class="small font-weight-bolder subtitle">RESUME</h4>
-          <h2>Take a look at my CV 🤓</h2>
-          <p>Here you can take a look at some sections of my resume. Just click on it if you're curious!</p>
-          <div class="cv-cards">
-            <div class="cv-card-languages">
-              <div class="window-icons">
-                <i class="fas fa-circle window-close"></i>
-                <i class="fas fa-circle window-minimize"></i>
-                <i class="fas fa-circle window-open"></i>
-              </div>
-              <h1 class="cv-card-title">Languages</h1>
-            </div>
-            <div class="cv-education-skills">
-              <div class="cv-card-education">
-                <div class="window-icons">
-                  <i class="fas fa-circle window-close"></i>
-                  <i class="fas fa-circle window-minimize"></i>
-                  <i class="fas fa-circle window-open"></i>
-                </div>
-                <h1 class="cv-card-title">Education</h1>
-              </div>
-              <div class="cv-card-skills">
-                <div class="window-icons">
-                  <i class="fas fa-circle window-close"></i>
-                  <i class="fas fa-circle window-minimize"></i>
-                  <i class="fas fa-circle window-open"></i>
-                </div>
-                <h1 class="cv-card-titlert">Skills</h1>
-              </div>
-            </div>
-              <div class="cv-card-experience">
-              <div class="window-icons">
-                <i class="fas fa-circle window-close"></i>
-                <i class="fas fa-circle window-minimize"></i>
-                <i class="fas fa-circle window-open"></i>
-              </div>
-              <h1 class="cv-card-title">Experience</h1>
-            </div>
-          </div> <!-- CARDS DIV -->
-          <a href="files/Guillem_Delas_CV.pdf" target="blank" class="btn-download-cv text-center">
-            <i class="fas fa-file-download download"></i>
-            Download my CV
-          </a>
         </div>
-      </section>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+    </section>
+  </main>
 </body>
 </html>

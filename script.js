@@ -2,6 +2,13 @@ const contactLinks = document.querySelectorAll('.contact-link')
 const contactDiv = document.querySelector('.contact-icons')
 const navLinks = document.querySelector('.navbar-links')
 const sections = document.querySelectorAll('section')
+const cvCardsDiv = document.querySelector('.cv-cards')
+const cvCards = document.querySelectorAll('.cv-card')
+const modalOverlay = document.querySelector('.overlay')
+const btnCloseModal = document.querySelectorAll('.btn-close-modal')
+const modals = document.querySelectorAll('.cv-modal')
+
+console.log(cvCardsDiv, cvCards, modalOverlay, btnCloseModal);
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector('.burger-menu')
@@ -57,4 +64,30 @@ const sectionObserver = new IntersectionObserver(loadSection, {
 sections.forEach(section => {
   sectionObserver.observe(section);
 })
+
+/* MODAL WINDOWS */
+cvCardsDiv.addEventListener('click', (e) => {
+  const card = e.target.closest('.cv-card');
+  if (!card) return;
+  const dataEl = card.dataset.cv
+  const modal = document.querySelector(`.modal-${dataEl}`)
+  modal.classList.remove('hidden')
+  modalOverlay.classList.remove('hidden')
+})
+
+const closeModal = function() {
+  modals.forEach(modal => {
+    modal.classList.add('hidden')
+  })
+  modalOverlay.classList.add('hidden')
+}
+
+modalOverlay.addEventListener('click', closeModal)
+
+btnCloseModal.forEach(btn => {
+  btn.addEventListener('click', closeModal)
+})
+
+
+
 

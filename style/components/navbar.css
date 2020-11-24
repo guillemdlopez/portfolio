@@ -16,7 +16,6 @@
 .navbar-links {
   display: flex;
   align-items: center;
-  justify-content: end;
 }
 
 /* NAVBAR PHONE */

@@ -1,0 +1,73 @@
+.cv-modal {
+  position: fixed;
+  left: 25%;
+  top: 15%;
+  width: 50%;
+  background-color: #f3f3f3;
+  padding: 60px;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  padding: 0px;
+}
+
+.cv-modal .window-icons {
+  margin-bottom: 0px;
+}
+
+.btn-close-modal {
+  font-size: 37px;
+  position: absolute;
+  top: 0px;
+  right: 14px;
+  color: lightgrey;
+}
+
+.btn-close-modal:hover {
+  color: var(--color-headers)
+}
+
+.cv-modal-content {
+  margin-top: 40px;
+}
+
+.language-level {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.level {
+  height: 10px;
+  width: 250px;
+  background: var(--color-secundario);
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.education-description {
+  margin-top: 20px;
+}
+
+.modal-skills h4 {
+  margin-top: 40px;
+}
