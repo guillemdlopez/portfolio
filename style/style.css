@@ -132,11 +132,13 @@ a:hover {
 .flatify {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .games-master {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 60px;
 }
 

@@ -7,8 +7,10 @@ const cvCards = document.querySelectorAll('.cv-card')
 const modalOverlay = document.querySelector('.overlay')
 const btnCloseModal = document.querySelectorAll('.btn-close-modal')
 const modals = document.querySelectorAll('.cv-modal')
+const banner = document.querySelector('.banner')
+const navbar = document.querySelector('.navbar')
 
-console.log(cvCardsDiv, cvCards, modalOverlay, btnCloseModal);
+console.log(cvCardsDiv, cvCards, modalOverlay, btnCloseModal, banner, navbar);
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector('.burger-menu')
@@ -88,6 +90,20 @@ btnCloseModal.forEach(btn => {
   btn.addEventListener('click', closeModal)
 })
 
+/* NAVBAR OPACITY EFFECT */
+const opacityNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry)
+  if (!entry.isIntersecting) {
+    navbar.classList.add('navbar-background')
+  } else {
+    navbar.classList.remove('navbar-background')
+  }
+}
+const bannerObserver = new IntersectionObserver(opacityNav, {
+  root: null,
+  threshold: 0,
+})
 
-
+bannerObserver.observe(banner)
 
