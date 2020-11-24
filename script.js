@@ -10,7 +10,7 @@ const modals = document.querySelectorAll('.cv-modal')
 const banner = document.querySelector('.banner')
 const navbar = document.querySelector('.navbar')
 
-console.log(cvCardsDiv, cvCards, modalOverlay, btnCloseModal, banner, navbar);
+// console.log(cvCardsDiv, cvCards, modalOverlay, btnCloseModal, banner, navbar);
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector('.burger-menu')
@@ -38,6 +38,7 @@ linksSections.forEach(link => {
 })
 
 /* SROLLING */
+
 const initScrolling = function() {
   navLinks.addEventListener('click', (e) => {
     e.preventDefault()
@@ -91,19 +92,44 @@ btnCloseModal.forEach(btn => {
 })
 
 /* NAVBAR OPACITY EFFECT */
-const opacityNav = function (entries) {
+const changeColorNav = function (entries) {
   const [entry] = entries;
-  console.log(entry)
   if (!entry.isIntersecting) {
-    navbar.classList.add('navbar-background')
+    navbar.style.background = 'white'
   } else {
-    navbar.classList.remove('navbar-background')
+    navbar.style.background = 'var(--color-principal)'
   }
 }
-const bannerObserver = new IntersectionObserver(opacityNav, {
+const bannerObserver = new IntersectionObserver(changeColorNav, {
   root: null,
   threshold: 0,
+  rootMargin: `-${navbar.offsetHeight}px`,
 })
 
 bannerObserver.observe(banner)
+
+
+/* NAVBAR LINKS SELECTION */
+const linkDecoration = function (entries, observer) {
+  const [entry] = entries;
+  // console.log(entry);
+  const links = document.querySelectorAll('a[data-link]')
+  if (!entry.isIntersecting) return;
+
+  if (entry.isIntersecting) {
+    const hrefLink = entry.target.id
+    links.forEach(link => {
+      link.dataset.link === entry.target.id ? link.classList.add('underline-link') : link.classList.remove('underline-link')
+    })
+  }
+}
+
+const underlineLinks = new IntersectionObserver(linkDecoration, {
+  root: null,
+  threshold: 0.10,
+})
+
+sections.forEach(section => {
+  underlineLinks.observe(section);
+})
 

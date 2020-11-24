@@ -142,11 +142,11 @@ a:hover {
   margin-top: 60px;
 }
 
-.projects {
+.flatify-games {
   margin-top: 40px;
 }
 
-#projects {
+.projects {
   padding-top: 80px;
   background-image: url(../images/background-projects.png);
   background-size: cover;
@@ -240,7 +240,7 @@ a:hover {
   .value-cards {
     display: block;
   }
-  .card {
+  .my-card {
     width: 100%;
     margin-bottom: 30px;
   }
@@ -337,7 +337,7 @@ a:hover {
   .value-cards {
     display: block;
   }
-  .card {
+  .my-card {
     width: 100%;
     margin-bottom: 30px;
   }

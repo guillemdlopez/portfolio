@@ -47,4 +47,7 @@
   background: rgb(242, 205, 93, 0.6);
 }
 
+.underline-link {
+  border-bottom: 2px solid black;
+}
 
