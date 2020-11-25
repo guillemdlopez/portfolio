@@ -10,7 +10,9 @@ const modals = document.querySelectorAll('.cv-modal')
 const banner = document.querySelector('.banner')
 const navbar = document.querySelector('.navbar')
 const links = document.querySelectorAll('a[data-link]')
-// console.log(cvCardsDiv, cvCards, modalOverlay, btnCloseModal, banner, navbar);
+const logo = document.querySelector('.link-logo')
+const mainContent = document.querySelector('main')
+
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector('.burger-menu')
@@ -36,13 +38,17 @@ const initScrolling = function() {
 }
 initScrolling();
 
-const logo = document.querySelector('.link-logo')
-console.log(logo)
 
-logo.addEventListener('click', (e) => {
-  e.preventDefault();
-  banner.scrollIntoView({behavior: 'smooth'})
-})
+const upperScrolling = function() {
+  logo.addEventListener('click', (e) => {
+    e.preventDefault();
+    banner.scrollIntoView({behavior: 'smooth'})
+  })
+}
+
+if (mainContent.hasAttribute('id')) {
+  upperScrolling()
+}
 
 
 /* SECTIONS EFFECT */
