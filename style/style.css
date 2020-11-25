@@ -307,7 +307,7 @@ a:hover {
     flex-direction: initial;
     align-items: center;
     top: 60%;
-    right: 20%;
+    left: 30%;
   }
 
   .contact-icons i {
@@ -383,6 +383,14 @@ a:hover {
 
   .projects .my-card {
     width: 100%;
+  }
+
+  .banner-project-content {
+    display: block;
+  }
+  .project-pic {
+    width: 100%;
+    margin-top: 20px;
   }
 
 }
