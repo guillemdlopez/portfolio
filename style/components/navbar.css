@@ -18,6 +18,13 @@
   align-items: center;
 }
 
+.link-home {
+  flex-grow: 1
+  margin-bottom: 0;
+  font-weight: bolder;
+  color: var(--color-paragraphs);
+}
+
 /* NAVBAR PHONE */
 .navbar-phone {
   display: flex;

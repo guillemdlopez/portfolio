@@ -108,12 +108,14 @@ bannerObserver.observe(banner)
 const linkDecoration = function (entries, observer) {
   const [entry] = entries;
   const links = document.querySelectorAll('a[data-link]')
-   console.log(entry)
-   console.log(window.pageYOffset)
+   // console.log(entry)
+   // console.log(window.pageYOffset)
+
 
   links.forEach(link => {
     if (entry.isIntersecting && link.dataset.link === entry.target.id) {
       link.classList.add('underline-link')
+      console.log(link.dataset.link, entry.target.id)
     } else if (entry.isIntersecting && link.dataset.link != entry.target.id) {
       link.classList.remove('underline-link')
     } else if (!entry.isIntersecting && entry.target.id === 'about-me') {
@@ -124,7 +126,7 @@ const linkDecoration = function (entries, observer) {
 
 const underlineLinks = new IntersectionObserver(linkDecoration, {
   root: null,
-  threshold: 0.20,
+  threshold: 0.10,
 })
 
 sections.forEach(section => {

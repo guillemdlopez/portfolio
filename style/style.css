@@ -95,7 +95,7 @@ a:hover {
 
 /* MY VALUE */
 .my-value {
-  margin-top: 80px;
+  padding-top: 80px;
   margin-bottom: 80px;
   background-image: url(../images/background2.png);
   background-size: cover;
