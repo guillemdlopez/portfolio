@@ -385,6 +385,7 @@ a:hover {
 
 }
 
+/* PHONE */
 @media (max-width: 414px) {
   /* navbar */
   .navbar-small-devices {
@@ -419,7 +420,7 @@ a:hover {
   }
 
   .card-purple {
-    width: 88%;
+   display: none;
   }
 
   .contact-icons i {
@@ -428,8 +429,8 @@ a:hover {
   }
 
   .contact-icons {
-    left: 32%;
-    bottom: 56%;
+    left: -5%;
+    top: 478px;
   }
 
 
@@ -469,12 +470,16 @@ a:hover {
   }
 
   .my-value h2 {
-    font-size: 44px;
+    font-size: 42px;
   }
 
   .btn-download-cv {
     width: 54%;
     margin-top: 47px;
+  }
+
+  .projects {
+    background-image: none;
   }
 
 }
