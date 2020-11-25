@@ -36,6 +36,14 @@ const initScrolling = function() {
 }
 initScrolling();
 
+const logo = document.querySelector('.link-logo')
+console.log(logo)
+
+logo.addEventListener('click', (e) => {
+  e.preventDefault();
+  banner.scrollIntoView({behavior: 'smooth'})
+})
+
 
 /* SECTIONS EFFECT */
 const loadSection = function(entries, observer) {
