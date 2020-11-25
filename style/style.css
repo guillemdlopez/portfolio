@@ -10,15 +10,16 @@
 @import url(components/images.css);
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap');
+/* SOFIA PRO - https://fonts.adobe.com/fonts/sofia */
 
-/* COLORS */
+/* COLORS - https://colorhunt.co/palette/220258 */
 :root {
-  --color-principal: rgb(242, 205, 93);
-  --color-secundario: #5F38CC;
+  --color-principal: #f3eac2;
+  --color-secundario: rgb(154, 211, 188);
   --color-headers: #353535;
-  --color-paragraphs: #494949;
-  --color-subtitles: rgba(91, 71, 210, 0.6);
+  --color-paragraphs: #636262;
+  --color-subtitles: #ec524b;
+  --color-details: #f5b461;
 }
 
 .hidden {
@@ -31,14 +32,15 @@ body {
 }
 
 p {
-  font-family: 'Nunito', sans-serif;
+  font-family: sofia-pro, sans-serif;
   color: var(--color-paragraphs);
   margin-bottom: 0px;
   font-size: 16px;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: sofia-pro, sans-serif;
+  font-weight: bold;
   color: var(--color-headers);
 }
 
@@ -47,6 +49,7 @@ h1 {
 }
 
 .subtitle {
+  font-family: sofia-pro, sans-serif;
   font-weight: bold;
   color: var(--color-subtitles)
 }
@@ -55,7 +58,7 @@ h1 {
 a {
   display: block;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: sofia-pro, sans-serif;
 }
 
 a:hover {
@@ -97,8 +100,8 @@ a:hover {
 }
 
 .my-value h2 {
-  font-size: 50px;
-  line-height: 85px;
+  font-size: 40px;
+  line-height: 94px;
 }
 
 .my-value p {
@@ -116,30 +119,21 @@ a:hover {
 }
 
 .highlight {
-  background-color: rgba(91, 71, 210, 0.3);
+  background-color: rgb(154, 211, 188, 0.4);
   padding: 10px 10px;
   font-weight: bold;
 }
 
 /* PROJECTS */
 
-/*.projects .card {
-  background: none;
-  box-shadow: none;
-  border: none;
-}*/
-
 .flatify {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .games-master {
-  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
 }
 
 .flatify-games {
@@ -150,7 +144,7 @@ a:hover {
   padding-top: 80px;
   background-image: url(../images/background-projects.png);
   background-size: cover;
-  padding-bottom: 150px;
+  padding-bottom: 250px;
 }
 
 .project-description {

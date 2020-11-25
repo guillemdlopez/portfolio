@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/d60ba0d5fe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/evv4gzg.css">
 
   <link rel="stylesheet" href="style/style.css">
 
@@ -48,10 +49,12 @@
         <div class="card-transparent"></div>
         <div class="card-purple"></div>
         <div class="card-banner"> <!--- CARD WITH NAME --->
-          <div class="window-icons">
-            <i class="fas fa-circle window-close"></i>
-            <i class="fas fa-circle window-minimize"></i>
-            <i class="fas fa-circle window-open"></i>
+          <div class="header">
+            <div class="window-icons">
+              <i class="fas fa-circle window-close"></i>
+              <i class="fas fa-circle window-minimize"></i>
+              <i class="fas fa-circle window-open"></i>
+            </div>
           </div>
           <div class="card-banner-content">
             <h1>Guillem Delás López</h1>
@@ -60,11 +63,23 @@
         </div>
       </div>
       <div class="contact-icons">
-        <a href="https://github.com/guillemdlopez" target="blank" class="contact-link" data-number-link="1"><i class="fab fa-github-square"></i></a>
-        <a href="https://www.hackerrank.com/guillemdelas" target="blank" class="contact-link" data-number-link="2"><i class="fab fa-hackerrank"></i></a>
-        <a href="https://www.linkedin.com/in/guillemdelas/" target="blank" class="contact-link" data-number-link="3"><i class="fab fa-linkedin"></i></a>
-        <a href="" class="contact-link" data-number-link="4"><i class="fab fa-discord"></i></a>
-        <a href="mailto: guillemdelas@hotmail.com" class="contact-link" data-number-link="5"><i class="fas fa-envelope-square"></i></a>
+        <ul class="icons-list">
+          <li>
+            <a href="https://github.com/guillemdlopez">github ·</a>
+          </li>
+          <li>
+            <a href="https://www.hackerrank.com/guillemdelas">hackerrank ·</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/guillemdelas/">linkedin ·</a>
+          </li>
+          <li>
+            <a href="">discord ·</a>
+          </li>
+          <li>
+            <a href="mailto: guillemdelas@hotmail.com">email</a>
+          </li>
+        </ul>
       </div>
     </div> <!--- CONTAINER --->
   </div>
@@ -321,7 +336,7 @@
       <div class="container">
         <h4 class="small subtitle">PROJECTS</h4>
         <h2>What I can do</h2>
-        <div class="flatify-games">
+        <div class="flatify-games d-flex justify-content-between">
           <div class="flatify">
             <div class="my-card">
               <div class="window-icons">
@@ -330,9 +345,10 @@
                 <i class="fas fa-circle window-open"></i>
               </div>
               <div class="project-title-github">
-                <h4>Games Master</h4>
+                <h4>Flatify</h4>
                 <a href="https://github.com/mauriarmora/flatify" target="blank" class="contact-link" data-number-link="1"><i class="fab fa-github-square github-icon"></i></a>
               </div>
+              <p class="subtitle">LE WAGON PROJECT</p>
               <div class="project-description">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
               </div>
@@ -344,11 +360,9 @@
                 <p class="tech-tag-background small">Bootstrap</p>
               </div>
             </div>
-            <img src="images/flatify.png" alt="" class="img-flatify">
           </div>
 
           <div class="games-master">
-            <img src="images/games-master.png" alt="" class="img-games-master">
             <div class="my-card">
               <div class="window-icons">
                 <i class="fas fa-circle window-close"></i>
@@ -356,9 +370,10 @@
                 <i class="fas fa-circle window-open"></i>
               </div>
               <div class="project-title-github">
-                <h4>Flatify</h4>
+                <h4>Games master</h4>
                 <a href="https://github.com/mauriarmora/rails-games-master" target="blank" class="contact-link" data-number-link="1"><i class="fab fa-github-square"></i></a>
               </div>
+              <p class="subtitle">LE WAGON PROJECT</p>
               <div class="project-description">
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
               </div>
@@ -374,6 +389,29 @@
         </div>
       </div>
     </section>
+
+    <div class="footer">
+      <div class="container">
+      <h4>Contact</h4>
+      <ul class="contact-links-footer">
+        <li>
+          <a href="https://github.com/guillemdlopez" target="blank">github ·</a>
+        </li>
+        <li>
+          <a href="https://www.hackerrank.com/guillemdelas" target="blank">hackerrank ·</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/guillemdelas/" target="blank">linkedin ·</a>
+        </li>
+        <li>
+          <a href="">discord ·</a>
+        </li>
+        <li>
+          <a href="mailto: guillemdelas@hotmail.com" target="blank">email</a>
+        </li>
+      </ul>
+      </div>
+    </div>
   </main>
 </body>
 </html>

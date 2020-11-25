@@ -5,13 +5,24 @@
 .card-banner {
   background-color: white;
   width: 761px;
-  padding: 30px 50px;
   position: absolute;
   top: 23%;
+  border: 2px solid rgb(130 129 129);
+}
+
+.card-banner .header {
+  background: rgb(215 213 213);
+}
+
+.card-banner .window-icons {
+  margin-bottom: 20px;
+}
+
+.banner .window-icons, .card-banner-content {
+  padding: 20px 50px;
 }
 
 .card-banner p {
-  font-family: 'Roboto', sans-serif;
   margin-top: 20px;
   font-size: 24px;
 }
@@ -23,6 +34,7 @@
   position: absolute;
   left: 14%;
   top: 18%;
+  border: 2px solid rgb(108 151 133);
 }
 
 .card-transparent {
@@ -50,6 +62,7 @@
   width: 50%;
   padding: 30px 30px;
   height: 50%;
+  border: 2px solid rgb(130, 129, 129, 0.1);
 }
 
 .card-contact-details-content {
@@ -109,14 +122,13 @@
   background: white;
 }
 
-.card:hover {
+.my-card:hover {
   transition: transform 0.4s;
   transform: translateY(-14px);
 }
 
 
 /* CV CARDS */
-
 .cv-card-languages, .cv-card-experience {
   background-color: white;
   width: 25%;
@@ -155,10 +167,17 @@
   margin: 0px
 }
 
+
 /* PROJECT CARDS */
-.projects .card {
-  height: 60%;
+.projects .my-card {
+  width: 96%;
+  border: 2px solid rgb(130, 129, 129, 0.1);
 }
+
+.projects .my-card .subtitle {
+  margin-bottom: 10px;
+}
+
 .project-title-github {
   display: flex;
   justify-content: space-between;
@@ -183,6 +202,10 @@
   color: white;
   padding: 4px 14px;
   font-weight: bold;
+}
+
+.project-technologies {
+  width: 70%;
 }
 
 .tech-tag {

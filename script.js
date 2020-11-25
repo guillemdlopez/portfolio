@@ -95,9 +95,9 @@ btnCloseModal.forEach(btn => {
 const changeColorNav = function (entries) {
   const [entry] = entries;
   if (!entry.isIntersecting) {
-    navbar.style.background = 'white'
+    navbar.style.opacity = '0.5'
   } else {
-    navbar.style.background = 'var(--color-principal)'
+    navbar.style.opacity = '1'
   }
 }
 const bannerObserver = new IntersectionObserver(changeColorNav, {
@@ -133,4 +133,12 @@ const underlineLinks = new IntersectionObserver(linkDecoration, {
 sections.forEach(section => {
   underlineLinks.observe(section);
 })
+console.log(window.pageYOffset)
 
+navbar.addEventListener('mouseover', (e) => {
+  if (window.pageYOffset > 850) e.target.style.opacity = '1'
+})
+
+navbar.addEventListener('mouseleave', (e) => {
+  if (window.pageYOffset > 850) e.target.style.opacity = '0.5'
+})

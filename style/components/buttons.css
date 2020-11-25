@@ -6,8 +6,9 @@
 }
 
 .btn-contact:hover {
-  background-color: black;
-  color: #F2CD5D;
+  background: var(--color-secundario);
+  color: white;
+  border: 1px solid rgb(108 151 133);
 }
 
 .btn-download-cv {
@@ -23,8 +24,9 @@
 }
 
 .btn-download-cv:hover {
-  background-color: black;
-  color: #F2CD5D;
+  background: var(--color-secundario);
+  color: white;
+  border: 1px solid rgb(108 151 133);
 }
 
 button {

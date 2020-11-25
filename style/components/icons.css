@@ -18,16 +18,19 @@
 }
 
 .window-open {
-  color: #0A8425
-;
+  color: #0A8425;
 }
 
 .contact-icons {
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  right: 25.5%;
-  top: 13.5%;
+  bottom: 17%;
+  left: 32.5%;
+}
+
+.icons-list li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .contact-icons i {
@@ -40,4 +43,5 @@
 
 .contact-icons a {
   display: block;
+  color: grey;
 }
