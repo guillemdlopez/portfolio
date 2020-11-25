@@ -9,6 +9,7 @@
   z-index: 1000;
   transition: all 0.5s;
   margin: 0 auto;
+  transition: 1s;
 }
 
 .overlay {

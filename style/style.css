@@ -20,9 +20,11 @@
   --color-paragraphs: #636262;
   --color-subtitles: #ec524b;
   --color-details: #f5b461;
+  --color-ebony: #606D5D;
 }
 
 .hidden {
+  transition: 1s;
   display: none;
 }
 

@@ -91,6 +91,14 @@ btnCloseModal.forEach(btn => {
   btn.addEventListener('click', closeModal)
 })
 
+document.addEventListener('keydown', (e) => {
+  modals.forEach(modal => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  })
+})
+
 /* NAVBAR OPACITY EFFECT */
 const changeColorNav = function (entries) {
   const [entry] = entries;
