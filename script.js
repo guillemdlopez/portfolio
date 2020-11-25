@@ -65,7 +65,7 @@ cvCardsDiv.addEventListener('click', (e) => {
   modalOverlay.classList.remove('hidden')
 })
 
-const closeModal = function() {
+const closeModal = function () {
   modals.forEach(modal => {
     modal.classList.add('hidden')
   })

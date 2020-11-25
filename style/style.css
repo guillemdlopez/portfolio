@@ -14,7 +14,7 @@
 
 /* COLORS - https://colorhunt.co/palette/220258 */
 :root {
-  --color-principal: #f3eac2;
+  --color-principal: #F9EFE4; /* #f3eac2; */
   --color-secundario: rgb(154, 211, 188);
   --color-headers: #353535;
   --color-paragraphs: #636262;
@@ -131,6 +131,7 @@ a:hover {
 .flatify-games {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .flatify {
@@ -141,10 +142,6 @@ a:hover {
 .games-master {
   justify-content: center;
   align-items: center;
-}
-
-.flatify-games {
-  margin-top: 40px;
 }
 
 .projects {
@@ -472,6 +469,13 @@ a:hover {
 
   .download-cv {
     justify-content: center;
+  }
+
+  .cv-modal {
+    left: 4%;
+    width: 92%;
+    top: 2%;
+    padding: 43px;
   }
 
   .purple-bar {
