@@ -119,12 +119,17 @@ a:hover {
 }
 
 .highlight {
-  background-color: rgb(154, 211, 188, 0.4);
+  background-color: rgb(154, 211, 188, 0.2);
   padding: 10px 10px;
   font-weight: bold;
 }
 
 /* PROJECTS */
+
+.flatify-games {
+  display: flex;
+  justify-content: space-between;
+}
 
 .flatify {
   justify-content: center;
@@ -366,6 +371,16 @@ a:hover {
   .btn-download-cv {
     margin: 4% auto;
     width: 30%;
+  }
+
+  /* PROJECTS */
+
+  .flatify-games {
+    display: block;
+  }
+
+  .projects .my-card {
+    width: 100%;
   }
 
 }

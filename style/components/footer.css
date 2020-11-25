@@ -1,12 +1,7 @@
 .footer {
-  background-color: rgb(154, 211, 188, 0.5);
+  background-color: #59656F;
   height: 300px;
-}
-
-.footer h4 {
-  padding-top: 20px;
-  font-weight: normal;
-  font-size: 20px;
+  padding-top: 40px;
 }
 
 .contact-links-footer {
@@ -16,13 +11,13 @@
 .contact-links-footer li {
   display: inline-block;
   /*margin-right: 10px;*/
-  font-weight: 700;
+  font-weight: 400;
   font-size:
 }
 
 .contact-links-footer a {
   display: block;
-  color: grey;
+  color: white;
   font-family: sofia-pro, sans-serif;
   font-size: 18px;
 }

@@ -110,30 +110,31 @@ bannerObserver.observe(banner)
 
 
 /* NAVBAR LINKS SELECTION */
-const linkDecoration = function (entries) {
+const linkDecoration = function (entries, observer) {
   const [entry] = entries;
-  // console.log(entry);
   const links = document.querySelectorAll('a[data-link]')
-   // console.log(entry)
+   console.log(entry)
+   console.log(window.pageYOffset)
 
   links.forEach(link => {
-    link.dataset.link === entry.target.id ? link.classList.add('underline-link') : link.classList.remove('underline-link');
-  //   }
-  //   else {
-  //     link.dataset.link === entry.target.id ? link.classList.remove('underline-link') : false;
-  //   }
+    if (entry.isIntersecting && link.dataset.link === entry.target.id) {
+      link.classList.add('underline-link')
+    } else if (entry.isIntersecting && link.dataset.link != entry.target.id) {
+      link.classList.remove('underline-link')
+    } else if (!entry.isIntersecting && entry.target.id === 'about-me') {
+      link.classList.remove('underline-link')
+    }
   })
 }
 
 const underlineLinks = new IntersectionObserver(linkDecoration, {
   root: null,
-  threshold: 0.50,
+  threshold: 0.20,
 })
 
 sections.forEach(section => {
   underlineLinks.observe(section);
 })
-console.log(window.pageYOffset)
 
 navbar.addEventListener('mouseover', (e) => {
   if (window.pageYOffset > 850) e.target.style.opacity = '1'
