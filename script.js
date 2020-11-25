@@ -17,19 +17,6 @@ const navMenu = document.querySelector('.burger-menu')
 const menu = document.querySelector('.sections')
 const linksSections = document.querySelectorAll('.link-section')
 
-navMenu.addEventListener('click', (e) => {
-  if (navMenu) menu.classList.toggle('hidden')
-
-  // if (menu) {
-  //   menu.addEventListener('click', (e) => {
-  //     // console.log(e.target)
-  //     e.target.addEventListener('click', (e) => {
-  //       menu.classList.add('hidden')
-  //     })
-  //   })
-  // }
-})
-
 
 linksSections.forEach(link => {
   link.addEventListener('click', (e) => {
