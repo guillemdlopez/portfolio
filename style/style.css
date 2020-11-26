@@ -14,13 +14,13 @@
 
 /* COLORS - https://colorhunt.co/palette/220258 */
 :root {
-  --color-principal: #F9EFE4; /* #f3eac2; */
+  --color-principal: #f9efe4; /* #f3eac2; */
   --color-secundario: rgb(154, 211, 188);
   --color-headers: #353535;
   --color-paragraphs: #636262;
   --color-subtitles: #ec524b;
   --color-details: #f5b461;
-  --color-ebony: #606D5D;
+  --color-ebony: #606d5d;
 }
 
 .hidden {
@@ -40,7 +40,10 @@ p {
   font-size: 16px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: sofia-pro, sans-serif;
   font-weight: bold;
   color: var(--color-headers);
@@ -53,9 +56,8 @@ h1 {
 .subtitle {
   font-family: sofia-pro, sans-serif;
   font-weight: bold;
-  color: var(--color-subtitles)
+  color: var(--color-subtitles);
 }
-
 
 a {
   display: block;
@@ -157,16 +159,13 @@ a:hover {
 
 /* effect */
 .section {
-  transition: transform 1s, opacity 1s
+  transition: transform 1s, opacity 1s;
 }
 
 .hidden-section {
   opacity: 0;
   transform: translateY(40px);
 }
-
-
-/* RESPONSIVE DESIGN */
 
 /* IPAD PRO */
 @media (max-width: 1024px) {
@@ -204,10 +203,6 @@ a:hover {
 
   .contact-icons i {
     margin-right: 10px;
-  }
-
-  .container {
-    width:
   }
 
   .bio {
@@ -253,12 +248,16 @@ a:hover {
     display: block;
   }
 
-  .cv-card-languages, .cv-card-education, .cv-card-skills, .cv-card-experience {
+  .cv-card-languages,
+  .cv-card-education,
+  .cv-card-skills,
+  .cv-card-experience {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .cv-card-education, .cv-card-skills {
+  .cv-card-education,
+  .cv-card-skills {
     margin-left: 0px;
   }
 
@@ -266,7 +265,8 @@ a:hover {
     justify-content: start !important;
   }
 
-  .cv-card-languages h1, .cv-card-experience h1{
+  .cv-card-languages h1,
+  .cv-card-experience h1 {
     margin-top: 0px;
   }
 
@@ -282,7 +282,6 @@ a:hover {
 
 /* IPAD */
 @media (max-width: 768px) {
-
   /* BANNER */
   .banner h1 {
     font-size: 81px;
@@ -350,12 +349,16 @@ a:hover {
     display: block;
   }
 
-  .cv-card-languages, .cv-card-education, .cv-card-skills, .cv-card-experience {
+  .cv-card-languages,
+  .cv-card-education,
+  .cv-card-skills,
+  .cv-card-experience {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .cv-card-education, .cv-card-skills {
+  .cv-card-education,
+  .cv-card-skills {
     margin-left: 0px;
   }
 
@@ -363,7 +366,8 @@ a:hover {
     justify-content: start !important;
   }
 
-  .cv-card-languages h1, .cv-card-experience h1{
+  .cv-card-languages h1,
+  .cv-card-experience h1 {
     margin-top: 0px;
   }
 
@@ -389,7 +393,6 @@ a:hover {
     width: 100%;
     margin-top: 20px;
   }
-
 }
 
 /* PHONE */
@@ -427,7 +430,7 @@ a:hover {
   }
 
   .card-purple {
-   display: none;
+    display: none;
   }
 
   .contact-icons i {
@@ -439,7 +442,6 @@ a:hover {
     left: -5%;
     top: 478px;
   }
-
 
   .bio {
     width: 100%;
@@ -495,5 +497,4 @@ a:hover {
   .projects {
     background-image: none;
   }
-
 }
