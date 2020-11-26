@@ -118,7 +118,7 @@ if (mainContent.getAttribute('id') === 'home-page') {
       navbar.style.opacity = "1";
     }
   };
-  const bannerObserver = new IntersectionObserver(changeColorNav, {
+  const bannerObserver = new IntersectionObserver(changeOpacityNav, {
     root: null,
     threshold: 0,
     rootMargin: `-${navbar.offsetHeight}px`,
