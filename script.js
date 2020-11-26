@@ -110,9 +110,9 @@ if (mainContent.getAttribute('id') === 'home-page') {
 /* NAVBAR OPACITY EFFECT */
 
 if (mainContent.getAttribute('id') === 'home-page') {
-  const changeColorNav = function (entries) {
+  const changeOpacityNav = function (entries) {
     const [entry] = entries;
-    if (!entry.isIntersecting && window.innerHeight > 1366) {
+    if (!entry.isIntersecting && window.innerWidth >= 1078) {
       navbar.style.opacity = "0.5";
     } else {
       navbar.style.opacity = "1";
