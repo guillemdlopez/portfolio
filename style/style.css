@@ -101,13 +101,11 @@ a:hover {
 .my-value {
   padding-top: 80px;
   margin-bottom: 80px;
-  background-image: url(../images/background2.png);
-  background-size: cover;
-}
-
-.my-value h2 {
-  font-size: 40px;
-  line-height: 94px;
+  background-image: url(/images/values-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 80px;
 }
 
 .my-value p {
@@ -235,6 +233,7 @@ a:hover {
 
   .my-value {
     margin-top: 100px;
+    background-position: bottom;
   }
 
   .value-cards {

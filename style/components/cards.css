@@ -48,7 +48,7 @@
 }
 
 /* CARDS CONTAINER */
-.value-cards, .cv-cards {
+.cv-cards {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -116,15 +116,16 @@
 /* VALUE CARDS */
 
 .my-card {
-  width: 30%;
+  width: 70%;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   padding: 30px 40px;
   background: white;
+  margin-top: 20px;
 }
 
 .my-card:hover {
   transition: transform 0.4s;
-  transform: translateY(-14px);
+  transform: translateX(14px);
 }
 
 
