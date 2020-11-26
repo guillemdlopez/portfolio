@@ -30,7 +30,9 @@ const initScrolling = function () {
   navLinks.addEventListener("click", (e) => {
     e.preventDefault();
     const id = e.target.getAttribute("href");
+    if (id === 'mailto: guillemdelas@hotmail.com') return;
     const section = document.querySelector(id);
+    console.log(section, id)
     section.scrollIntoView({ behavior: "smooth" });
   });
 };
@@ -123,7 +125,7 @@ const linkDecoration = function (entries) {
   links.forEach((link) => {
     if (entry.isIntersecting && link.dataset.link === entry.target.id) {
       link.classList.add("underline-link");
-      console.log(link.dataset.link, entry.target.id);
+      // console.log(link.dataset.link, entry.target.id);
     } else if (entry.isIntersecting && link.dataset.link != entry.target.id) {
       link.classList.remove("underline-link");
     } else if (!entry.isIntersecting && entry.target.id === "about-me") {
