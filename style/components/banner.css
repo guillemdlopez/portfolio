@@ -6,13 +6,15 @@
 
 .banner h1 {
   font-size: 100px;
-  color: var(--color-headers)
-  font-weight: lighter;
+  color: var(--color-headers);
+  font-weight: bolder;
 }
 
 .card-banner .window-icons i {
   font-size: 20px;
 }
+
+/* PROJECT BANNER */
 
 .banner-project {
   /*background-color: rgb(154, 211, 188, 0.5);*/
@@ -25,16 +27,19 @@
 .banner-project-content {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
 .banner-project-content p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 40px;
 }
 
 .project-info {
   margin-right: 20px;
+}
+
+.project-info h1 {
+  margin-bottom: 30px;
 }
 
 .project-pic {
@@ -43,5 +48,5 @@
 }
 
 .website-project:hover {
-  border-bottom: 2px solid var(--color-subtitles);
+  border-bottom: 2px solid black;
 }
