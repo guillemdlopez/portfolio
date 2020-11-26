@@ -112,7 +112,7 @@ if (mainContent.getAttribute('id') === 'home-page') {
 if (mainContent.getAttribute('id') === 'home-page') {
   const changeColorNav = function (entries) {
     const [entry] = entries;
-    if (!entry.isIntersecting) {
+    if (!entry.isIntersecting && window.innerHeight > 1366) {
       navbar.style.opacity = "0.5";
     } else {
       navbar.style.opacity = "1";
