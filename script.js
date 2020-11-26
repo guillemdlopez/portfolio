@@ -29,11 +29,13 @@ linksSections.forEach((link) => {
 /* SROLLING */
 const initScrolling = function () {
   navLinks.addEventListener("click", (e) => {
-    e.preventDefault();
-    const id = e.target.getAttribute("href");
-    if (!e.target.hasAttribute('href') || id === 'mailto: guillemdelas@hotmail.com') return;
-    const section = document.querySelector(id);
-    section.scrollIntoView({ behavior: "smooth" });
+    if (e.target.hasAttribute('data-link')) {
+      e.preventDefault();
+      const id = e.target.getAttribute("href");
+      if (!e.target.hasAttribute('href') || id === 'mailto: guillemdelas@hotmail.com') return;
+      const section = document.querySelector(id);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   });
 };
 initScrolling();
