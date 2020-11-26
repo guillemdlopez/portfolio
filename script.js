@@ -12,6 +12,8 @@ const navbar = document.querySelector(".navbar");
 const links = document.querySelectorAll("a[data-link]");
 const logo = document.querySelector(".link-logo");
 const mainContent = document.querySelector("main");
+const videoCategories = document.getElementById('video-categories');
+// console.log(videoCategories)
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -25,14 +27,12 @@ linksSections.forEach((link) => {
 });
 
 /* SROLLING */
-
 const initScrolling = function () {
   navLinks.addEventListener("click", (e) => {
     e.preventDefault();
     const id = e.target.getAttribute("href");
-    if (id === 'mailto: guillemdelas@hotmail.com') return;
+    if (!e.target.hasAttribute('href') || id === 'mailto: guillemdelas@hotmail.com') return;
     const section = document.querySelector(id);
-    console.log(section, id)
     section.scrollIntoView({ behavior: "smooth" });
   });
 };
@@ -45,7 +45,7 @@ const upperScrolling = function () {
   });
 };
 
-if (mainContent.hasAttribute("id")) {
+if (mainContent.getAttribute("id") === 'home-page') {
   upperScrolling();
 }
 
@@ -68,14 +68,17 @@ sections.forEach((section) => {
 });
 
 /* MODAL WINDOWS */
-cvCardsDiv.addEventListener("click", (e) => {
-  const card = e.target.closest(".cv-card");
-  if (!card) return;
-  const dataEl = card.dataset.cv;
-  const modal = document.querySelector(`.modal-${dataEl}`);
-  modal.classList.remove("hidden");
-  modalOverlay.classList.remove("hidden");
-});
+
+const openModal = function () {
+  cvCardsDiv.addEventListener("click", (e) => {
+      const card = e.target.closest(".cv-card");
+      if (!card) return;
+      const dataEl = card.dataset.cv;
+      const modal = document.querySelector(`.modal-${dataEl}`);
+      modal.classList.remove("hidden");
+      modalOverlay.classList.remove("hidden");
+    });
+}
 
 const closeModal = function () {
   modals.forEach((modal) => {
@@ -84,43 +87,48 @@ const closeModal = function () {
   modalOverlay.classList.add("hidden");
 };
 
-modalOverlay.addEventListener("click", closeModal);
+if (mainContent.getAttribute('id') === 'home-page') {
+  openModal();
 
-btnCloseModal.forEach((btn) => {
-  btn.addEventListener("click", closeModal);
-});
-
-document.addEventListener("keydown", (e) => {
-  modals.forEach((modal) => {
-    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-      closeModal();
-    }
+  modalOverlay.addEventListener("click", closeModal);
+  btnCloseModal.forEach((btn) => {
+    btn.addEventListener("click", closeModal);
   });
-});
+
+  document.addEventListener("keydown", (e) => {
+    modals.forEach((modal) => {
+      if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+        closeModal();
+      }
+    });
+  });
+}
+
 
 /* NAVBAR OPACITY EFFECT */
-const changeColorNav = function (entries) {
-  const [entry] = entries;
-  if (!entry.isIntersecting) {
-    navbar.style.opacity = "0.5";
-  } else {
-    navbar.style.opacity = "1";
-  }
-};
-const bannerObserver = new IntersectionObserver(changeColorNav, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navbar.offsetHeight}px`,
-});
 
-bannerObserver.observe(banner);
+if (mainContent.getAttribute('id') === 'home-page') {
+  const changeColorNav = function (entries) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) {
+      navbar.style.opacity = "0.5";
+    } else {
+      navbar.style.opacity = "1";
+    }
+  };
+  const bannerObserver = new IntersectionObserver(changeColorNav, {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navbar.offsetHeight}px`,
+  });
+
+  bannerObserver.observe(banner);
+}
 
 /* NAVBAR LINKS SELECTION */
 const linkDecoration = function (entries) {
   const [entry] = entries;
   const links = document.querySelectorAll("a[data-link]");
-  console.log(entry)
-  // console.log(window.pageYOffset)
 
   links.forEach((link) => {
     if (entry.isIntersecting && link.dataset.link === entry.target.id) {
@@ -150,3 +158,15 @@ navbar.addEventListener("mouseover", (e) => {
 navbar.addEventListener("mouseleave", (e) => {
   if (window.pageYOffset > 850) e.target.style.opacity = "0.5";
 });
+
+
+// VIDEO //
+if (mainContent.getAttribute('id') === 'games-master') {
+  videoCategories.addEventListener('loadedmetadata', function() {
+    this.currentTime = 10
+    if (this.currentTime >= 50) {
+      this.load()
+    }
+  }, false)
+}
+
