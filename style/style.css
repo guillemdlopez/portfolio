@@ -8,6 +8,7 @@
 @import url(components/footer.css);
 @import url(components/modal.css);
 @import url(components/images.css);
+@import url(components/videos.css);
 
 /* FONTS */
 /* SOFIA PRO - https://fonts.adobe.com/fonts/sofia */
@@ -166,6 +167,21 @@ a:hover {
   opacity: 0;
   transform: translateY(40px);
 }
+
+.wrapper-project-description {
+  background-image: url(../images/categories-games-master.png);
+  background-size: cover;
+  background-position: left;
+  margin-top: 80px;
+  height: 70vh;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  display: flex;
+}
+
+/* RESPONSIVENESS */
 
 /* IPAD PRO */
 @media (max-width: 1024px) {

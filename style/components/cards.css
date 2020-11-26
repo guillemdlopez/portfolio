@@ -230,6 +230,8 @@
 }
 
 .arrow-up {
-  font-size: 20px;
-  color: grey;
+  font-size: 16px;
+  color: var(--color-paragraphs);
+  margin-left: 2px;
 }
+
