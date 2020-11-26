@@ -119,14 +119,14 @@ bannerObserver.observe(banner);
 const linkDecoration = function (entries) {
   const [entry] = entries;
   const links = document.querySelectorAll("a[data-link]");
-  // console.log(entry)
+  console.log(entry)
   // console.log(window.pageYOffset)
 
   links.forEach((link) => {
     if (entry.isIntersecting && link.dataset.link === entry.target.id) {
       link.classList.add("underline-link");
       // console.log(link.dataset.link, entry.target.id);
-    } else if (entry.isIntersecting && link.dataset.link != entry.target.id) {
+    } else if (entry.isIntersecting && link.dataset.link !== entry.target.id) {
       link.classList.remove("underline-link");
     } else if (!entry.isIntersecting && entry.target.id === "about-me") {
       link.classList.remove("underline-link");

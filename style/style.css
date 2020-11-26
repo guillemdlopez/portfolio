@@ -81,6 +81,7 @@ a:hover {
 .about-me {
   margin-top: 50px;
   padding-top: 80px;
+  margin-bottom: 80px;
 }
 
 .about-me-content {
@@ -135,16 +136,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-}
-
-.flatify {
-  justify-content: center;
-  align-items: center;
-}
-
-.games-master {
-  justify-content: center;
-  align-items: center;
 }
 
 .projects {
@@ -398,8 +389,12 @@ a:hover {
     display: block;
   }
 
-  .projects .my-card {
+  .project-card {
     width: 100%;
+  }
+
+  .flatify-games .project-card:first-child {
+    margin-bottom: 40px;
   }
 
   .banner-project-content {
