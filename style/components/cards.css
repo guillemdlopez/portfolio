@@ -8,6 +8,7 @@
   position: absolute;
   top: 23%;
   border: 2px solid rgb(130 129 129);
+  left: 11%;
 }
 
 .header {
@@ -20,6 +21,10 @@
 
 .banner .window-icons, .card-banner-content {
   padding: 20px 50px;
+}
+
+.card-banner .window-icons i {
+  font-size: 20px;
 }
 
 .card-banner p {

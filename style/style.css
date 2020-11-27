@@ -383,7 +383,7 @@ a:hover {
     width: 30%;
   }
 
-  /* PROJECTS */
+  /* PROJECT PAGES */
 
   .flatify-games {
     display: block;
@@ -403,6 +403,23 @@ a:hover {
   .project-pic {
     width: 100%;
     margin-top: 20px;
+  }
+
+  .wrapper-project-description {
+    height: 70vh;
+    background-position: right;
+  }
+
+  .project-description {
+    display: block;
+  }
+
+  #video-categories {
+    width: 100%;
+  }
+
+  .project-description .description {
+    margin-top: 50px;
   }
 }
 
