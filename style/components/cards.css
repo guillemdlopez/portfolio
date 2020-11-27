@@ -44,7 +44,7 @@
 
 .card-transparent {
   background-color: var(--color-principal);
-  border: 1px solid black;
+  border: 2px solid rgb(130 129 129);
   width: 761px;
   position: absolute;
   height: 400px;
