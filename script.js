@@ -1,3 +1,5 @@
+'use strict';
+
 const contactLinks = document.querySelectorAll(".contact-link");
 const contactDiv = document.querySelector(".contact-icons");
 const navLinks = document.querySelector(".navbar-links");
