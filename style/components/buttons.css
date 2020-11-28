@@ -1,9 +1,9 @@
 .btn-contact {
   font-weight: bold;
   border: 1px solid black;
-  padding: 10px 20px;
+  padding: 10px 28px;
   margin-left: 40px;
-  border-radius: 12px;
+  border-radius: 30px;
 }
 
 .btn-contact:hover {
@@ -22,7 +22,7 @@
   margin: auto;
   font-weight: bold;
   margin-top: 60px;
-  border-radius: 12px;
+  border-radius: 30px;
 }
 
 .btn-download-cv:hover {

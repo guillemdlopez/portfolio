@@ -51,13 +51,9 @@ h4 {
   color: var(--color-headers);
 }
 
-h1 {
-  font-weight: 700px;
-}
-
 .subtitle {
   font-family: sofia-pro, sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   color: var(--color-subtitles);
   display: inline-block;
   margin-bottom: 10px;

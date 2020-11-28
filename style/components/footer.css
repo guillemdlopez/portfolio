@@ -6,6 +6,7 @@
 
 .footer p {
   color: white;
+  margin-top: 20px;
 }
 
 .contact-links-footer, .sections-footer {
@@ -24,5 +25,12 @@
   color: white;
   font-family: sofia-pro, sans-serif;
   font-size: 18px;
-  margin-top: 20px;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer a {
+  color: grey;
 }
