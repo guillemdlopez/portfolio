@@ -160,28 +160,31 @@ a:hover {
   line-height: 34px;
 }
 
-/* effect */
-.section {
-  transition: transform 1s, opacity 1s;
-}
-
-.hidden-section {
-  opacity: 0;
-  transform: translateY(40px);
-}
-
 .wrapper-project-description {
   background-image: url(../images/categories-games-master.png);
   background-size: cover;
   background-position: left;
   margin-top: 80px;
   height: 70vh;
-  margin-bottom: 20px;
 }
 
 .project-description {
   display: flex;
 }
+
+.searching-system {
+  margin-bottom: 80px;
+}
+
+/* EFFECTS */
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.hidden-section {
+  transform: translateY(60px);
+}
+
 
 /* RESPONSIVENESS */
 
@@ -198,6 +201,7 @@ a:hover {
 
   .card-banner {
     width: 78%;
+    left: 6%;
   }
 
   .card-purple {
@@ -216,7 +220,7 @@ a:hover {
     flex-direction: initial;
     align-items: center;
     top: 51%;
-    right: 17%;
+    left: 47%;
   }
 
   .contact-icons i {
@@ -298,6 +302,15 @@ a:hover {
   .wrapper-cv {
     height: auto;
   }
+
+  .wrapper-project-description {
+    background-size: inherit;
+    height: 40vh;
+  }
+
+  #video-games-master {
+    box-shadow: none;
+  }
 }
 
 /* IPAD */
@@ -309,6 +322,7 @@ a:hover {
 
   .card-banner {
     width: 74%;
+    left: 6%;
   }
 
   .card-purple {
@@ -345,7 +359,11 @@ a:hover {
     margin-top: 40px;
   }
 
-  /* MY VALUE */
+  .interests {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* STRENGTHS */
 
   .my-value {
     margin-top: 100px;

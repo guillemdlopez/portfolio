@@ -15,7 +15,9 @@ const links = document.querySelectorAll("a[data-link]");
 const logo = document.querySelector(".link-logo");
 const mainContent = document.querySelector("main");
 const videoCategories = document.getElementById('video-categories');
-// console.log(videoCategories)
+const projectCard = document.querySelectorAll('.project-card')
+const projectCardsDiv = document.querySelector('.flatify-games')
+// console.log(projectCardsDiv)
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");

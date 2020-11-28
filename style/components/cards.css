@@ -233,6 +233,10 @@
   display: inline-block;
 }
 
+.project-card:hover .link-project {
+  border-bottom: 2px solid black;
+}
+
 .arrow-up {
   font-size: 16px;
   color: var(--color-paragraphs);
