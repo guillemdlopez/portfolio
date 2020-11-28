@@ -3,6 +3,7 @@
   border: 1px solid black;
   padding: 10px 20px;
   margin-left: 40px;
+  border-radius: 12px;
 }
 
 .btn-contact:hover {
@@ -21,12 +22,13 @@
   margin: auto;
   font-weight: bold;
   margin-top: 60px;
+  border-radius: 12px;
 }
 
 .btn-download-cv:hover {
   background: var(--color-secundario);
-  color: white;
-  border: 1px solid rgb(108 151 133);
+  color: black;
+  border: 1px solid var(--color-secundario);
 }
 
 button {

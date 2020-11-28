@@ -165,17 +165,18 @@ a:hover {
 }
 
 .wrapper-project-description {
-  background-image: url(../images/categories-games-master.png);
+  background-image: url(../images/background-projects.png);
   background-size: cover;
   background-position: left;
   margin-top: 80px;
-  height: 90vh;
 }
 
 .project-description {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 80px;
+  height: 80vh;
 }
 
 .project-description .description {

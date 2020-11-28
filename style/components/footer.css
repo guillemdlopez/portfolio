@@ -4,6 +4,10 @@
   padding-top: 40px;
 }
 
+.footer p {
+  color: white;
+}
+
 .contact-links-footer {
   padding-left: 0px;
 }
@@ -20,4 +24,5 @@
   color: white;
   font-family: sofia-pro, sans-serif;
   font-size: 18px;
+  margin-top: 20px;
 }
