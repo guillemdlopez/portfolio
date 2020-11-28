@@ -101,13 +101,17 @@ a:hover {
 .interests {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
 }
 
 .interest p {
   margin-top: 10px;
-  line-height: 34px;
+  line-height: 30px;
+}
+
+.interest-title {
+  font-weight: bolder;
 }
 
 /* STRENGTHS */
@@ -165,11 +169,17 @@ a:hover {
   background-size: cover;
   background-position: left;
   margin-top: 80px;
-  height: 70vh;
+  height: 90vh;
 }
 
 .project-description {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-description .description {
+  width: 40%;
 }
 
 .searching-system {
@@ -430,10 +440,6 @@ a:hover {
 
   .banner-project-content {
     display: block;
-  }
-  .project-pic {
-    width: 100%;
-    margin-top: 20px;
   }
 
   .wrapper-project-description {

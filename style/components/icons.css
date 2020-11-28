@@ -46,8 +46,12 @@
   color: grey;
 }
 
+.interests {
+  margin-top: 60px;
+}
+
 .interest i {
-  font-size: 100px;
+  font-size: 71px;
   font-weight: bolder;
-  color: var(--color-ebony);
+  color: var(--color-subtitles);
 }
