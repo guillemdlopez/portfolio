@@ -54,9 +54,14 @@
 
 /* CARDS CONTAINER */
 .cv-cards {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 40px;
+  grid-gap: 10px;
+}
+
+.cv-card h2 {
+  text-align: center;
 }
 
 /* CARD CONTACT DETAILS (ABOUT ME) */
@@ -137,7 +142,6 @@
 /* CV CARDS */
 .cv-card-languages, .cv-card-experience {
   background-color: white;
-  width: 25%;
   padding: 20px 30px;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
 }
@@ -147,25 +151,15 @@
   transform: translateY(-14px);
 }
 
-.cv-card-languages h1, .cv-card-experience h1{
-  margin-top: 200px;
-}
-
 .cv-card-education, .cv-card-skills {
   background-color: white;
   padding: 20px 30px;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
-  width: 96%;
-  margin-left: 11px;
 }
 
 .cv-card-title {
   display: flex;
   justify-content: end;
-}
-
-.cv-card-education {
-  margin-bottom: 20px;
 }
 
 .cv-education-skills {
@@ -184,6 +178,11 @@
 .project-card:hover {
   transition: transform 0.4s;
   transform: translateY(-14px);
+}
+
+.project-card-content .project-description {
+  margin-bottom: 0px;
+  height: auto;
 }
 
 .project-card-content .subtitle {
@@ -231,10 +230,6 @@
 .link-project {
   margin-top: 20px;
   display: inline-block;
-}
-
-.project-card:hover .link-project {
-  border-bottom: 2px solid black;
 }
 
 .arrow-up {

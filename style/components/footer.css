@@ -1,5 +1,5 @@
 .footer {
-  background-color: #59656F;
+  background-color: #212121;
   height: 300px;
   padding-top: 40px;
 }
@@ -8,18 +8,18 @@
   color: white;
 }
 
-.contact-links-footer {
+.contact-links-footer, .sections-footer {
   padding-left: 0px;
 }
 
-.contact-links-footer li {
+.contact-links-footer li, .sections-footer li {
   display: inline-block;
   /*margin-right: 10px;*/
   font-weight: 400;
   font-size:
 }
 
-.contact-links-footer a {
+.contact-links-footer a, .sections-footer a {
   display: block;
   color: white;
   font-family: sofia-pro, sans-serif;

@@ -46,11 +46,7 @@
   color: grey;
 }
 
-.interests {
-  margin-top: 60px;
-}
-
-.interest i {
+.interest i, .specification i {
   font-size: 71px;
   font-weight: bolder;
   color: var(--color-subtitles);

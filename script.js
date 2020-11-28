@@ -17,7 +17,8 @@ const mainContent = document.querySelector("main");
 const videoCategories = document.getElementById('video-categories');
 const projectCard = document.querySelectorAll('.project-card')
 const projectCardsDiv = document.querySelector('.flatify-games')
-// console.log(projectCardsDiv)
+const bannerProject = document.querySelector('.banner-project')
+console.log(bannerProject)
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -129,6 +130,24 @@ if (mainContent.getAttribute('id') === 'home-page') {
 
   bannerObserver.observe(banner);
 }
+if (mainContent.getAttribute('id') === 'games-master' || mainContent.getAttribute('id') === 'flatify') {
+  const changeOpacityNavProject = function(entries) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) {
+      navbar.style.opacity = '0.5'
+    } else {
+      navbar.style.opacity = '1'
+    }
+  }
+
+  const bannerProjectObserver = new IntersectionObserver(changeOpacityNavProject, {
+    root: null,
+    threshold: 0,
+    rootMargin: `-${navbar.offsetHeight}px`,
+  })
+
+  bannerProjectObserver.observe(bannerProject)
+}
 
 /* NAVBAR LINKS SELECTION */
 const linkDecoration = function (entries) {
@@ -166,12 +185,12 @@ navbar.addEventListener("mouseleave", (e) => {
 
 
 // VIDEO //
-if (mainContent.getAttribute('id') === 'games-master') {
-  videoCategories.addEventListener('loadedmetadata', function() {
-    this.currentTime = 10
-    if (this.currentTime >= 50) {
-      this.load()
-    }
-  }, false)
-}
+// if (mainContent.getAttribute('id') === 'games-master') {
+//   videoCategories.addEventListener('loadedmetadata', function() {
+//     this.currentTime = 10
+//     if (this.currentTime >= 50) {
+//       this.load()
+//     }
+//   }, false)
+// }
 
