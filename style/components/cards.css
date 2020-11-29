@@ -12,7 +12,7 @@
 }
 
 .header {
-  background: rgb(215 213 213);
+  background: #F6F7FA;
 }
 
 .card-banner .window-icons {
@@ -125,17 +125,25 @@
 
 /* VALUE CARDS */
 
+.value-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
 .my-card {
-  width: 70%;
-  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
-  padding: 30px 40px;
-  background: white;
   margin-top: 40px;
+  /*border: 2px solid #F6F7FA;*/
+  /*padding: 20px 30px;*/
+  width: 30%;
 }
 
 .my-card:hover {
   transition: transform 0.4s;
-  transform: translateX(14px);
+  transform: translateY(-14px);
+}
+
+.value-card-content img {
+  width: 100%;
 }
 
 

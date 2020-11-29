@@ -118,7 +118,7 @@ a:hover {
 .my-value {
   padding-top: 80px;
   margin-bottom: 80px;
-  background-image: url(/images/values-background.png);
+  /*background-image: url(/images/values-background.png);*/
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;

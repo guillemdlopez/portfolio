@@ -10,6 +10,7 @@
   background: var(--color-secundario);
   color: black;
   border: 1px solid var(--color-secundario);
+  transition: 0.5s;
 }
 
 .btn-download-cv {
@@ -29,9 +30,11 @@
   background: var(--color-secundario);
   color: black;
   border: 1px solid var(--color-secundario);
+  transition: 0.5s;
 }
 
 button {
   border: none;
   background-color: transparent;
 }
+
