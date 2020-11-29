@@ -69,8 +69,9 @@
    border-bottom: 1px solid lightgrey;
 }
 
-.project-links p{
+.project-links p {
   font-size: 16px;
+  font-weight: 100;
 }
 
 .project-links i {

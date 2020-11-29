@@ -274,8 +274,9 @@ a:hover {
   }
 
   .value-cards {
-    display: block;
+    display: grid;
   }
+
   .my-card {
     width: 100%;
     margin-bottom: 30px;
@@ -286,10 +287,6 @@ a:hover {
   }
 
   /* CV */
-
-  .cv-cards {
-    display: block;
-  }
 
   .cv-card-languages,
   .cv-card-education,
