@@ -19,7 +19,9 @@ const projectCard = document.querySelectorAll('.project-card')
 const projectCardsDiv = document.querySelector('.flatify-games')
 const bannerProject = document.querySelector('.banner-project')
 const btnContact = document.querySelector('.btn-contact-2')
-console.log(sections);
+const plusIcons = document.querySelectorAll('.fa-plus')
+const questionDiv = document.querySelector('.questions')
+const questions = document.querySelectorAll('.question')
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -188,7 +190,6 @@ navbar.addEventListener("mouseleave", (e) => {
 // BTN CONTACT //
 const btnContactAppearence = function (entries) {
   const [entry] = entries;
-  console.log(entry)
 
   if (!entry.isIntersecting) {
     btnContact.classList.remove('hidden');
@@ -205,13 +206,6 @@ const btnContactOpacity = new IntersectionObserver(btnContactAppearence, {
 btnContactOpacity.observe(banner)
 
 // Q&A //
-
-const plusIcons = document.querySelectorAll('.fa-plus')
-console.log(plusIcons)
-
-const questionDiv = document.querySelector('.questions')
-console.log(questionDiv)
-const questions = document.querySelectorAll('.question')
 
 questionDiv.addEventListener('click', (e) => {
   if (!e.target.closest('.question-header') && !e.target.hasAttribute('data-question')) return;

@@ -200,6 +200,10 @@ a:hover {
   margin-top: 100px;
 }
 
+.questions i {
+  cursor: pointer;
+}
+
 .answer {
   margin-left: 22px;
 }

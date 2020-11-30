@@ -47,7 +47,7 @@
 }
 
 .interest i, .specification i {
-  font-size: 71px;
+  font-size: 54px;
   font-weight: bolder;
   color: var(--color-paragraphs);
 }
