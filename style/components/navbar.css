@@ -3,7 +3,7 @@
   height: 68px;
   position: sticky;
   top: 0px;
-  background: var(--color-principal);
+  background: white;
   /*opacity: 0.8;*/
   z-index: 1;
 }

@@ -13,6 +13,8 @@
 
 /* FONTS */
 /* SOFIA PRO - https://fonts.adobe.com/fonts/sofia */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400&display=swap');
 
 /* COLORS - https://colorhunt.co/palette/220258 */
 :root {
@@ -36,10 +38,11 @@ body {
 }
 
 p {
-  font-family: sofia-pro, sans-serif;
-  color: var(--color-paragraphs);
+  font-family: sofia-pro-soft, sans-serif;
   margin-bottom: 0px;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 100;
+  color: var(--color-paragraphs);
 }
 
 h1,
@@ -51,13 +54,38 @@ h4 {
   color: var(--color-headers);
 }
 
+.section-title {
+  margin-top: 40px;
+}
+
+.section-description {
+  font-family: sofia-pro-soft, sans-serif;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  margin: 0 auto;
+  width: 83%;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  font-weight: 100;
+}
+
 .subtitle {
+  font-family: sofia-pro, sans-serif;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  color: var(--color-headers);
+}
+
+/*.subtitle {
   font-family: sofia-pro, sans-serif;
   font-weight: 500;
   color: var(--color-subtitles);
   display: inline-block;
   margin-bottom: 10px;
-}
+}*/
 
 a {
   display: block;
@@ -81,6 +109,8 @@ a:hover {
   margin-top: 50px;
   padding-top: 80px;
   margin-bottom: 80px;
+  background-color: #F3F3F1;
+  padding-bottom: 80px;
 }
 
 .about-me-content {
@@ -125,13 +155,66 @@ a:hover {
   padding-bottom: 80px;
 }
 
-.my-value p {
+.value-cards p {
   line-height: 34px;
+}
+
+.section-questions {
+  margin-bottom: 100px;
+/*  background-image: url('../images/questions-background.png');
+  background-repeat: no-repeat;
+  background-position: right;*/
+}
+
+.questions > p {
+  line-height: 34px;
+  width: 50%;
+}
+
+.question-header {
+  display: flex;
+  margin: 10px 0px 10px 0px;
+  align-items: center;
+}
+
+.first-question {
+  border-top: 1px solid lightgray;
+  margin-top: 40px;
+}
+
+.question {
+  border-bottom: 1px solid lightgray;
+  width: 50%;
+}
+
+.answer {
+  padding-bottom: 20px;
+}
+
+.question-header p {
+  font-weight: 500;
+  padding: 20px 0px 20px 0px;
+}
+
+.questions {
+  margin-top: 100px;
+}
+
+.answer {
+  margin-left: 22px;
+}
+
+.more-questions {
+  margin-top: 60px;
+}
+
+.more-questions .btn-email {
+  margin-top: 20px;
 }
 
 /* CV */
 .wrapper-cv {
-  background-color: var(--color-principal);
+  background-color: #F3F3F1;
   margin-bottom: 100px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -150,7 +233,7 @@ a:hover {
 .flatify-games {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .projects {
@@ -193,6 +276,20 @@ a:hover {
   grid-gap: 10px;
   margin-top: 100px;
   text-align: center;
+}
+
+/* GOODBYE */
+.goodbye {
+  margin-top: 20%;
+  height: 100vh;
+}
+
+.goodbye-content {
+  text-align: center;
+}
+
+.goodbye .section-title {
+  font-size: 150px;
 }
 
 /* EFFECTS */
@@ -274,11 +371,12 @@ a:hover {
   }
 
   .value-cards {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
   }
 
   .my-card {
-    width: 100%;
+    width: 30%;
     margin-bottom: 30px;
   }
 
@@ -330,6 +428,10 @@ a:hover {
 
   #video-games-master {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  .goodbye-content {
+    text-align: center;
   }
 }
 
@@ -404,20 +506,8 @@ a:hover {
   /* CV */
 
   .cv-cards {
-    display: block;
-  }
-
-  .cv-card-languages,
-  .cv-card-education,
-  .cv-card-skills,
-  .cv-card-experience {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .cv-card-education,
-  .cv-card-skills {
-    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .cv-card-languages h1 {

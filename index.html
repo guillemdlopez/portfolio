@@ -51,7 +51,7 @@
           <a href="#my-value" data-link="my-value">Strengths</a>
           <a href="#cv" data-link="cv">CV</a>
           <a href="#projects" data-link="projects">Projects</a>
-          <a href="mailto: guillemdelas@hotmail.com" class="btn-contact">Contact</a>
+          <a href="mailto: guillemdelas@hotmail.com" class="btn-contact-2">Contact</a>
         </div>
       </div>
     </div>
@@ -59,47 +59,12 @@
     <div class="banner">
       <div class="container">
         <!--- CONTAINER --->
-        <div class="banner-cards">
-          <div class="card-transparent"></div>
-          <div class="card-purple"></div>
-          <div class="card-banner">
-            <!--- CARD WITH NAME --->
-            <div class="header">
-              <div class="window-icons">
-                <i class="fas fa-circle window-close"></i>
-                <i class="fas fa-circle window-minimize"></i>
-                <i class="fas fa-circle window-open"></i>
-              </div>
-            </div>
-            <div class="card-banner-content">
-              <h1>Guillem Delás López</h1>
-              <p>Barcelona-based Fullstack Developer</p>
-            </div>
+        <div class="banner-content">
+          <img src="images/profile.jpg" class="avatar-mini" alt="">
+          <h1>Guillem Delás López</h1>
+          <p>Barcelona-based Fullstack Developer</p>
+          <a href="mailto: guillemdelas@hotmail.com" class="btn-email">guillemdelas@hotmail.com</a>
           </div>
-        </div>
-        <div class="contact-icons">
-          <ul class="icons-list">
-            <li>
-              <a href="https://github.com/guillemdlopez" target="blank"
-                >github ·</a
-              >
-            </li>
-            <li>
-              <a href="https://www.hackerrank.com/guillemdelas" target="blank"
-                >hackerrank ·</a
-              >
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/guillemdelas/" target="blank"
-                >linkedin ·</a
-              >
-            </li>
-            <li>
-              <a href="mailto: guillemdelas@hotmail.com" target="blank"
-                >email</a
-              >
-            </li>
-          </ul>
         </div>
       </div>
       <!--- CONTAINER --->
@@ -111,7 +76,7 @@
         <div class="container">
           <!---PAGE CONTENT -->
           <p class="subtitle">ABOUT ME</p>
-          <h1>Hi, nice to meet you! 👋</h1>
+          <h1 class="section-title">Hello, nice to <br> meet you! </h1>
           <div class="about-me-content">
             <div class="bio">
               <p class="mt-4">
@@ -122,12 +87,6 @@
                 about people through people. I am willing to get better and
                 better every day until I become a Senior Web Developer. <br />
                 <br />
-                Hello, I'm Guillem Delás! A Fullstack Junior Web Developer. I am
-                passionate about technology and its power to make a positive
-                impact in the world we are living in, specially when it comes
-                across culture, art and social issues. Technology that speaks
-                about people through people. I am willing to get better and
-                better every day until I become a Senior Web Developer.
               </p>
             </div>
             <div class="card-contact-details">
@@ -151,12 +110,6 @@
                     <p>Palau-solità i Plegamans, Barcelona</p>
                   </div>
                 </div>
-              </div>
-              <div class="download-cv">
-                <a href="files/Guillem_Delas_CV.pdf" target="_blank">
-                  <i class="fas fa-file-download"></i>
-                </a>
-                <p>Download my CV</p>
               </div>
             </div>
           </div>
@@ -190,13 +143,12 @@
       <section class="section my-value hidden-section" id="my-value">
         <div class="container">
           <p class="subtitle">STRENGTHS</p>
-          <h1>My strengths 🧠</h1>
-          <div class="value-cards">
+          <h1 class="section-title">What are my soft skills, <br> <span style="color: #f2d563">my strengths</span></h1>
+          <div class="value-cards mt-5">
             <div class="my-card">
               <div class="value-card-content">
-                <!-- <img src="images/illustrations/character 16.png" alt=""> -->
                 <div class="value-card-description">
-                  <h4 class="value">Quick lerner</h4>
+                  <h4 class="value"> Quick lerner</h4>
                   <p>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -208,7 +160,6 @@
             </div>
             <div class="my-card">
               <div class="value-card-content">
-                <!-- <img src="images/illustrations/student-colour.png" alt=""> -->
                 <div class="value-card-description">
                   <h4 class="value">Curious by nature</h4>
                   <p>
@@ -221,23 +172,26 @@
               </div>
             </div>
             <div class="my-card">
-              <h4 class="value">Hard worker</h4>
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo.
-              </p>
+              <div class="value-card-content">
+                <div class="value-card-description">
+                  <h4 class="value">Hard worker</h4>
+                  <p>
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
       </section>
 
       <!-- RESUME --->
       <section class="section wrapper-cv hidden-section" id="cv">
         <div class="container">
           <p class="subtitle">RESUME</p>
-          <h2>Take a look at my CV 🤓</h2>
+          <h1 class="section-title">Take a look at my resume, <br> and I'll finally <span style="color: #f2d563">convince</span> you</h1>
           <p>
             Here you can take a look at some sections of my resume. Just click
             on it if you're curious!
@@ -245,22 +199,22 @@
           <div class="cv-cards">
             <button>
               <div class="cv-card cv-card-languages" data-cv="languages">
-                <h4 class="cv-card-title">Languages</h4>
+                <p class="cv-card-title">Languages</p>
               </div>
             </button>
             <button>
               <div class="cv-card cv-card-education" data-cv="education">
-                <h4 class="cv-card-title">Education</h4>
+                <p class="cv-card-title">Education</p>
               </div>
             </button>
             <button>
               <div class="cv-card cv-card-skills" data-cv="skills">
-                <h4 class="cv-card-title">Skills</h4>
+                <p class="cv-card-title">Skills</p>
               </div>
             </button>
             <button>
               <div class="cv-card cv-card-experience" data-cv="experience">
-                <h4 class="cv-card-title">Experience</h4>
+                <p class="cv-card-title">Experience</p>
               </div>
             </button>
           </div>
@@ -400,10 +354,74 @@
         </div>
       </section>
 
+      <section class="section-questions" id="questions">
+        <div class="container">
+          <div class="questions">
+            <h2>Do you want to know <br> more about me?</h2>
+            <p>Here are some FAQ, a lot of people ask me... Okay, not really.
+            But my mum said it is a good idea to ask to some question so you get to know me better.</p>
+            <div class="question first-question">
+              <div class="question-header">
+                <i class="fas fa-plus mr-2" data-question="1"></i>
+                <p>Why did you decide to learn to code?</p>
+              </div>
+              <div class="answer answer-1 hidden">
+                <p>Well.. That's a good question!</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <div class="question-header">
+                <i class="fas fa-plus mr-2" data-question="2"></i>
+                <p>Second question?</p>
+              </div>
+              <div class="answer answer-2 hidden">
+                <p>Well.. That's a good question!</p>
+              </div>
+            </div>
+
+
+            <div class="question">
+              <div class="question-header">
+                <i class="fas fa-plus mr-2" data-question="3"></i>
+                <p>Why did you decide to learn to code?</p>
+              </div>
+              <div class="answer answer-3 hidden">
+                <p>Well.. That's a good question!</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <div class="question-header">
+                <i class="fas fa-plus mr-2" data-question="4"></i>
+                <p>Why did you decide to learn to code?</p>
+              </div>
+              <div class="answer answer-4 hidden">
+                <p>Well.. That's a good question!</p>
+              </div>
+            </div>
+
+            <div class="question">
+              <div class="question-header">
+                <i class="fas fa-plus mr-2" data-question="5"></i>
+                <p><span style="text-decoration: underline">BONUS QUESTION</span>: Where is Palau-solità i Plegamans?</p>
+              </div>
+              <div class="answer answer-5 hidden">
+                <p>Well.. That's a good question!</p>
+              </div>
+            </div>
+          </div>
+          <div class="more-questions text-center">
+            <p class="">Do you have more questions?</p>
+            <a href="mailto: guillemdelas@hotmail.com" class="btn-email">guillemdelas@hotmail.com</a>
+          </div>
+        </div>
+      </section>
+
       <section class="section projects hidden-section" id="projects">
         <div class="container">
           <p class="subtitle">PROJECTS</p>
-          <h2>What I can do 🧑🏽‍💻</h2>
+          <h1 class="text-white section-title">Talk is cheap. <br> Show me the code.</h1>
           <div class="flatify-games">
             <div class="project-card" id="flatify">
               <div class="header">
@@ -423,7 +441,6 @@
                   ><i class="fab fa-github-square github-icon"></i>
                 </a>
                 </div>
-                <p class="subtitle">LE WAGON PROJECT</p>
                 <div class="project-description">
                   <p>
                     Airbnb clone I did during Le Wagon Bootcamp. Games master
@@ -465,7 +482,6 @@
                   ><i class="fab fa-github-square github-icon"></i>
                 </a>
                 </div>
-                <p class="subtitle">LE WAGON PROJECT</p>
                 <div class="project-description">
                   <p>
                     Airbnb clone I did during Le Wagon Bootcamp. Games master
@@ -482,12 +498,26 @@
                   <p class="tech-tag-background small">Bootstrap</p>
                 </div>
                 <a
-                href="projects/games-master.html"
-                class="link-project"
-                id="games-master"
-                >Read more <i class="fas fa-external-link-alt arrow-up"></i></a>
+                  href="projects/games-master.html"
+                  class="link-project"
+                  id="games-master">
+                  Read more <i class="fas fa-external-link-alt arrow-up"></i>
+                </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="goodbye">
+        <div class="container">
+            <div class="goodbye-content">
+            <img src="images/illustrations/illustrated-avatar.png" class="illustrated-avatar" alt="">
+            <h1 class="section-title">That's it foks!</h1>
+            <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
+            quam saepe reiciendis fugit dolores ab nostrum labore reprehenderit quas,
+            illo soluta aperiam nam sequi fuga natus sed dolorum alias vitae.</p>
+            <a href="mailto: guillemdelas@hotmail.com" class="btn-email">guillemdelas@hotmail.com</a>
           </div>
         </div>
       </section>

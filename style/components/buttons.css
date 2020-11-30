@@ -1,15 +1,29 @@
-.btn-contact {
-  font-weight: bold;
+.btn-contact-2 {
   border: 1px solid black;
   padding: 10px 28px;
   margin-left: 40px;
   border-radius: 30px;
 }
 
-.btn-contact:hover {
-  background: var(--color-secundario);
+.btn-contact-2:hover {
+  background:  #FEE475;
   color: black;
-  border: 1px solid var(--color-secundario);
+  border: 1px solid #f2d563;
+  transition: 0.5s;
+}
+
+.btn-email {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 35px;
+  margin-top: 60px;
+  box-shadow: 0px 4px 40px lightgray;
+  background: #FEE475;
+}
+
+.btn-email:hover {
+  background: #f2d563;
+  transform: translateY(-10px);
   transition: 0.5s;
 }
 
@@ -21,15 +35,14 @@
   padding: 10px 20px;
   width: 20%;
   margin: auto;
-  font-weight: bold;
   margin-top: 60px;
   border-radius: 30px;
 }
 
 .btn-download-cv:hover {
-  background: var(--color-secundario);
+  background: #f2d563;
   color: black;
-  border: 1px solid var(--color-secundario);
+  border: 1px solid #f2d563;
   transition: 0.5s;
 }
 

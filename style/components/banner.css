@@ -1,13 +1,25 @@
 .banner {
-  background-color: var(--color-principal);
+  background-color: white;
   height: 100vh;
   position: relative;
 }
 
 .banner h1 {
+  font-family: sofia-pro, sans-serif;
   font-size: 100px;
   color: var(--color-headers);
   font-weight: bolder;
+  letter-spacing: -7px;
+}
+
+.banner-content {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.banner p {
+  font-weight: 100;
+  font-size: 30px;
 }
 
 /* PROJECT BANNER */

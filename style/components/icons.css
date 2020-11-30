@@ -49,5 +49,9 @@
 .interest i, .specification i {
   font-size: 71px;
   font-weight: bolder;
-  color: var(--color-subtitles);
+  color: var(--color-paragraphs);
+}
+
+.fa-plus {
+  color: #f2d563;
 }

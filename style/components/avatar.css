@@ -5,3 +5,17 @@
   height: 150px;
   object-position: top;
 }
+
+.avatar-mini {
+  width: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  height: 110px;
+  object-position: top;
+}
+
+.illustrated-avatar {
+  width: 5%;
+  display: block;
+  margin: 0 auto;
+}

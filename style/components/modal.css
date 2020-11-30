@@ -23,6 +23,10 @@
   transition: all 0.5s;
 }
 
+.cv-modal {
+  border-radius: 8px;
+}
+
 .modal-header {
   display: flex;
   align-items: center;

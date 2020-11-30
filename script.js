@@ -18,7 +18,8 @@ const videoCategories = document.getElementById('video-categories');
 const projectCard = document.querySelectorAll('.project-card')
 const projectCardsDiv = document.querySelector('.flatify-games')
 const bannerProject = document.querySelector('.banner-project')
-console.log(bannerProject)
+const btnContact = document.querySelector('.btn-contact-2')
+console.log(sections);
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -149,7 +150,7 @@ if (mainContent.getAttribute('id') === 'games-master' || mainContent.getAttribut
   bannerProjectObserver.observe(bannerProject)
 }
 
-/* NAVBAR LINKS SELECTION */
+// NAVBAR LINKS SELECTION //
 const linkDecoration = function (entries) {
   const [entry] = entries;
   const links = document.querySelectorAll("a[data-link]");
@@ -184,13 +185,42 @@ navbar.addEventListener("mouseleave", (e) => {
 });
 
 
-// VIDEO //
-// if (mainContent.getAttribute('id') === 'games-master') {
-//   videoCategories.addEventListener('loadedmetadata', function() {
-//     this.currentTime = 10
-//     if (this.currentTime >= 50) {
-//       this.load()
-//     }
-//   }, false)
-// }
+// BTN CONTACT //
+const btnContactAppearence = function (entries) {
+  const [entry] = entries;
+  console.log(entry)
 
+  if (!entry.isIntersecting) {
+    btnContact.classList.remove('hidden');
+  } else {
+    btnContact.classList.add('hidden');
+  }
+}
+
+const btnContactOpacity = new IntersectionObserver(btnContactAppearence, {
+  root: null,
+  threshold: 0
+})
+
+btnContactOpacity.observe(banner)
+
+// Q&A //
+
+const plusIcons = document.querySelectorAll('.fa-plus')
+console.log(plusIcons)
+
+const questionDiv = document.querySelector('.questions')
+console.log(questionDiv)
+const questions = document.querySelectorAll('.question')
+
+questionDiv.addEventListener('click', (e) => {
+  if (!e.target.closest('.question-header') && !e.target.hasAttribute('data-question')) return;
+
+    const dataEl = e.target.getAttribute('data-question')
+
+    const answers = document.querySelectorAll('.answer')
+    answers.forEach(answer => answer.classList.add('hidden'))
+
+    const answer = document.querySelector(`.answer-${dataEl}`)
+    answer.classList.toggle('hidden')
+})
