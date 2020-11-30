@@ -216,5 +216,6 @@ questionDiv.addEventListener('click', (e) => {
     answers.forEach(answer => answer.classList.add('hidden'))
 
     const answer = document.querySelector(`.answer-${dataEl}`)
-    answer.classList.toggle('hidden')
+    // console.log(answer)
+    answer.classList.remove('hidden')
 })

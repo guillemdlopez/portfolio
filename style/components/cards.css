@@ -62,6 +62,10 @@
   grid-gap: 10px;
 }
 
+.cv-card {
+  cursor: pointer;
+}
+
 .cv-card h2 {
   text-align: center;
 }

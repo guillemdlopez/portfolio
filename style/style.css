@@ -13,16 +13,13 @@
 
 /* FONTS */
 /* SOFIA PRO - https://fonts.adobe.com/fonts/sofia */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400&display=swap');
 
 /* COLORS - https://colorhunt.co/palette/220258 */
 :root {
-  --color-principal: #f9efe4; /* #f3eac2; */
-  --color-secundario: rgb(154, 211, 188);
+  --color-principal: #FEE475; /* #f3eac2; */
+  --color-secundario: #3E4E50;
   --color-headers: #353535;
   --color-paragraphs: #636262;
-  --color-subtitles: #ec524b;
   --color-details: #f5b461;
   --color-ebony: #606d5d;
 }
