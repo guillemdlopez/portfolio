@@ -2,6 +2,13 @@
   background-color: white;
   height: 100vh;
   position: relative;
+/*  background-image: url('../../images/banner-background.png');
+  background-repeat: no-repeat;
+  background-position: left;*/
+}
+
+.banner img:last-child {
+  position: absolute;
 }
 
 .banner h1 {
