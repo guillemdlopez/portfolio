@@ -207,7 +207,7 @@ btnContactOpacity.observe(banner)
 
 // Q&A //
 questionDiv.addEventListener('click', (e) => {
-  if (!e.target.closest('.question-header') && !e.target.hasAttribute('data-question')) return;
+  // if (!e.target.closest('.question-header') && !e.target.hasAttribute('data-question')) return;
 
   if (!e.target.classList.contains('fa-plus')) return;
 
@@ -220,25 +220,18 @@ questionDiv.addEventListener('click', (e) => {
     const answer = document.querySelector(`.answer-${dataEl}`)
     answer.classList.remove('hidden')
 
+    const icons = document.querySelectorAll('i[data-question]')
+    icons.forEach(icon => {
+      icon.classList.remove('fa-minus');
+      icon.classList.add('fa-plus')
+    })
+
     if (e.target.classList.contains('fa-plus')) {
       e.target.classList.remove('fa-plus')
       e.target.classList.add('fa-minus')
       e.target.style.color = "#f2d563";
     }
-
-    const minusIcon = document.querySelector('.fa-minus')
-
-    if (e.target.getAttribute('data-question') !== minusIcon.getAttribute('data-question')) {
-      minusIcon.classList.remove('fa-minus')
-      minusIcon.classList.add('fa-plus')
-    }
 })
-
-
-
-
-
-
 
 
 
