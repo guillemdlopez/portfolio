@@ -316,6 +316,10 @@ a:hover {
     font-size: 81px;
   }
 
+  .banner-content {
+    padding-top: 50%;
+  }
+
   .card-banner {
     width: 78%;
     left: 6%;
@@ -409,6 +413,11 @@ a:hover {
     margin-top: 0px;
   }
 
+  .cv-modal {
+    left: 14%;
+    width: 71%;
+  }
+
   .btn-download-cv {
     margin: 4% auto;
     width: 30%;
@@ -431,8 +440,20 @@ a:hover {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   }
 
+  .question {
+    width: 100%;
+  }
+
   .goodbye-content {
     text-align: center;
+  }
+
+  .goodbye .section-title {
+    font-size: 100px;
+  }
+
+  .goodbye {
+    height: 60vh;
   }
 }
 
@@ -441,6 +462,14 @@ a:hover {
   /* BANNER */
   .banner h1 {
     font-size: 81px;
+  }
+
+  .banner-content {
+    padding-top: 40%;
+  }
+
+  .banner .btn-email {
+    margin-top: 40px;
   }
 
   .card-banner {
@@ -511,6 +540,11 @@ a:hover {
     justify-content: space-between;
   }
 
+  .cv-modal {
+    left: 9%;
+    width: 83%;
+  }
+
   .cv-card-languages h1 {
     justify-content: start !important;
   }
@@ -573,8 +607,20 @@ a:hover {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   }
 
+  .question {
+    width: 100%;
+  }
+
   .project-description .description {
     margin-top: 50px;
+  }
+
+  .goodbye .section-title {
+    font-size: 100px;
+  }
+
+  .goodbye {
+    height: 80vh;
   }
 }
 
