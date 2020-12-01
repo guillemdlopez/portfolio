@@ -223,13 +223,15 @@ questionDiv.addEventListener('click', (e) => {
     const icons = document.querySelectorAll('i[data-question]')
     icons.forEach(icon => {
       icon.classList.remove('fa-minus');
-      icon.classList.add('fa-plus')
+      icon.classList.add('fa-plus');
+      icon.style.cursor = 'pointer';
     })
 
     if (e.target.classList.contains('fa-plus')) {
       e.target.classList.remove('fa-plus')
       e.target.classList.add('fa-minus')
       e.target.style.color = "#f2d563";
+      e.target.style.cursor = 'auto';
     }
 })
 

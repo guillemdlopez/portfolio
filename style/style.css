@@ -71,7 +71,6 @@ h4 {
   font-family: sofia-pro, sans-serif;
   margin: 0 auto;
   width: 100%;
-  text-align: center;
   font-weight: 700;
   color: var(--color-headers);
 }
@@ -244,6 +243,10 @@ a:hover {
   padding-bottom: 250px;
 }
 
+.projects .subtitle {
+  color: white;
+}
+
 .project-description {
   line-height: 34px;
 }
@@ -313,7 +316,7 @@ a:hover {
   }
 
   .banner h1 {
-    font-size: 81px;
+    font-size: 100px;
   }
 
   .banner-content {
@@ -560,10 +563,6 @@ a:hover {
   }
 
   /* PROJECT SECTION */
-
-  .projects .subtitle {
-    color: white;
-  }
 
   .btn-email {
     margin-top: 0px;
