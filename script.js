@@ -206,16 +206,46 @@ const btnContactOpacity = new IntersectionObserver(btnContactAppearence, {
 btnContactOpacity.observe(banner)
 
 // Q&A //
-
 questionDiv.addEventListener('click', (e) => {
   if (!e.target.closest('.question-header') && !e.target.hasAttribute('data-question')) return;
+
+  if (!e.target.classList.contains('fa-plus')) return;
 
     const dataEl = e.target.getAttribute('data-question')
 
     const answers = document.querySelectorAll('.answer')
-    answers.forEach(answer => answer.classList.add('hidden'))
-
+    answers.forEach(answer => {
+      answer.classList.add('hidden')
+    })
     const answer = document.querySelector(`.answer-${dataEl}`)
-    // console.log(answer)
     answer.classList.remove('hidden')
+
+    if (e.target.classList.contains('fa-plus')) {
+      e.target.classList.remove('fa-plus')
+      e.target.classList.add('fa-minus')
+      e.target.style.color = "#f2d563";
+    }
+
+    const minusIcon = document.querySelector('.fa-minus')
+
+    if (e.target.getAttribute('data-question') !== minusIcon.getAttribute('data-question')) {
+      minusIcon.classList.remove('fa-minus')
+      minusIcon.classList.add('fa-plus')
+    }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
