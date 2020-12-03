@@ -2,16 +2,6 @@
   z-index: auto;
 }
 
-.card-banner {
-  background-color: white;
-  width: 761px;
-  position: absolute;
-  top: 23%;
-  border: 1px solid rgb(130 129 129);
-  left: 11%;
-  border-radius: 8px;
-}
-
 .header {
   background: #F6F7FA;
   border-radius: 8px 8px 0px 0px;
@@ -32,26 +22,6 @@
 .card-banner p {
   margin-top: 20px;
   font-size: 24px;
-}
-
-.card-purple {
-  background-color: var(--color-secundario);
-  height: 400px;
-  width: 764px;
-  position: absolute;
-  left: 14%;
-  top: 18%;
-  border: 1px solid rgb(108 151 133);
-}
-
-.card-transparent {
-  background-color: var(--color-principal);
-  border: 1px solid rgb(130 129 129);
-  width: 761px;
-  position: absolute;
-  height: 400px;
-  left: 16.5%;
-  top: 14%;
 }
 
 /* CARDS CONTAINER */
@@ -141,11 +111,6 @@
   width: 30%;
 }
 
-.my-card:hover {
-  transition: transform 0.4s;
-  transform: translateY(-14px);
-}
-
 /* CV CARDS */
 .cv-card-languages, .cv-card-experience, .cv-card-education, .cv-card-skills {
   background-color: white;
@@ -153,6 +118,7 @@
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   border-radius: 60px;
   text-align: center;
+  transition: all 0.5s;
 }
 
 .cv-card-languages:hover, .cv-card-education:hover, .cv-card-skills:hover, .cv-card-experience:hover {
@@ -172,10 +138,11 @@
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   width: 49%;
   border-radius: 8px;
+  transition: all 0.5s;
 }
 
 .project-card:hover {
-  transition: transform 0.4s;
+  transition: transform 0.5s;
   transform: translateY(-14px);
 }
 
@@ -231,4 +198,39 @@
   font-size: 16px;
   color: var(--color-paragraphs);
   margin-left: 2px;
+}
+
+
+/* OPINION CARDS */
+.opinions {
+  width: 40%;
+}
+
+.opinions img {
+  width: 15%;
+  position: absolute;
+  top: -26px;
+  right: 22px;
+}
+
+.opinions .mum, .paulus {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  padding: 20px 24px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.opinions .paulus {
+  margin-top: 40px;
+}
+
+.opinions .paulus img {
+  background: #F7D4F6;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.opinions .mum p:first-child, .paulus p:first-child {
+  font-weight: 500;
+  margin-bottom: 20px;
 }

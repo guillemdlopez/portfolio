@@ -1,7 +1,7 @@
 .tech-tag-background {
   display: inline-block;
   background: var(--color-secundario);
-  color: #b5cac2;
+  color: white;
   padding: 4px 14px;
   font-weight: bold;
   border-radius: 4px;

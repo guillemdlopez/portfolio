@@ -22,6 +22,11 @@ const btnContact = document.querySelector('.btn-contact-2')
 const plusIcons = document.querySelectorAll('.fa-plus')
 const questionDiv = document.querySelector('.questions')
 const questions = document.querySelectorAll('.question')
+const mumOpinion = document.querySelector('.mum')
+const paulusOpinion = document.querySelector('.paulus')
+const opinions = document.querySelectorAll('.opinion')
+const sectionQuestions = document.querySelector('.section-questions');
+
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -236,9 +241,25 @@ questionDiv.addEventListener('click', (e) => {
 })
 
 
+const opinionsTransition = function (entries) {
+  const [entry] = entries;
+  if (entry.isIntersecting) {
+    setTimeout(() => {
+      opinions.forEach(opinion => {
+      opinion.style.opacity = '1';
+      opinion.style.transform = 'translateY(0px)'
+      opinion.style.transition = 'all 1s ease'
+    })
+    }, 1000)
+  }
+}
 
+const questionsSection = new IntersectionObserver(opinionsTransition, {
+  root: null,
+  threshold: 0.20,
+})
 
-
+questionsSection.observe(sectionQuestions)
 
 
 
