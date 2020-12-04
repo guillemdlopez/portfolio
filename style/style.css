@@ -328,7 +328,7 @@ a:hover {
   }
 
   .banner h1 {
-    font-size: 100px;
+    font-size: 150px;
   }
 
   .banner-content {
@@ -343,6 +343,11 @@ a:hover {
   .btn-redirect-email {
     right: 284px;
     background: none;
+  }
+
+  .message {
+    right: 83px;
+    bottom: 123px;
   }
 
   .contact-icons i {
@@ -462,7 +467,7 @@ a:hover {
 @media (max-width: 768px) {
   /* BANNER */
   .banner h1 {
-    font-size: 81px;
+    font-size: 120px;
   }
 
   .banner-content {
@@ -471,6 +476,20 @@ a:hover {
 
   .banner .btn-email {
     margin-top: 40px;
+  }
+
+  .btn-copy {
+    right: 233px;
+  }
+
+  .btn-redirect-email {
+    right: 221px;
+  }
+
+  .message {
+    width: 43%;
+    right: 51px;
+    bottom: 108px;;
   }
 
   .card-banner {

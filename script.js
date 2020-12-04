@@ -31,6 +31,7 @@ const btnCopy = document.querySelector('.btn-copy');
 const successMsg = document.querySelector('.message');
 const btnCloseAlert = document.querySelector('.btn-close-alert');
 const answers = document.querySelectorAll('.answer');
+const icons = document.querySelectorAll('i[data-question]')
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -221,6 +222,37 @@ const opacityQuestions = function () {
 
 opacityQuestions()
 
+console.log(document.querySelector('.question-1'))
+
+let minus;
+// const minusIcons = function (icons) {
+//   icons.forEach(icon => {
+//     if (icon.classList.contains('fa-minus')) {
+//       minus = icon
+//     }
+//   })
+//   minus.addEventListener('click', (e) => {
+//     const data = e.target.dataset.question
+
+//     const answer = document.querySelector(`.answer-${data}`)
+//     answer.classList.add('hidden')
+
+//     e.target.classList.remove('fa-minus')
+
+//     const html = `
+//       <i class="fas mr-2 fa-plus" data-question="${data}" aria-hidden="true" style="cursor: pointer; color: rgb(95, 56, 204);"></i>
+//     `
+//     const question = document.querySelector(`.question-${data}`)
+
+//     question.insertAdjacentHTML('afterbegin', html)
+
+//     opacityQuestions()
+
+//   })
+// }
+
+
+
 questionDiv.addEventListener('click', (e) => {
   if (!e.target.classList.contains('fa-plus')) return;
 
@@ -242,12 +274,11 @@ questionDiv.addEventListener('click', (e) => {
     const answer = document.querySelector(`.answer-${dataEl}`)
     answer.classList.remove('hidden')
 
-    const icons = document.querySelectorAll('i[data-question]')
-    icons.forEach(icon => {
-      icon.classList.remove('fa-minus');
-      icon.classList.add('fa-plus');
-      icon.style.cursor = 'pointer';
-    })
+      icons.forEach(icon => {
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+        icon.style.cursor = 'pointer';
+      })
 
     if (e.target.classList.contains('fa-plus')) {
       e.target.classList.remove('fa-plus')
@@ -255,6 +286,7 @@ questionDiv.addEventListener('click', (e) => {
       e.target.style.color = "#5F38CC";
       e.target.style.cursor = 'auto';
     }
+    // minusIcons(icons)
 })
 
 // OPINIONS //
@@ -337,6 +369,6 @@ const copyEmail = () => {
 btnCopy.addEventListener('click', copyEmail)
 
 
-const clickedBtn = btnCloseAlert.addEventListener('click', (e) => {
+btnCloseAlert.addEventListener('click', (e) => {
   successMsg.style.opacity = 0;
 })

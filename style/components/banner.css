@@ -29,7 +29,7 @@
 .message {
   opacity: 0;
   text-align: right;
-  background: #F6F7FA;
+  background: #c4b9e5;
   width: 31%;
   padding: 15px 24px;
   border-radius: 8px;
@@ -45,6 +45,7 @@
 .message p:first-child {
   font-size: 16px;
   font-weight: 500;
+  color: black;
 }
 
 .btn-close-alert {

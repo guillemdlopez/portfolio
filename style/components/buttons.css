@@ -54,7 +54,8 @@
 }
 
 .banner-content .btn-email:hover {
-  transform: translateY(0px);
+  transform: none;
+  background: #4e21d3;
 }
 
 .btn-download-cv {
