@@ -16,7 +16,7 @@
 
 /* COLORS - https://colorhunt.co/palette/220258 */
 :root {
-  --color-principal: #FEE475; /* #f3eac2; */
+  --color-principal: #5F38CC ; /* #FEE475 */
   --color-secundario: #3E4E50;
   --color-headers: #353535;
   --color-paragraphs: #636262;
@@ -29,9 +29,9 @@
 }
 
 .hidden-btn {
-  opacity: 0;
-  transform: translateX(-14px);
-  transition: all 0.1s;
+  transform: scale(0);
+  /*transform: translateX(-14px);*/
+  /*transition: all ease;*/
 }
 
 .hidden-opinion {
@@ -252,14 +252,15 @@ a:hover {
 
 .projects {
   padding-top: 80px;
-  background-image: url(../images/background-projects.png);
-  background-size: cover;
+  background-image: url(../images/background-banner.png);
   padding-bottom: 250px;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
-.projects .subtitle {
+/*.projects .subtitle {
   color: white;
-}
+}*/
 
 .project-description {
   line-height: 34px;

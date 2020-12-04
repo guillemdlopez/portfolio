@@ -252,7 +252,7 @@ questionDiv.addEventListener('click', (e) => {
     if (e.target.classList.contains('fa-plus')) {
       e.target.classList.remove('fa-plus')
       e.target.classList.add('fa-minus')
-      e.target.style.color = "#f2d563";
+      e.target.style.color = "#5F38CC";
       e.target.style.cursor = 'auto';
     }
 })
@@ -279,50 +279,49 @@ const questionsSection = new IntersectionObserver(opinionsTransition, {
 questionsSection.observe(sectionQuestions)
 
 const btnRedirectEmail = document.querySelector('.btn-redirect-email')
-// COPY BTN //
-const emailCopy = function() {
-  btnEmail.addEventListener('click', function(e) {
-    e.preventDefault();
 
-    if (btnCopy.classList.contains('hidden-btn') && btnRedirectEmail.classList.contains('hidden-btn')) {
-      btnCopy.classList.remove('hidden-btn');
-      btnCopy.style.transition = 'all 0.1s';
-      btnCopy.style.cursor = 'pointer';
 
-      btnRedirectEmail.classList.remove('hidden-btn');
-      btnRedirectEmail.style.transition = 'all 0.1s';
-      btnRedirectEmail.style.cursor = 'pointer';
-    } else {
-      btnCopy.classList.add('hidden-btn')
-      btnRedirectEmail.classList.add('hidden-btn');
-      btnCopy.style.cursor = 'auto';
-      btnRedirectEmail.style.cursor = 'auto';
-    }
-  })
+// COPY EMAIL //
+const displayBtn = function (btn) {
+  btn.classList.remove('hidden-btn');
+  btn.style.transition = 'all 0.1s';
+  btn.style.cursor = 'pointer';
+}
 
-  const copyEmail = () => {
-    const email = btnCopy.dataset.email;
-    if (navigator.clipboard.writeText(email)) {
-      successMsg.style.opacity = 1;
-      successMsg.style.transform = 'translateY(-14px)';
-    }
+const hideBtn = function (btn) {
+  btn.classList.add('hidden-btn')
+  btn.style.cursor = 'auto';
+}
 
-    if (!btnCopy.classList.contains('hidden-btn') && !btnRedirectEmail.classList.contains('hidden-btn')) {
-      btnCopy.classList.add('hidden-btn')
-      btnRedirectEmail.classList.add('hidden-btn');
-    }
+btnEmail.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  if (btnCopy.classList.contains('hidden-btn') && btnRedirectEmail.classList.contains('hidden-btn')) {
+    displayBtn(btnCopy);
+    displayBtn(btnRedirectEmail);
+
+  } else {
+    hideBtn(btnCopy);
+    hideBtn(btnRedirectEmail)
+  }
+})
+
+const copyEmail = () => {
+  const email = btnCopy.dataset.email;
+  if (navigator.clipboard.writeText(email)) {
+    successMsg.style.opacity = 1;
+    successMsg.style.transform = 'translateY(-14px)';
   }
 
-  btnCopy.addEventListener('click', copyEmail)
-
-  const fadeOut = setTimeout(() => {
-      successMsg.style.opacity = 0
-    }, 4000)
-
-  const clickedBtn = btnCloseAlert.addEventListener('click', (e) => {
-    if (!e.target) fadeOut();
-
-    successMsg.style.opacity = 0;
-  })
+  if (!btnCopy.classList.contains('hidden-btn') && !btnRedirectEmail.classList.contains('hidden-btn')) {
+    hideBtn(btnCopy);
+    hideBtn(btnRedirectEmail)
+  }
 }
-emailCopy();
+
+btnCopy.addEventListener('click', copyEmail)
+
+
+const clickedBtn = btnCloseAlert.addEventListener('click', (e) => {
+  successMsg.style.opacity = 0;
+})
