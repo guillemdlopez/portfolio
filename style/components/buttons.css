@@ -6,10 +6,19 @@
   transition: all 0.5s;
 }
 
-.btn-contact-2:hover {
-  background:  #FEE475;
+.btn-copy {
+  background: #e5e5e2;
   color: black;
-  border: 1px solid #f2d563;
+  padding: 10px 14px;
+  border-radius: 50%;
+  width: 3.5%;
+  cursor: pointer;
+}
+
+.btn-contact-2:hover {
+  background:  var(--color-principal);
+  color: black;
+  border: 1px solid var(--color-principal);
   transition: 0.5s;
 }
 
@@ -22,8 +31,9 @@
   padding: 20px 40px;
   border-radius: 35px;
   box-shadow: 0px 4px 40px lightgray;
-  background: #FEE475;
+  background: var(--color-principal);
   transition: all 0.5s;
+  width: 28%;
 }
 
 .btn-email:hover {

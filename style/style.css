@@ -26,7 +26,12 @@
 
 .hidden {
   display: none;
-  transition: 0.5s;
+}
+
+.hidden-btn {
+  opacity: 0;
+  transform: translateX(-14px);
+  transition: all 0.1s;
 }
 
 .hidden-opinion {

@@ -13,7 +13,7 @@
 
 .banner h1 {
   font-family: sofia-pro, sans-serif;
-  font-size: 100px;
+  font-size: 150px;
   color: var(--color-headers);
   font-weight: bolder;
   letter-spacing: -7px;
@@ -27,6 +27,31 @@
 .banner p {
   font-weight: 100;
   font-size: 30px;
+}
+
+.message {
+  opacity: 0;
+  text-align: right;
+  background: #F6F7FA;
+  width: 31%;
+  padding: 15px 24px;
+  border-radius: 8px;
+  position: absolute;
+  right: 115px;
+  bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.message p:first-child {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-close-alert {
+  cursor: pointer;
 }
 
 /* PROJECT BANNER */

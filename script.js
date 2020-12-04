@@ -26,7 +26,10 @@ const mumOpinion = document.querySelector('.mum')
 const paulusOpinion = document.querySelector('.paulus')
 const opinions = document.querySelectorAll('.opinion')
 const sectionQuestions = document.querySelector('.section-questions');
-
+const btnEmail = document.querySelector('.btn-email')
+const btnCopy = document.querySelector('.btn-copy')
+const successMsg = document.querySelector('.message')
+const btnCloseAlert = document.querySelector('.btn-close-alert');
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -212,8 +215,6 @@ btnContactOpacity.observe(banner)
 
 // Q&A //
 questionDiv.addEventListener('click', (e) => {
-  // if (!e.target.closest('.question-header') && !e.target.hasAttribute('data-question')) return;
-
   if (!e.target.classList.contains('fa-plus')) return;
 
     const dataEl = e.target.getAttribute('data-question')
@@ -240,7 +241,7 @@ questionDiv.addEventListener('click', (e) => {
     }
 })
 
-
+// OPINIONS //
 const opinionsTransition = function (entries) {
   const [entry] = entries;
   if (entry.isIntersecting) {
@@ -262,5 +263,39 @@ const questionsSection = new IntersectionObserver(opinionsTransition, {
 questionsSection.observe(sectionQuestions)
 
 
+// COPY BTN //
+const emailCopy = function() {
+  btnEmail.addEventListener('click', function(e) {
+    e.preventDefault();
 
+    if (btnCopy.classList.contains('hidden-btn')) {
+      btnCopy.classList.remove('hidden-btn');
+      btnCopy.style.transition = 'all 0.1s';
+    } else {
+      btnCopy.classList.add('hidden-btn')
+    }
+  })
 
+  const copyEmail = () => {
+    const email = btnCopy.dataset.email;
+    if (navigator.clipboard.writeText(email)) {
+      successMsg.style.opacity = 1;
+      successMsg.style.transform = 'translateY(-14px)';
+    }
+
+    if (!btnCopy.classList.contains('hidden-btn')) {
+      btnCopy.classList.add('hidden-btn')
+    }
+  }
+
+  btnCopy.addEventListener('click', copyEmail)
+
+  const clickedBtn = btnCloseAlert.addEventListener('click', (e) => {
+    successMsg.style.opacity = 0;
+  })
+
+  setTimeout(() => {
+    successMsg.style.opacity = 0
+  }, 4000)
+}
+emailCopy();
