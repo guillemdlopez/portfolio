@@ -251,7 +251,7 @@ a:hover {
 .projects {
   padding-top: 80px;
   background-image: url(../images/background-banner.png);
-  background-position: left;
+  background-position: left bottom;
   background-repeat: no-repeat;
 }
 
