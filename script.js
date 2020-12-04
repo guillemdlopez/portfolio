@@ -307,6 +307,10 @@ const hideBtn = function (btn) {
 btnEmail.addEventListener('click', function(e) {
   e.preventDefault();
 
+  if (successMsg.style.opacity = 1) {
+    successMsg.style.opacity = 0;
+  }
+
   if (btnCopy.classList.contains('hidden-btn') && btnRedirectEmail.classList.contains('hidden-btn')) {
     displayBtn(btnCopy);
     displayBtn(btnRedirectEmail, '0.4');
