@@ -30,8 +30,6 @@
 
 .hidden-btn {
   transform: scale(0);
-  /*transform: translateX(-14px);*/
-  /*transition: all ease;*/
 }
 
 .hidden-opinion {

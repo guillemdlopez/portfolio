@@ -282,10 +282,11 @@ const btnRedirectEmail = document.querySelector('.btn-redirect-email')
 
 
 // COPY EMAIL //
-const displayBtn = function (btn) {
+const displayBtn = function (btn, time = '0.1') {
   btn.classList.remove('hidden-btn');
-  btn.style.transition = 'all 0.1s';
+  btn.style.transition = `all ${time}s`;
   btn.style.cursor = 'pointer';
+
   if (btn.closest('a')) {
     const link = btn.closest("a")
     link.setAttribute('href', 'mailto: guillemdelas@hotmail.com')
@@ -294,6 +295,7 @@ const displayBtn = function (btn) {
 
 const hideBtn = function (btn) {
   btn.classList.add('hidden-btn')
+  btn.style.transition = `all 0.3s`
   btn.style.cursor = 'auto';
 
   if (btn.closest("a")) {
@@ -307,7 +309,7 @@ btnEmail.addEventListener('click', function(e) {
 
   if (btnCopy.classList.contains('hidden-btn') && btnRedirectEmail.classList.contains('hidden-btn')) {
     displayBtn(btnCopy);
-    displayBtn(btnRedirectEmail);
+    displayBtn(btnRedirectEmail, '0.4');
 
   } else {
     hideBtn(btnCopy);
