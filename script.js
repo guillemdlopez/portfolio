@@ -286,11 +286,20 @@ const displayBtn = function (btn) {
   btn.classList.remove('hidden-btn');
   btn.style.transition = 'all 0.1s';
   btn.style.cursor = 'pointer';
+  if (btn.closest('a')) {
+    const link = btn.closest("a")
+    link.setAttribute('href', 'mailto: guillemdelas@hotmail.com')
+  }
 }
 
 const hideBtn = function (btn) {
   btn.classList.add('hidden-btn')
   btn.style.cursor = 'auto';
+
+  if (btn.closest("a")) {
+    const link = btn.closest("a")
+    link.setAttribute("href", "#")
+  }
 }
 
 btnEmail.addEventListener('click', function(e) {
