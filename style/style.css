@@ -337,28 +337,14 @@ a:hover {
     padding-top: 50%;
   }
 
-  .card-banner {
-    width: 78%;
-    left: 6%;
+  .btn-copy {
+    right: 322px;
+    background: none;
   }
 
-  .card-purple {
-    width: 784px;
-    top: 19%;
-    left: 12%;
-  }
-
-  .card-transparent {
-    width: 755px;
-    top: 16%;
-    left: 19%;
-  }
-
-  .contact-icons {
-    flex-direction: initial;
-    align-items: center;
-    top: 51%;
-    left: 47%;
+  .btn-redirect-email {
+    right: 284px;
+    background: none;
   }
 
   .contact-icons i {

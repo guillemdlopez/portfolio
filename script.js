@@ -15,21 +15,22 @@ const links = document.querySelectorAll("a[data-link]");
 const logo = document.querySelector(".link-logo");
 const mainContent = document.querySelector("main");
 const videoCategories = document.getElementById('video-categories');
-const projectCard = document.querySelectorAll('.project-card')
-const projectCardsDiv = document.querySelector('.flatify-games')
-const bannerProject = document.querySelector('.banner-project')
-const btnContact = document.querySelector('.btn-contact-2')
-const plusIcons = document.querySelectorAll('.fa-plus')
-const questionDiv = document.querySelector('.questions')
-const questions = document.querySelectorAll('.question')
-const mumOpinion = document.querySelector('.mum')
-const paulusOpinion = document.querySelector('.paulus')
-const opinions = document.querySelectorAll('.opinion')
+const projectCard = document.querySelectorAll('.project-card');
+const projectCardsDiv = document.querySelector('.flatify-games');
+const bannerProject = document.querySelector('.banner-project');
+const btnContact = document.querySelector('.btn-contact-2');
+const plusIcons = document.querySelectorAll('.fa-plus');
+const questionDiv = document.querySelector('.questions');
+const questions = document.querySelectorAll('.question-header');
+const mumOpinion = document.querySelector('.mum');
+const paulusOpinion = document.querySelector('.paulus');
+const opinions = document.querySelectorAll('.opinion');
 const sectionQuestions = document.querySelector('.section-questions');
-const btnEmail = document.querySelector('.btn-email')
-const btnCopy = document.querySelector('.btn-copy')
-const successMsg = document.querySelector('.message')
+const btnEmail = document.querySelector('.btn-email');
+const btnCopy = document.querySelector('.btn-copy');
+const successMsg = document.querySelector('.message');
 const btnCloseAlert = document.querySelector('.btn-close-alert');
+const answers = document.querySelectorAll('.answer');
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -214,15 +215,30 @@ const btnContactOpacity = new IntersectionObserver(btnContactAppearence, {
 btnContactOpacity.observe(banner)
 
 // Q&A //
+const opacityQuestions = function () {
+  questions.forEach(q => q.style.opacity = 0.5);
+}
+
+opacityQuestions()
+
 questionDiv.addEventListener('click', (e) => {
   if (!e.target.classList.contains('fa-plus')) return;
 
     const dataEl = e.target.getAttribute('data-question')
 
-    const answers = document.querySelectorAll('.answer')
+    opacityQuestions();
+
+    questions.forEach(q => {
+      const data = q.dataset.header
+       if (data === dataEl) {
+        q.style.opacity = 1;
+       }
+    })
+
     answers.forEach(answer => {
       answer.classList.add('hidden')
     })
+
     const answer = document.querySelector(`.answer-${dataEl}`)
     answer.classList.remove('hidden')
 
@@ -262,17 +278,25 @@ const questionsSection = new IntersectionObserver(opinionsTransition, {
 
 questionsSection.observe(sectionQuestions)
 
-
+const btnRedirectEmail = document.querySelector('.btn-redirect-email')
 // COPY BTN //
 const emailCopy = function() {
   btnEmail.addEventListener('click', function(e) {
     e.preventDefault();
 
-    if (btnCopy.classList.contains('hidden-btn')) {
+    if (btnCopy.classList.contains('hidden-btn') && btnRedirectEmail.classList.contains('hidden-btn')) {
       btnCopy.classList.remove('hidden-btn');
       btnCopy.style.transition = 'all 0.1s';
+      btnCopy.style.cursor = 'pointer';
+
+      btnRedirectEmail.classList.remove('hidden-btn');
+      btnRedirectEmail.style.transition = 'all 0.1s';
+      btnRedirectEmail.style.cursor = 'pointer';
     } else {
       btnCopy.classList.add('hidden-btn')
+      btnRedirectEmail.classList.add('hidden-btn');
+      btnCopy.style.cursor = 'auto';
+      btnRedirectEmail.style.cursor = 'auto';
     }
   })
 
@@ -283,19 +307,22 @@ const emailCopy = function() {
       successMsg.style.transform = 'translateY(-14px)';
     }
 
-    if (!btnCopy.classList.contains('hidden-btn')) {
+    if (!btnCopy.classList.contains('hidden-btn') && !btnRedirectEmail.classList.contains('hidden-btn')) {
       btnCopy.classList.add('hidden-btn')
+      btnRedirectEmail.classList.add('hidden-btn');
     }
   }
 
   btnCopy.addEventListener('click', copyEmail)
 
+  const fadeOut = setTimeout(() => {
+      successMsg.style.opacity = 0
+    }, 4000)
+
   const clickedBtn = btnCloseAlert.addEventListener('click', (e) => {
+    if (!e.target) fadeOut();
+
     successMsg.style.opacity = 0;
   })
-
-  setTimeout(() => {
-    successMsg.style.opacity = 0
-  }, 4000)
 }
 emailCopy();

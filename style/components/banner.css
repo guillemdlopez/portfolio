@@ -54,6 +54,10 @@
   cursor: pointer;
 }
 
+.contact-btns {
+  position: relative;
+}
+
 /* PROJECT BANNER */
 
 .banner-project {

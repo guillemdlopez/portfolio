@@ -6,13 +6,20 @@
   transition: all 0.5s;
 }
 
-.btn-copy {
+.btn-copy, .btn-redirect-email {
   background: #e5e5e2;
   color: black;
   padding: 10px 14px;
   border-radius: 50%;
   width: 3.5%;
-  cursor: pointer;
+  position: absolute;
+  top: 21px;
+  right: 400px;
+}
+
+.btn-redirect-email {
+  right: 354px;
+  top: 57px;
 }
 
 .btn-contact-2:hover {
@@ -40,6 +47,10 @@
   background: #f2d563;
   transform: translateY(-10px);
   transition: 0.5s;
+}
+
+.banner-content .btn-email:hover {
+  transform: translateY(0px);
 }
 
 .btn-download-cv {
