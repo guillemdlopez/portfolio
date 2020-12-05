@@ -136,7 +136,6 @@
 .project-card {
   background-color: white;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
-  width: 49%;
   border-radius: 8px;
   transition: all 0.5s;
 }
@@ -146,8 +145,9 @@
   transform: translateY(-14px);
 }
 
+
 .project-card-content .project-description {
-  margin-bottom: 0px;
+  margin-bottom: 40px;
   height: auto;
 }
 

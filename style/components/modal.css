@@ -1,4 +1,4 @@
-.cv-modal {
+.cv-modal, .modal-instagram-copycat {
   position: fixed;
   left: 25%;
   top: 15%;
@@ -9,15 +9,23 @@
   z-index: 1000;
   transition: all 0.5s;
   margin: 0 auto;
+  border-radius: 8px;
 }
 
-.overlay {
+.modal-instagram-copycat {
+  left: 34%;
+  top: 15%;
+  width: 30%;
+}
+
+
+.overlay, .overlay-projects {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
   z-index: 100;
   transition: all 0.5s;
@@ -74,4 +82,13 @@
 
 .modal-skills h4 {
   margin-top: 40px;
+}
+
+
+/* PROJECTS' MODAL */
+
+.modal-instagram-copycat .tools {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

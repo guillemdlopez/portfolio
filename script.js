@@ -32,6 +32,10 @@ const successMsg = document.querySelector('.message');
 const btnCloseAlert = document.querySelector('.btn-close-alert');
 const answers = document.querySelectorAll('.answer');
 const icons = document.querySelectorAll('i[data-question]')
+const instagramLink = document.getElementById('instagram-copycat-link');
+const modalProject = document.querySelector('.modal-instagram-copycat');
+const overlayProjects = document.querySelector('.overlay-projects');
+
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -91,6 +95,7 @@ sections.forEach((section) => {
 const openModal = function () {
   cvCardsDiv.addEventListener("click", (e) => {
       const card = e.target.closest(".cv-card");
+
       if (!card) return;
       const dataEl = card.dataset.cv;
       const modal = document.querySelector(`.modal-${dataEl}`);
@@ -268,11 +273,11 @@ questionDiv.addEventListener('click', (e) => {
     })
 
     answers.forEach(answer => {
-      answer.classList.add('hidden')
+      answer.classList.add('hidden-answer')
     })
 
     const answer = document.querySelector(`.answer-${dataEl}`)
-    answer.classList.remove('hidden')
+    answer.classList.remove('hidden-answer')
 
       icons.forEach(icon => {
         icon.classList.remove('fa-minus');
@@ -372,3 +377,38 @@ btnCopy.addEventListener('click', copyEmail)
 btnCloseAlert.addEventListener('click', (e) => {
   successMsg.style.opacity = 0;
 })
+
+
+// MODAL INSTAGRAM
+instagramLink.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (!e.target.classList.contains('link-project')) return;
+
+  const data = e.target.getAttribute('data')
+  console.log(data)
+
+  const modalProject = document.querySelector(`.modal-${data}`)
+
+  modalProject.classList.remove('hidden')
+  overlayProjects.classList.remove('hidden')
+})
+
+const closeModalProject = function () {
+  if (!modalProject.classList.contains('hidden')) {
+    modalProject.classList.add('hidden')
+    overlayProjects.classList.add('hidden')
+  }
+}
+
+btnCloseModal.forEach(btn => {
+  btn.addEventListener('click', closeModalProject)
+})
+
+overlayProjects.addEventListener('click', closeModalProject)
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModalProject();
+})
+
+

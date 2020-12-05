@@ -1,0 +1,15 @@
+.message {
+  opacity: 0;
+  text-align: right;
+  background: #c4b9e5;
+  width: 31%;
+  padding: 15px 24px;
+  border-radius: 8px;
+  position: absolute;
+  right: 115px;
+  bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+}

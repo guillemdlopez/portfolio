@@ -25,6 +25,11 @@
 }
 
 .hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.hidden-answer {
   display: none;
 }
 
@@ -35,6 +40,10 @@
 .hidden-opinion {
   opacity: 0;
   transform: translateY(44px);
+}
+
+.hidden-section {
+  transform: translateY(60px);
 }
 
 body {
@@ -242,16 +251,17 @@ a:hover {
 
 /* PROJECTS */
 
-.flatify-games {
-  display: flex;
-  justify-content: space-between;
+.project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
   margin-top: 60px;
 }
 
 .projects {
   padding-top: 80px;
   background-image: url(../images/background-banner.png);
-  background-position: left bottom;
+  background-position: left center;
   background-repeat: no-repeat;
 }
 
@@ -311,10 +321,6 @@ a:hover {
 /* EFFECTS */
 .section {
   transition: transform 1s, opacity 1s;
-}
-
-.hidden-section {
-  transform: translateY(60px);
 }
 
 
@@ -667,21 +673,12 @@ a:hover {
     display: none;
   }
 
-  .card-banner {
-    width: 93%;
-    top: 10%;
+  .banner .btn-email {
+    width: 53%;
   }
 
-  .card-banner h1 {
-    font-size: 52px;
-  }
-
-  .card-transparent {
-    display: none;
-  }
-
-  .card-purple {
-    display: none;
+  .banner-content {
+    padding-top: 20%;
   }
 
   .contact-icons i {
@@ -699,6 +696,10 @@ a:hover {
   }
 
   .about-me-content {
+    display: block;
+  }
+
+  .cv-cards {
     display: block;
   }
 
@@ -740,12 +741,43 @@ a:hover {
     font-size: 42px;
   }
 
+  .value-cards {
+    display: block;
+  }
+
+  .my-card {
+    width: 100%;
+  }
+
   .btn-download-cv {
     width: 54%;
     margin-top: 47px;
   }
 
+  .section-questions-content {
+    display: block;
+  }
+
+  .questions {
+    width: 100%;
+  }
+
+  .opinions {
+    width: 100%;
+    margin-top: 60px;
+  }
+
   .projects {
     background-image: none;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-instagram-copycat {
+    left: 10%;
+    top: 15%;
+    width: 81%;
   }
 }
