@@ -207,9 +207,9 @@ const btnContactAppearence = function (entries) {
   const [entry] = entries;
 
   if (!entry.isIntersecting) {
-    btnContact.classList.remove('hidden');
+    btnContact.classList.remove('hidden-answer');
   } else {
-    btnContact.classList.add('hidden');
+    btnContact.classList.add('hidden-answer');
   }
 }
 
