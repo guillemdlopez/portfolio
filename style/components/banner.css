@@ -33,7 +33,7 @@
   width: 31%;
   padding: 15px 24px;
   border-radius: 8px;
-  position: absolute;
+  position: fixed;
   right: 115px;
   bottom: 100px;
   display: flex;

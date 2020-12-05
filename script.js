@@ -234,9 +234,12 @@ let minus;
 //   icons.forEach(icon => {
 //     if (icon.classList.contains('fa-minus')) {
 //       minus = icon
+//       console.log(minus)
 //     }
 //   })
+
 //   minus.addEventListener('click', (e) => {
+//     console.log(e.target)
 //     const data = e.target.dataset.question
 
 //     const answer = document.querySelector(`.answer-${data}`)
@@ -255,7 +258,6 @@ let minus;
 
 //   })
 // }
-
 
 
 questionDiv.addEventListener('click', (e) => {
@@ -376,16 +378,37 @@ btnCopy.addEventListener('click', copyEmail)
 
 btnCloseAlert.addEventListener('click', (e) => {
   successMsg.style.opacity = 0;
+  successMsg.style.transform = 'translateY(14px)';
 })
 
+
+const aboutMe = document.getElementById('about-me')
+
+const hideSuccessMsg = function (entries, observer) {
+  const [entry] = entries;
+
+  if (entry.isIntersecting) {
+    successMsg.style.opacity = 0;
+    successMsg.style.transform = 'translateY(14px)';
+  }
+}
+
+const successMsgObserver = new IntersectionObserver(hideSuccessMsg, {
+  root: null,
+  threshold: 0.10
+})
+
+successMsgObserver.observe(aboutMe)
 
 // MODAL INSTAGRAM
 instagramLink.addEventListener('click', function (e) {
   e.preventDefault();
 
-  if (!e.target.classList.contains('link-project')) return;
+  if (!e.target.closest('a')) return;
 
-  const data = e.target.getAttribute('data')
+  const link = e.target.closest('a')
+
+  const data = link.getAttribute('data')
   console.log(data)
 
   const modalProject = document.querySelector(`.modal-${data}`)
