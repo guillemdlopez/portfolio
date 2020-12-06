@@ -402,6 +402,13 @@ a:hover {
     align-items: center;
   }
 
+  .interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-gap: 70px;
+  }
+
   /* MY VALUE */
 
   .my-value {
@@ -620,6 +627,12 @@ a:hover {
     background-size: cover;
   }
 
+  .modal-instagram-copycat {
+    left: 23%;
+    top: 21%;
+    width: 52%;
+  }
+
   /* PROJECT PAGES */
 
   .flatify-games {
@@ -665,6 +678,8 @@ a:hover {
   .project-description .description {
     margin-top: 50px;
   }
+
+  /* GOODBYE */
 
   .goodbye .section-title {
     font-size: 100px;

@@ -438,7 +438,6 @@ document.addEventListener('keydown', (e) => {
 
 const displayInterests = (entries) => {
   const [entry] = entries;
-  console.log(entry)
 
   if (entry.isIntersecting) {
     const interests = document.querySelectorAll('.interest')
@@ -451,7 +450,7 @@ const displayInterests = (entries) => {
 
 const interestsObserver = new IntersectionObserver(displayInterests, {
   root: null,
-  threshold: 1,
+  threshold: 0.5,
 })
 
 const interestDiv = document.querySelector('.interests')
