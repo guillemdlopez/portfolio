@@ -407,12 +407,13 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     text-align: center;
     grid-gap: 70px;
+    margin-bottom: 0px;
   }
 
   /* MY VALUE */
 
   .my-value {
-    margin-top: 100px;
+    margin-top: 0px;
     background-position: right;
     background-size: cover;
   }
@@ -476,6 +477,12 @@ a:hover {
 
   .project-description {
     height: 40vh;
+  }
+
+  .modal-instagram-copycat {
+    left: 27%;
+    top: 21%;
+    width: 43%;
   }
 
   #video-games-master {
