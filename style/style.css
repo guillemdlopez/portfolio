@@ -408,6 +408,7 @@ a:hover {
     text-align: center;
     grid-gap: 70px;
     margin-bottom: 0px;
+    grid-row-gap: 0px;
   }
 
   /* MY VALUE */
@@ -581,7 +582,7 @@ a:hover {
   /* STRENGTHS */
 
   .my-value {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .value-cards {
