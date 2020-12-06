@@ -50,6 +50,8 @@
   font-size: 54px;
   font-weight: bolder;
   color: var(--color-paragraphs);
+  position: relative;
+  top: 35px;
 }
 
 .fa-plus {

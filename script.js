@@ -227,38 +227,39 @@ const opacityQuestions = function () {
 
 opacityQuestions()
 
-console.log(document.querySelector('.question-1'))
-
 let minus;
-// const minusIcons = function (icons) {
-//   icons.forEach(icon => {
-//     if (icon.classList.contains('fa-minus')) {
-//       minus = icon
-//       console.log(minus)
+
+// const getMinusIcons = function (icons) {
+//   const arrIcons = Array.from(icons)
+
+//   arrIcons.forEach(icon => {
+//     if(icon.classList.contains('fa-minus')) {
+//       minus = icon;
 //     }
 //   })
 
-//   minus.addEventListener('click', (e) => {
-//     console.log(e.target)
+//   questionDiv.addEventListener('click', (e) => {
+//     console.log(e.target === minus)
+//     if (e.target !== minus) return;
+
 //     const data = e.target.dataset.question
 
 //     const answer = document.querySelector(`.answer-${data}`)
-//     answer.classList.add('hidden')
+//     answer.classList.add('hidden-answer')
 
 //     e.target.classList.remove('fa-minus')
+//     e.target.classList.add('fa-plus')
 
-//     const html = `
-//       <i class="fas mr-2 fa-plus" data-question="${data}" aria-hidden="true" style="cursor: pointer; color: rgb(95, 56, 204);"></i>
-//     `
 //     const question = document.querySelector(`.question-${data}`)
-
-//     question.insertAdjacentHTML('afterbegin', html)
 
 //     opacityQuestions()
 
 //   })
 // }
 
+const allPlus = function (icons) {
+  Array.from(icons).every(icon => icon.classList.contains('fa-plus'))
+}
 
 questionDiv.addEventListener('click', (e) => {
   if (!e.target.classList.contains('fa-plus')) return;
@@ -293,7 +294,6 @@ questionDiv.addEventListener('click', (e) => {
       e.target.style.color = "#5F38CC";
       e.target.style.cursor = 'auto';
     }
-    // minusIcons(icons)
 })
 
 // OPINIONS //
@@ -395,7 +395,7 @@ const hideSuccessMsg = function (entries, observer) {
 
 const successMsgObserver = new IntersectionObserver(hideSuccessMsg, {
   root: null,
-  threshold: 0.10
+  threshold: 0,
 })
 
 successMsgObserver.observe(aboutMe)
@@ -433,5 +433,30 @@ overlayProjects.addEventListener('click', closeModalProject)
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModalProject();
 })
+
+// INTERESTS CARDS //
+
+const displayInterests = (entries) => {
+  const [entry] = entries;
+  console.log(entry)
+
+  if (entry.isIntersecting) {
+    const interests = document.querySelectorAll('.interest')
+    interests.forEach(interest => {
+      interest.classList.remove('hidden-interest')
+      interest.style.transition = 'all 1s'
+    })
+  }
+}
+
+const interestsObserver = new IntersectionObserver(displayInterests, {
+  root: null,
+  threshold: 1,
+})
+
+const interestDiv = document.querySelector('.interests')
+
+interestsObserver.observe(interestDiv)
+
 
 

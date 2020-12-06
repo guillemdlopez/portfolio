@@ -38,7 +38,7 @@
   transform: scale(0);
 }
 
-.hidden-opinion {
+.hidden-opinion, .hidden-interest {
   opacity: 0;
   transform: translateY(44px);
 }
@@ -144,9 +144,22 @@ a:hover {
 .interests {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-top: 80px;
   text-align: center;
   grid-gap: 70px;
+  height: 50vh;
+  margin-bottom: 100px;
+}
+
+.interests-title {
+  margin-bottom: 80px;
+}
+
+.interest-type {
+  font-weight: 700;
+}
+
+.wrapper-interests {
+  margin-top: 150px;
 }
 
 .interest p, .specification p {
@@ -156,6 +169,15 @@ a:hover {
 
 .interest-title, .specification-title {
   font-weight: bolder;
+}
+
+.literature, .music {
+  position: relative;
+  top: -55px;
+}
+
+.videogames, .social {
+
 }
 
 /* STRENGTHS */
@@ -545,7 +567,7 @@ a:hover {
   /* STRENGTHS */
 
   .my-value {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   .value-cards {
