@@ -599,6 +599,10 @@ a:hover {
     margin-top: 0px;
   }
 
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+
   .projects {
     background-position: right;
     background-repeat: no-repeat;
