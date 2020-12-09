@@ -44,6 +44,7 @@
 
 .project-pic-flatify {
   width: 25%;
+  box-shadow: none;
 }
 
 .project-link {

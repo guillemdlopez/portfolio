@@ -90,7 +90,6 @@ a:hover {
   width: 70%;
 }
 
-
 /* IMAGES */
 .img-game-cards {
   width: 40%;
@@ -102,6 +101,23 @@ a:hover {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
+
+  .project-description {
+    height: 40vh;
+  }
+
+  .banner-project i {
+    opacity: 1;
+  }
+
+  .project-description .description {
+    width: 35%;
+  }
+
+  .img-game-cards {
+    width: 60%;
+  }
+
   #video-games-master {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
   }
@@ -113,18 +129,40 @@ a:hover {
     display: block;
   }
 
+  .banner-project i {
+    opacity: 1;
+  }
+
+  .flatify-banner-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-info-flatify {
+    width: 50%;
+  }
+
   .project-link:first-child {
     margin-top: 20px;
   }
 
-  .project-pic {
+  .project-pic-flatify {
+    width: 40%;
+    margin-top: 40px;
+  }
+
+  .project-pic-games-master {
     width: 100%;
     margin-top: 40px;
   }
 
+  .project-description {
+    height: 60vh;
+  }
+
   .img-game-cards {
-      width: 70%;
-      margin-top: 0px;
+    width: 70%;
+    margin-top: 0px;
   }
 
   .game-cards-img {
