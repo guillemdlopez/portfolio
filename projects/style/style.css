@@ -1,0 +1,70 @@
+@import url(components/banner.css);
+@import url(components/icons.css);
+@import url(../../style/components/footer.css);
+@import url(../../style/components/navbar.css);
+@import url(../../style/components/buttons.css);
+@import url(components/video.css);
+
+
+:root {
+  --color-principal: #5F38CC ; /* #FEE475 */
+  --color-secundario: #3E4E50;
+  --color-headers: #353535;
+  --color-paragraphs: #636262;
+  --color-details: #f5b461;
+  --color-ebony: #606d5d;
+}
+
+body {
+  margin: 0;
+  margin-top: 0;
+}
+
+p {
+  font-family: sofia-pro-soft, sans-serif;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 100;
+  color: var(--color-paragraphs);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: sofia-pro, sans-serif;
+  font-weight: bold;
+  color: var(--color-headers);
+}
+
+a {
+  display: block;
+  color: black;
+  font-family: sofia-pro, sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+.project-description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  height: 80vh;
+}
+
+.project-description {
+  line-height: 34px;
+}
+
+
+.wrapper-project-description {
+  background-image: url(../images/background-projects.png);
+  background-size: cover;
+  background-position: left;
+  margin-top: 80px;
+}

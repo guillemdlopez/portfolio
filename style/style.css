@@ -8,7 +8,6 @@
 @import url(components/footer.css);
 @import url(components/modal.css);
 @import url(components/images.css);
-@import url(components/videos.css);
 @import url(components/tags.css);
 @import url(components/alerts.css);
 
@@ -32,6 +31,8 @@
 
 .hidden-answer {
   display: none;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 .hidden-btn {
@@ -242,6 +243,7 @@ a:hover {
 
 .questions i {
   cursor: pointer;
+  color: #5F38CC;
 }
 
 .answer {
@@ -294,21 +296,6 @@ a:hover {
 
 .project-description {
   line-height: 34px;
-}
-
-.wrapper-project-description {
-  background-image: url(../images/background-projects.png);
-  background-size: cover;
-  background-position: left;
-  margin-top: 80px;
-}
-
-.project-description {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 80px;
-  height: 80vh;
 }
 
 .project-description .description {

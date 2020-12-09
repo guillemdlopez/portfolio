@@ -262,7 +262,7 @@ const allPlus = function (icons) {
 }
 
 questionDiv.addEventListener('click', (e) => {
-  if (!e.target.classList.contains('fa-plus')) return;
+  if (!e.target.classList.contains('fa-chevron-right')) return;
 
     const dataEl = e.target.getAttribute('data-question')
 
@@ -283,14 +283,14 @@ questionDiv.addEventListener('click', (e) => {
     answer.classList.remove('hidden-answer')
 
       icons.forEach(icon => {
-        icon.classList.remove('fa-minus');
-        icon.classList.add('fa-plus');
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-right');
         icon.style.cursor = 'pointer';
       })
 
-    if (e.target.classList.contains('fa-plus')) {
-      e.target.classList.remove('fa-plus')
-      e.target.classList.add('fa-minus')
+    if (e.target.classList.contains('fa-chevron-right')) {
+      e.target.classList.remove('fa-chevron-right')
+      e.target.classList.add('fa-chevron-down')
       e.target.style.color = "#5F38CC";
       e.target.style.cursor = 'auto';
     }
