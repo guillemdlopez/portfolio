@@ -94,14 +94,6 @@ h4 {
   color: var(--color-headers);
 }
 
-/*.subtitle {
-  font-family: sofia-pro, sans-serif;
-  font-weight: 500;
-  color: var(--color-subtitles);
-  display: inline-block;
-  margin-bottom: 10px;
-}*/
-
 a {
   display: block;
   color: black;
@@ -185,7 +177,6 @@ a:hover {
 .my-value {
   padding-top: 80px;
   margin-bottom: 80px;
-  /*background-image: url(/images/values-background.png);*/
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -289,10 +280,6 @@ a:hover {
   background-position: left center;
   background-repeat: no-repeat;
 }
-
-/*.projects .subtitle {
-  color: white;
-}*/
 
 .project-description {
   line-height: 34px;
