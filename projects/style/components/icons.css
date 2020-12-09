@@ -3,3 +3,14 @@
   font-weight: bolder;
   color: var(--color-paragraphs);
 }
+
+.project-links i {
+  opacity: 0.5;
+  font-size: 24px;
+  transition: all 0.5s;
+}
+
+.project-link:hover i {
+  opacity: 1;
+  transition: 0.5s;
+}

@@ -344,19 +344,21 @@ const hideBtn = function (btn) {
 }
 
 btnEmail.addEventListener('click', function(e) {
-  e.preventDefault();
+  if (window.innerWidth > 1024) {
+    e.preventDefault();
 
-  if (successMsg.style.opacity = 1) {
-    successMsg.style.opacity = 0;
-  }
+    if (successMsg.style.opacity = 1) {
+      successMsg.style.opacity = 0;
+    }
 
-  if (btnCopy.classList.contains('hidden-btn') && btnRedirectEmail.classList.contains('hidden-btn')) {
-    displayBtn(btnCopy);
-    displayBtn(btnRedirectEmail, '0.4');
+    if (btnCopy.classList.contains('hidden-btn') && btnRedirectEmail.classList.contains('hidden-btn')) {
+      displayBtn(btnCopy);
+      displayBtn(btnRedirectEmail, '0.4');
 
-  } else {
-    hideBtn(btnCopy);
-    hideBtn(btnRedirectEmail)
+    } else {
+      hideBtn(btnCopy);
+      hideBtn(btnRedirectEmail)
+    }
   }
 })
 
@@ -457,5 +459,6 @@ const interestDiv = document.querySelector('.interests')
 
 interestsObserver.observe(interestDiv)
 
+console.log(window);
 
 
