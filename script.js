@@ -217,8 +217,9 @@ const btnContactOpacity = new IntersectionObserver(btnContactAppearence, {
   root: null,
   threshold: 0
 })
-
-btnContactOpacity.observe(banner)
+if (mainContent.getAttribute('id') === 'home-page') {
+  btnContactOpacity.observe(banner);
+}
 
 // Q&A //
 const opacityQuestions = function () {
