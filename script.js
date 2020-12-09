@@ -459,6 +459,3 @@ const interestDiv = document.querySelector('.interests')
 
 interestsObserver.observe(interestDiv)
 
-console.log(window);
-
-
