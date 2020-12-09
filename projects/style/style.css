@@ -17,6 +17,7 @@
   --color-paragraphs: #636262;
   --color-details: #f5b461;
   --color-ebony: #606d5d;
+  --color-background: #F3F3F1;
 }
 
 body {
@@ -61,12 +62,15 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 80px;
-  height: 80vh;
+  height: 60vh;
 }
 
 .project-description {
   line-height: 34px;
+}
+
+.project-description .description {
+  width: 40%;
 }
 
 .project-specifications {
@@ -77,13 +81,22 @@ a:hover {
 
 
 .wrapper-project-description {
+  background: var(--color-background);
   background-size: cover;
   background-position: left;
   margin-top: 80px;
 }
 
-/* RESPONSIVE DESIGN */
+/* IMAGES */
+.img-game-cards {
+  width: 40%;
+}
 
+.searching-system-img {
+
+}
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
   #video-games-master {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
@@ -91,7 +104,29 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .img-game-cards {
+      width: 60%;
+      margin-top: 30px;
+  }
 
+  .project-description {
+    display: block;
+  }
+
+  .project-description .description {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .project-description .description {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #video-games-master {
+  width: 100%;
+  }
 }
 
 @media (max-width: 414px) {
