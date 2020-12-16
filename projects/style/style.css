@@ -84,6 +84,7 @@ a:hover {
   background-size: cover;
   background-position: left;
   margin-top: 80px;
+  padding: 40px 0px 80px 0px;
 }
 
 .project-info-flatify {
@@ -95,8 +96,21 @@ a:hover {
   width: 40%;
 }
 
-.searching-system-img {
+.flatify-img {
+  width: 22%;
+  margin-left: 40px;
+}
 
+#flatify-project-page .project-description {
+  margin-top: 80px;
+}
+
+#flatify-project-page .left-side {
+  justify-content: flex-start;
+}
+
+#flatify-project-page .right-side {
+  justify-content: flex-end;
 }
 
 /* RESPONSIVE DESIGN */
@@ -173,16 +187,33 @@ a:hover {
     padding: 40px 0px 80px 0px;
   }
 
-  .project-description {
+  #flatify-project-page .project-description {
+    justify-content: space-around;
+  }
+
+  #flatify-project-page .project-description .description {
+    width: 45%;
+  }
+
+  #flatify-project-page .project-description {
+  margin-top: 150px;
+}
+
+  .flatify-img {
+    width: 40%;
+  }
+
+
+  #games-master .project-description {
     display: block;
   }
 
-  .project-description .description {
+  #games-master .project-description .description {
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .project-description .description {
+  #games-master .project-description .description {
     text-align: center;
     margin-bottom: 20px;
     width: 100%;
