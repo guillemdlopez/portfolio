@@ -88,7 +88,7 @@ a:hover {
 }
 
 .project-info-flatify {
-  width: 70%;
+  width: 60%;
 }
 
 /* IMAGES */
@@ -121,6 +121,24 @@ a:hover {
 
 #invite-flatmates {
   position: relative;
+}
+
+#customize-flat {
+  position: relative;
+  margin-bottom: 250px;
+}
+
+.down {
+  position: absolute;
+  right: 197px;
+  filter: blur(2px);
+}
+
+.above {
+  z-index: 1;
+  position: absolute;
+  right: 95px;
+  top: -47px;
 }
 
 .flatmates {
@@ -247,6 +265,29 @@ a:hover {
 
 .scrolling-wrapper {
   -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+.go-to-projects {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.go-to-projects .previous {
+  margin-right: 60px;
+}
+
+.go-to-projects p {
+  font-size: 14px;
 }
 
 /* RESPONSIVE DESIGN */
