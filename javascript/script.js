@@ -5,20 +5,24 @@ const btnCloseModal = document.querySelectorAll(".btn-close-modal");
 const btnEmail = document.querySelector('.btn-email');
 const btnCopy = document.querySelector('.btn-copy');
 const btnCloseAlert = document.querySelector('.btn-close-alert');
+const btnRedirectEmail = document.querySelector('.btn-redirect-email');
 
 //////////// OVERLAYS ////////////
 const modalOverlay = document.querySelector(".overlay");
 const overlayProjects = document.querySelector('.overlay-projects');
+const modals = document.querySelectorAll(".cv-modal");
+const modalProject = document.querySelector('.modal-instagram-copycat');
 
 /////////// CONTAINERS AND SECTIONS /////////////
 const aboutMe = document.getElementById('about-me');
 const interestDiv = document.querySelector('.interests');
 const sectionQuestions = document.querySelector('.section-questions');
+const mainContent = document.querySelector("main");
 
 ////////////// OTHER COMPONENTS ////////////////
 const banner = document.querySelector(".banner");
 const navbar = document.querySelector(".navbar");
-
+const successMsg = document.querySelector('.message');
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -40,7 +44,7 @@ import { opacityQuestions, questionsIcons, navFullOpacity, navHalfOpacity, btnCo
 // EXECUTE ///////ONLY/////// ON HOME PAGE
 if (mainContent.getAttribute("id") === 'home-page') {
   openModal();
-  closeModal();
+  // closeModal();
 
   initScrolling();
   upperScrolling();
