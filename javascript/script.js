@@ -74,9 +74,6 @@ if (mainContent.getAttribute("id") === 'home-page') {
   opacityQuestions();
   questionsIcons();
 
-  navFullOpacity();
-  navHalfOpacity();
-
   const btnContactOpacity = new IntersectionObserver(btnContactAppearence, {
     root: null,
     threshold: 0,
@@ -144,4 +141,7 @@ if (mainContent.getAttribute("id") === 'home-page') {
 
   interestsObserver.observe(interestDiv)
 }
+
+navFullOpacity();
+navHalfOpacity();
 

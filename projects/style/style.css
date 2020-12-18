@@ -290,6 +290,10 @@ a:hover {
   font-size: 14px;
 }
 
+#games-master .go-to-projects {
+  margin-top: 150px;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
 
@@ -368,10 +372,6 @@ a:hover {
     justify-content: space-around;
   }
 
-  #flatify-project-page .project-description .description {
-    width: 45%;
-  }
-
   #flatify-project-page .project-description {
   margin-top: 150px;
 }
@@ -398,6 +398,48 @@ a:hover {
 
   #video-games-master {
   width: 100%;
+  }
+
+  #invite-flatmates {
+    display: block;
+  }
+
+  #invite-flatmates .description {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .flatmates {
+    margin-top: 0px;
+  }
+
+  .avatar-flatmates {
+    display: none;
+  }
+
+  #flatify-project-page .project-description .description {
+    width: 100%;
+  }
+
+  .expense-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-gap: 15px;
+  }
+
+  .down {
+    position: initial;
+  }
+
+  .above {
+    right: 31px;
+    top: 157px;
+  }
+
+  .banner-flatify {
+    height: 100vh;
   }
 }
 

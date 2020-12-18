@@ -83,12 +83,4 @@ if (mainContent.getAttribute('id') != 'home-page' && window.innerWidth > 1024) {
   bannerProjectObserver.observe(bannerProject);
 }
 
-// navbar.addEventListener("mouseover", (e) => {
-//   if (window.pageYOffset > 850) e.target.style.opacity = "1";
-// });
-
-// navbar.addEventListener("mouseleave", (e) => {
-//   if (window.pageYOffset > 850) e.target.style.opacity = "0.5";
-// });
-
 export {initScrolling, upperScrolling, linkDecoration, changeOpacityNav, changeOpacityNavProject }

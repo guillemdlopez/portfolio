@@ -1,7 +1,8 @@
 .message {
   opacity: 0;
   text-align: right;
-  background: #c4b9e5;
+  background: white;
+  border: 2px solid black;
   width: 31%;
   padding: 15px 24px;
   border-radius: 8px;
