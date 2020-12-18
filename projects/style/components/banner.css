@@ -75,7 +75,7 @@
 }
 
 .banner-flatify {
-  margin: 100px 0px 100px 0px;
+  margin: 150px 0px;
   background: #04AF88;
   height: 60vh;
   background-image: url(../../../images/flatify-background.png);
@@ -107,4 +107,5 @@
   padding: 20px 61px;
   background: black;
   font-size: 20px;
+  border-radius: 8px;
 }

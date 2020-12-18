@@ -97,12 +97,14 @@ a:hover {
 }
 
 .flatify-img {
-  width: 22%;
+  width: 25%;
   margin-left: 40px;
 }
 
 #flatify-project-page .project-description {
-  margin-top: 80px;
+  padding: 80px 0px;
+  height: auto;
+  margin-bottom: 150px;
 }
 
 #flatify-project-page .left-side {
@@ -111,6 +113,140 @@ a:hover {
 
 #flatify-project-page .right-side {
   justify-content: flex-end;
+}
+
+#flatify-project-page .project-description .description {
+  width: 50%;
+}
+
+#invite-flatmates {
+  position: relative;
+}
+
+.flatmates {
+  margin-top: 170px;
+}
+
+.avatar-flatmates {
+  position: absolute;
+  width: 50%;
+  bottom: 191px;
+  left: 34px;
+}
+
+.wrapper-create-share-expenses {
+  background: #F5E0B7;
+  margin: 150px 0px;
+}
+
+.wrapper-create-share-expenses .project-description {
+  display: block;
+}
+
+.expense-categories {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+#expense-description {
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+}
+
+.expense-images {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense-img {
+  width: 28%;
+  margin-left: 20px;
+}
+
+.expense-img:first-child {
+  margin-left: 0px;
+}
+
+.expense-category {
+  padding: 15px 60px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.shopping {
+  color: #42BCEC;
+  border: 1px solid #42BCEC;
+}
+
+.pets {
+  border: 1px solid #FF707B;
+  color: white;
+  background: #FF707B;
+  padding: 15px 70px;
+}
+
+.others {
+  border: 1px solid #D39DD3;
+  color: #D39DD3;
+}
+
+.utilities {
+  border: 1px solid #FACF45;
+  color: white;
+  background: #FACF45;
+}
+
+.img-profile {
+  width: 50%;
+  background-image: url(../../images/graphic-profile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.img-profile .flatify-img {
+  width: 55%;
+  margin: 21% 0% 0% 25%;
+}
+
+#profile-flatify .description {
+  margin-left: 40px;
+}
+
+.wrapper-screenshots {
+  background: #04AF88;
+  padding: 100px 0px;
+  margin-bottom: 150px;
+}
+
+.title-description {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-description p, .title-description h1 {
+  color: black;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-top: 40px;
+}
+
+.screenshot {
+    display: inline;
+  }
+
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
 }
 
 /* RESPONSIVE DESIGN */
