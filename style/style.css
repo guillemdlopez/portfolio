@@ -124,6 +124,11 @@ a:hover {
   margin-bottom: 80px;
   background-color: #F3F3F1;
   padding-bottom: 80px;
+  background-image: url(../images/background-about-me.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+  background-position-y: center;
 }
 
 .about-me-content {
