@@ -80,7 +80,6 @@ a:hover {
 }
 
 .wrapper-project-description {
-  background: var(--color-background);
   background-size: cover;
   background-position: left;
   margin-top: 80px;
@@ -130,15 +129,15 @@ a:hover {
 
 .down {
   position: absolute;
-  right: 197px;
+  right: 96px;
   filter: blur(2px);
 }
 
 .above {
   z-index: 1;
   position: absolute;
-  right: 95px;
-  top: -47px;
+  right: 180px;
+  top: 10px;
 }
 
 .flatmates {
@@ -162,8 +161,10 @@ a:hover {
 }
 
 .expense-categories {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  text-align: center;
   margin-top: 40px;
 }
 
@@ -271,10 +272,7 @@ a:hover {
   display: none;
 }
 
-
 .go-to-projects {
-  width: 50%;
-  margin: 0 auto;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -315,6 +313,27 @@ a:hover {
 
   #video-games-master {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  .flatmates {
+    margin-top: 0;
+    position: absolute;
+    right: 244px;
+    bottom: -18px;
+  }
+
+  .avatar-flatmates {
+    bottom: 77px;
+    left: 63px;
+    z-index: 1;
+  }
+
+  #expense-description {
+    width: 90%;
+  }
+
+  .banner-flatify {
+    background-size: auto;
   }
 }
 
@@ -374,7 +393,7 @@ a:hover {
 
   #flatify-project-page .project-description {
   margin-top: 150px;
-}
+  }
 
   .flatify-img {
     width: 40%;
@@ -412,10 +431,16 @@ a:hover {
 
   .flatmates {
     margin-top: 0px;
+    position: relative;
+    right: 0;
+    bottom: 0;
   }
 
   .avatar-flatmates {
-    display: none;
+    bottom: -51px;
+    left: 63px;
+    z-index: 1;
+    width: 79%;
   }
 
   #flatify-project-page .project-description .description {
@@ -440,9 +465,118 @@ a:hover {
 
   .banner-flatify {
     height: 100vh;
+    background-size: auto;
+  }
+
+  .img-profile {
+    width: auto;
+    background-image: none;
+  }
+
+  .img-profile .flatify-img {
+    width: 74%;
+    margin: 0;
+  }
+
+  #profile-flatify .description {
+    margin-left: 0;
+  }
+
+  .wrapper-screenshots {
+    height
+  }
+
+  .scrolling-wrapper {
+    margin-top: 70px;
   }
 }
 
 @media (max-width: 414px) {
+  .project-info-flatify {
+    width: 100%;
+  }
 
+  .flatify-banner-content {
+    display: block;
+  }
+
+  .project-pic {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #flatify-project-page .project-description {
+    margin-top: 80px;
+  }
+
+  .flatify-img {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .flatmates {
+    width: 100%;
+  }
+
+  .avatar-flatmates {
+    bottom: -51px;
+    left: -1px;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .expense-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .expense-images {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .expense-img {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .down {
+    display: none;
+  }
+
+  .above {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  #flatify-project-page .project-description {
+    display: block;
+    text-align: center;
+  }
+
+  #flatify-project-page .description {
+    margin-bottom: 40px;
+  }
+
+  .img-profile .flatify-img {
+    width: 100%;
+  }
+
+  #profile-flatify .description {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .banner-flatify {
+    height: 105vh;
+    background-size: contain;
+  }
+
+  .game-cards-img {
+    margin: 140px 0px 30px 0px;
+  }
+
+  .categories .img-game-cards {
+    margin-top: 93px;
+  }
 }

@@ -24,6 +24,7 @@
   --color-ebony: #606d5d;
 }
 
+/* EFFECTS */
 .hidden {
   visibility: hidden;
   opacity: 0;
@@ -46,6 +47,10 @@
 
 .hidden-section {
   transform: translateY(60px);
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
 }
 
 body {
@@ -109,6 +114,7 @@ a:hover {
   display: none;
 }
 
+
 /* SECTIONS */
 
 /* ABOUT ME */
@@ -134,6 +140,8 @@ a:hover {
   width: 40%;
 }
 
+/* INTERESTS */
+
 .interests {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -141,10 +149,6 @@ a:hover {
   grid-gap: 40px;
   height: 50vh;
   margin-bottom: 100px;
-}
-
-.interests-title {
-  margin-bottom: 80px;
 }
 
 .interest-type {
@@ -164,14 +168,6 @@ a:hover {
   font-weight: bolder;
 }
 
-.literature, .music {
-  position: relative;
-  top: -55px;
-}
-
-.videogames, .social {
-
-}
 
 /* STRENGTHS */
 .my-value {
@@ -315,11 +311,6 @@ a:hover {
   font-size: 150px;
 }
 
-/* EFFECTS */
-.section {
-  transition: transform 1s, opacity 1s;
-}
-
 
 /* RESPONSIVENESS */
 
@@ -335,7 +326,7 @@ a:hover {
   }
 
   .banner-content {
-    padding-top: 25vh;
+    padding-top: 30vh;
   }
 
   .btn-copy {
@@ -696,7 +687,7 @@ a:hover {
   /* BANNER*/
 
   .banner h1 {
-    font-size: 80px;
+   font-size: 71px;
   }
 
   .message {
@@ -717,10 +708,6 @@ a:hover {
   .banner .btn-redirect-email {
     top: 103px;
     right: 139px;
-  }
-
-  .banner-content {
-    padding-top: 20%;
   }
 
   .contact-icons i {
@@ -761,6 +748,11 @@ a:hover {
 
   .card-contact-details-location {
     display: block;
+  }
+
+  .interests {
+    grid-template-columns: 1fr;
+    margin-bottom: 900px;
   }
 
   .download-cv {
@@ -821,5 +813,10 @@ a:hover {
     left: 10%;
     top: 15%;
     width: 81%;
+  }
+
+  .goodbye {
+    height: 100vh;
+    margin-bottom: 40px;
   }
 }
