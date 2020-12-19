@@ -2,6 +2,9 @@
   background-color: white;
   height: 100vh;
   position: relative;
+  background-image: url(../../images/background-banner-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner img:last-child {

@@ -22,6 +22,9 @@
   --color-paragraphs: #636262;
   --color-details: #f5b461;
   --color-ebony: #606d5d;
+
+  --background-color: #F9F9F9;
+;
 }
 
 /* EFFECTS */
@@ -121,10 +124,8 @@ a:hover {
 .about-me {
   margin-top: 50px;
   padding-top: 80px;
-  margin-bottom: 80px;
-  background-color: #F3F3F1;
-  padding-bottom: 80px;
-  background-image: url(../images/background-about-me.png);
+  margin-bottom: 40px;
+  background-image: url();
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -134,7 +135,10 @@ a:hover {
 .about-me-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.about-me-img {
+  width: 58%;
 }
 
 .bio p {
@@ -145,32 +149,46 @@ a:hover {
   width: 40%;
 }
 
+.contact-details {
+  margin-top: 40px;
+}
+
+.working-status, .phone-num, .location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.working-status i, .phone-num i, .location i {
+  color: var(--color-principal);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
 /* INTERESTS */
+
+.wrapper-interests {
+  background: var(--background-color);
+}
 
 .interests {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   grid-gap: 40px;
-  height: 50vh;
+  padding: 20px 0px;
   margin-bottom: 100px;
 }
 
-.interest-type {
-  font-weight: 700;
+.interest p:first-child {
+  font-weight: bold;
 }
 
-.wrapper-interests {
-  margin-top: 150px;
-}
-
-.interest p, .specification p {
-  margin-top: 10px;
-  line-height: 30px;
-}
-
-.interest-title, .specification-title {
-  font-weight: bolder;
+.interest p:last-child {
+  color: #919191;
+  font-weight: lighter;
+  font-size: small;
 }
 
 
@@ -529,11 +547,12 @@ a:hover {
   /* ABOUT ME */
 
   .bio {
-    width: 100%;
+    width: 50%;
   }
 
   .about-me-content {
-    display: block;
+    display: flex;
+    align-items: flex-start;
   }
 
   .card-contact-details {

@@ -142,6 +142,7 @@ if (mainContent.getAttribute("id") === 'home-page') {
   interestsObserver.observe(interestDiv)
 }
 
+// EXECUTE //////////// ON ALL PAGES //////////////
 navFullOpacity();
 navHalfOpacity();
 
