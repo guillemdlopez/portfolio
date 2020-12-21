@@ -252,7 +252,7 @@ a:hover {
 .answer {
   padding-bottom: 20px;
   margin-left: 22px;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 50vh;
 }
 
 .answer p {
@@ -380,8 +380,9 @@ a:hover {
 
   /* ABOUT ME */
 
-  .about-me-content {
-    display: block;
+  .about-me-img {
+    width: 60%;
+    object-fit: contain;
   }
 
   .card-contact-details {
