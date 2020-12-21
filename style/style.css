@@ -43,7 +43,7 @@
   transform: scale(0);
 }
 
-.hidden-opinion, .hidden-interest {
+.hidden-opinion {
   opacity: 0;
   transform: translateY(44px);
 }
@@ -163,32 +163,6 @@ a:hover {
   color: var(--color-principal);
   font-size: 20px;
   margin-right: 10px;
-}
-
-
-/* INTERESTS */
-
-.wrapper-interests {
-  background: var(--background-color);
-}
-
-.interests {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-align: center;
-  grid-gap: 40px;
-  padding: 20px 0px;
-  margin-bottom: 100px;
-}
-
-.interest p:first-child {
-  font-weight: bold;
-}
-
-.interest p:last-child {
-  color: #919191;
-  font-weight: lighter;
-  font-size: small;
 }
 
 
@@ -394,15 +368,6 @@ a:hover {
     align-items: center;
   }
 
-  .interests {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    grid-gap: 70px;
-    margin-bottom: 0px;
-    grid-row-gap: 0px;
-  }
-
   /* MY VALUE */
 
   .my-value {
@@ -579,10 +544,6 @@ a:hover {
   .card-contact-details {
     width: 100%;
     margin-top: 40px;
-  }
-
-  .interests {
-    grid-template-columns: 1fr 1fr;
   }
 
   /* STRENGTHS */
@@ -798,11 +759,6 @@ a:hover {
 
   .card-contact-details-location {
     display: block;
-  }
-
-  .interests {
-    grid-template-columns: 1fr;
-    margin-bottom: 900px;
   }
 
   .download-cv {

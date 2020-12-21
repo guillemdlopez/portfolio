@@ -15,7 +15,6 @@ const modalProject = document.querySelector('.modal-instagram-copycat');
 
 /////////// CONTAINERS AND SECTIONS /////////////
 const aboutMe = document.getElementById('about-me');
-const interestDiv = document.querySelector('.interests');
 const sectionQuestions = document.querySelector('.section-questions');
 const mainContent = document.querySelector("main");
 

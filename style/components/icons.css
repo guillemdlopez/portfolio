@@ -46,17 +46,6 @@
   color: grey;
 }
 
-.interest i, .specification i {
-  font-size: 54px;
-  font-weight: bolder;
-  color: var(--color-paragraphs);
-}
-
-.interest i {
-  position: relative;
-  top: 35px;
-}
-
 .fa-plus {
   color: #5F38CC;
 }
