@@ -605,11 +605,6 @@ a:hover {
 
   /* CV */
 
-  .cv-cards {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .cv-modal {
     left: 9%;
     width: 83%;

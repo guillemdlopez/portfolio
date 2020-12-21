@@ -47,11 +47,12 @@
 }
 
 .btn-close-modal {
-  font-size: 37px;
+  font-size: 45px;
   position: absolute;
   top: 0px;
-  right: 14px;
+  right: 24px;
   color: lightgrey;
+  cursor: pointer;
 }
 
 .btn-close-modal:hover {
