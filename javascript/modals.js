@@ -3,9 +3,9 @@ const modals = document.querySelectorAll(".cv-modal");
 const modalOverlay = document.querySelector(".overlay");
 const mainContent = document.querySelector("main");
 const btnCloseModal = document.querySelectorAll(".btn-close-modal");
-const instagramLink = document.getElementById('instagram-copycat-link');
+const unfinishedProjectLink = document.querySelectorAll('.unfinished-project-link');
 const overlayProjects = document.querySelector('.overlay-projects');
-const modalProject = document.querySelector('.modal-instagram-copycat');
+const modalProject = document.querySelector('.modal-unfinished-project');
 
 
 const openModal = function () {
@@ -27,29 +27,28 @@ const closeModal = function () {
   modalOverlay.classList.add("hidden");
 };
 
-const openModalProject = function() {
-  instagramLink.addEventListener('click', function (e) {
+const openModalProject = function(e) {
     e.preventDefault();
 
-    if (!e.target.closest('a')) return;
+    const link = e.target.closest('a');
 
-    const link = e.target.closest('a')
+    if (!link) return;
 
-    const data = link.getAttribute('data')
-    console.log(data)
+    const data = link.getAttribute('data');
 
     const modalProject = document.querySelector(`.modal-${data}`)
 
-    modalProject.classList.remove('hidden')
-    overlayProjects.classList.remove('hidden')
-  })
-};
+    modalProject.classList.remove('hidden');
+    overlayProjects.classList.remove('hidden');
+  };
+
 
 const closeModalProject = function () {
   if (!modalProject.classList.contains('hidden')) {
-    modalProject.classList.add('hidden')
-    overlayProjects.classList.add('hidden')
+    modalProject.classList.add('hidden');
+    overlayProjects.classList.add('hidden');
   }
 };
+
 
 export { openModal, closeModal, openModalProject, closeModalProject }

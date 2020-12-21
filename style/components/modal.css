@@ -1,4 +1,4 @@
-.cv-modal, .modal-instagram-copycat {
+.cv-modal, .modal-unfinished-project {
   position: fixed;
   left: 25%;
   top: 15%;
@@ -12,7 +12,7 @@
   border-radius: 8px;
 }
 
-.modal-instagram-copycat {
+.modal-unfinished-project {
   left: 34%;
   top: 15%;
   width: 30%;
@@ -86,7 +86,7 @@
 
 /* PROJECTS' MODAL */
 
-.modal-instagram-copycat .tools {
+.modal-unfinished-project .tools {
   font-size: 50px;
   margin-top: 30px;
   margin-bottom: 30px;

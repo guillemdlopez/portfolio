@@ -22,6 +22,7 @@ const mainContent = document.querySelector("main");
 const banner = document.querySelector(".banner");
 const navbar = document.querySelector(".navbar");
 const successMsg = document.querySelector('.message');
+const unfinishedProjectLink = document.querySelectorAll('.unfinished-project-link');
 
 /* NAVBAR PHONE */
 const navMenu = document.querySelector(".burger-menu");
@@ -121,13 +122,12 @@ if (mainContent.getAttribute("id") === 'home-page') {
 
   successMsgObserver.observe(aboutMe)
 
-  openModalProject();
-
-  btnCloseModal.forEach(btn => {
-    btn.addEventListener('click', closeModalProject)
+  unfinishedProjectLink.forEach(link => {
+    link.addEventListener('click', openModalProject.bind(this))
   })
 
-  overlayProjects.addEventListener('click', closeModalProject)
+  overlayProjects.addEventListener('click', closeModalProject);
+  btnCloseModal.forEach(btn => btn.addEventListener('click', closeModalProject));
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !modalProject.classList.contains('hidden')) closeModalProject();
