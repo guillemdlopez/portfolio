@@ -70,9 +70,7 @@
 }
 
 .level {
-  height: 10px;
-  width: 250px;
-  background: var(--color-secundario);
+  color: var(--color-principal);
   margin-left: 10px;
   margin-bottom: 10px;
 }
