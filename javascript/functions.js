@@ -39,11 +39,12 @@ const questionsIcons = function () {
       })
 
       answers.forEach(answer => {
-        answer.classList.add('hidden-answer')
+        answer.classList.add('hidden-answer');
       })
 
-      const answer = document.querySelector(`.answer-${dataEl}`)
-      answer.classList.remove('hidden-answer')
+      const answer = document.querySelector(`.answer-${dataEl}`);
+      answer.classList.remove('hidden-answer');
+      answer.scrollIntoView({behavior: 'smooth'});
 
         icons.forEach(icon => {
           icon.classList.remove('fa-chevron-down');
@@ -52,13 +53,13 @@ const questionsIcons = function () {
         })
 
       if (e.target.classList.contains('fa-chevron-right')) {
-        e.target.classList.remove('fa-chevron-right')
-        e.target.classList.add('fa-chevron-down')
+        e.target.classList.remove('fa-chevron-right');
+        e.target.classList.add('fa-chevron-down');
         e.target.style.color = "#5F38CC";
         e.target.style.cursor = 'auto';
       }
-  })
-}
+  });
+};
 
 const navFullOpacity = function () {
   navbar.addEventListener("mouseover", (e) => {

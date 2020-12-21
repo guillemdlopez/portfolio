@@ -10,6 +10,7 @@
 @import url(components/images.css);
 @import url(components/tags.css);
 @import url(components/alerts.css);
+@import url(components/map.css);
 
 /* FONTS */
 /* SOFIA PRO - https://fonts.adobe.com/fonts/sofia */
@@ -213,9 +214,10 @@ a:hover {
 }
 
 .section-questions-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  place-items: center;
 }
 
 .questions > p {
@@ -237,17 +239,9 @@ a:hover {
   border-bottom: 1px solid lightgray;
 }
 
-.answer {
-  padding-bottom: 20px;
-}
-
 .question-header p {
   font-weight: 500;
   padding: 20px 0px 20px 0px;
-}
-
-.questions {
-  width: 50%;
 }
 
 .questions i {
@@ -256,7 +250,17 @@ a:hover {
 }
 
 .answer {
+  padding-bottom: 20px;
   margin-left: 22px;
+  scroll-margin-top: 150px;
+}
+
+.answer p {
+  line-height: 35px;
+}
+
+.answer a {
+  display: inline-block;
 }
 
 .more-questions {
@@ -458,6 +462,23 @@ a:hover {
     height: auto;
   }
 
+  /* Q&A */
+
+  .section-questions-content {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+
+  .opinions {
+    width: 70%;
+  }
+
+  #map {
+    margin: 20px auto;
+  }
+
+  /* PROJECTS */
+
   .wrapper-project-description {
     background-size: cover;
     background-position: top;
@@ -605,6 +626,16 @@ a:hover {
   .btn-download-cv {
     margin: 4% auto;
     width: 30%;
+  }
+
+  /* Q&A */
+  .section-questions-content {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+
+  #map {
+    margin: 20px auto;
   }
 
   /* PROJECT SECTION */

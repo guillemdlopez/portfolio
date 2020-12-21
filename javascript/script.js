@@ -39,7 +39,7 @@ import { initScrolling, upperScrolling, linkDecoration, changeOpacityNav, change
 import { openModal, closeModal, openModalProject, closeModalProject } from './modals.js';
 import { loadSection, opinionsTransition, displayBtn, hideSuccessMsg, displayInterests } from './effects.js';
 import { opacityQuestions, questionsIcons, navFullOpacity, navHalfOpacity, btnContactAppearence, copyEmail, hideBtn } from './functions.js';
-
+import { initMap } from './initMap.js';
 
 // EXECUTE ///////ONLY/////// ON HOME PAGE
 if (mainContent.getAttribute("id") === 'home-page') {
@@ -134,12 +134,14 @@ if (mainContent.getAttribute("id") === 'home-page') {
     if (e.key === 'Escape' && !modalProject.classList.contains('hidden')) closeModalProject();
   })
 
-  const interestsObserver = new IntersectionObserver(displayInterests, {
-    root: null,
-    threshold: 0.5,
-  })
+  // const interestsObserver = new IntersectionObserver(displayInterests, {
+  //   root: null,
+  //   threshold: 0.5,
+  // })
 
-  interestsObserver.observe(interestDiv)
+  // interestsObserver.observe(interestDiv)
+
+  initMap();
 }
 
 // EXECUTE //////////// ON ALL PAGES //////////////

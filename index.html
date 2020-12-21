@@ -17,6 +17,9 @@
 
     <link rel="shortcut icon" type="image/png" href="images/emoji.png" />
 
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+
     <!-- <script defer src="javascript/navbar.js"></script> -->
     <script defer type="module" src="javascript/script.js"></script>
      <title>Guillem Delás - FullStack Developer</title>
@@ -116,30 +119,6 @@
           </div>
         </div>
       </section>
-      <!-- INTERESTS -->
-      <!-- <div class="wrapper-interests">
-        <div class="container">
-          <div class="interests">
-            <div class="interest">
-              <p>Literature</p>
-              <p class="">'La Saga de los Malditos'</p>
-            </div>
-            <div class="interest">
-              <p>Videogames</p>
-              <p>'Watchdogs'</p>
-            </div>
-            <div class="interest">
-              <p>Music</p>
-              <p>Rock, Heavy Metal, R&B,
-              Soul, Drums, Piano, Voice</p>
-            </div>
-            <div class="interest">
-              <p>Social issues</p>
-              <p>Vote, LGBTQ+ and Human Rights</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
       <!-- STRENGTHS --->
       <section class="section my-value" id="my-value">
@@ -354,7 +333,7 @@
           <div class="section-questions-content">
             <div class="questions">
               <h2>Do you want to know <br> more about me?</h2>
-              <p>Here are some FAQ, a lot of people ask me... Okay, not really.
+              <p class="question-itself">Here are some FAQ, a lot of people ask me... Okay, not really.
               But my mum said it is a good idea to answer to some question so you get to know me better.</p>
               <div class="question first-question">
                 <div class="question-header question-1" data-header="1">
@@ -362,17 +341,38 @@
                   <p>Why did you decide to learn to code?</p>
                 </div>
                 <div class="answer answer-1 hidden-answer">
-                  <p>Well.. That's a good question!</p>
+                  <p>Long story short (if I can 😂). In the middle of the pandemic I was doing
+                  an internship in a Gallery called SOMOS Art House in Berlin. There, I would be in charge
+                  of the social media content carring out some graphic design and postproduction stuff
+                  as well as production tasks. Of course, Corona came in and we had to reduce the amount
+                  of visitors allowed to our exhibitions (at the time, very very few).
+                  Paulus Fugers, director of SOMOS, had the idea to create a website or an app
+                  control the fluency of visitors in order to set a limit and not use a Google Survey,
+                  as we use to. Eventually, the idea didn't work out, but it rooted in my brain and I started
+                  to dive in the world of web development and code. First, I created the prototype with
+                  Adobe Xd. By the time, I didn't know it was a protoype, I believed I was creating the actual app,
+                  eventhough it seemed a little wird, since I wasn't sure how people was going to use it. Nevertheless
+                  I worked on it and as soon as it was done, I realized: 'okay. This is not the final product. Something is missing.'
+                  I did my research and found out that coding skills were needed to develop the application. I was so
+                  delighted and curious by all the possibilities that coding skills could bring to my life, that I decided
+                  to take a step further and learn to code. Code for me is independence, creativity and the possibility
+                  to develop your own ideas to make an impact in this world.</p>
                 </div>
               </div>
 
               <div class="question">
                 <div class="question-header question-2" data-header="2">
                   <i class="fas fa-chevron-right mr-2" data-question="2"></i>
-                  <p>Second question?</p>
+                  <p class="question-itself">What would motivate you to make a move from your current role?</p>
                 </div>
                 <div class="answer answer-2 hidden-answer">
-                  <p>Well.. That's a good question!</p>
+                  <p>Not only role, but also career wise. I am highly motivated,
+                  willing to start a new project and to learn from my colleagues.
+                  It would motivate me to work in a challenging enviroment and project
+                  that brings technology to the social issues and the society. Also, I
+                  am very versatile, and I would love to be involved in a different variety
+                  of projects: music, fashion, cinema and audiovisuals, art, market places
+                  and many more. My curiosity has no limits!</p>
                 </div>
               </div>
 
@@ -380,7 +380,8 @@
               <div class="question">
                 <div class="question-header question-3" data-header='3'>
                   <i class="fas fa-chevron-right mr-2" data-question="3"></i>
-                  <p>Third question?</p>
+                  <p class="question-itself">Tell me about a time when you had to juggle
+                  several projects at once. How did you organize your time? What was the result?</p>
                 </div>
                 <div class="answer answer-3 hidden-answer">
                   <p>Well.. That's a good question!</p>
@@ -390,7 +391,8 @@
               <div class="question">
                 <div class="question-header question-4" data-header="4">
                   <i class="fas fa-chevron-right mr-2" data-question="4"></i>
-                  <p>Forth question?</p>
+                  <p class="question-itself">How do you feel working with a team? Tell
+                  me about your favorite experiences. </p>
                 </div>
                 <div class="answer answer-4 hidden-answer">
                   <p>Well.. That's a good question!</p>
@@ -400,11 +402,19 @@
               <div class="question">
                 <div class="question-header question-5" data-header="5">
                   <i class="fas fa-chevron-right mr-2" data-question="5"></i>
-                  <p><span style="border-bottom: 2px solid var(--color-paragraphs)">BONUS QUESTION</span>: Where is Palau-solità i Plegamans?</p>
+                  <p class="question-itself"><span style="border-bottom: 2px solid var(--color-paragraphs)">BONUS QUESTION</span>: Where is Palau-solità i Plegamans?</p>
                 </div>
                 <div class="answer answer-5 hidden-answer">
-                  <p>Well.. That's a good question!</p>
-
+                  <p>A lot of people ask me this question. Where is it exaclty? Wait,
+                  can you repeat it? Not only foreign people, but even fellow catalan people.
+                  Well, let me tell you that Palau (long name short), is a beautiful (low-key
+                  exageration) village located in the region of Vallès Occidental, Catalunya. Most known
+                  to be very close to Caldes de Montbui (also very known for its thermal baths).
+                  Eventhough, we may not have such a thing, but Palau will surely
+                  make you fall in love with its inhabitants and its peacefully way of living.
+                  Looking for more information about the village? I'm sure you're willing to
+                  know more about it! 😜 <a href="https://es.wikipedia.org/wiki/Palau-solit%C3%A0_i_Plegamans" target="blank">Wikipedia</a></p>
+                  <div id="map" style='width: 400px; height: 300px;'></div>
                 </div>
               </div>
             </div>
@@ -422,7 +432,7 @@
               </div>
             </div>
           </div>
-          <div id="map"></div>
+
           <div class="more-questions text-center">
             <p class="">Do you have more questions?</p>
             <a href="mailto: guillemdelas@hotmail.com" class="btn-email">guillemdelas@hotmail.com</a>
