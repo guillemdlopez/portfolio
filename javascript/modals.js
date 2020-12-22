@@ -40,6 +40,8 @@ const openModalProject = function(e) {
 
     modalProject.classList.remove('hidden');
     overlayProjects.classList.remove('hidden');
+    modalProject.style.transform = 'translateY(0px)';
+    modalProject.style.transition = 'all 0.5s';
   };
 
 
