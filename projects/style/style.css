@@ -90,6 +90,11 @@ a:hover {
   width: 60%;
 }
 
+.searching-system a {
+  display: inline;
+  font-weight: bold;
+}
+
 /* IMAGES */
 .img-game-cards {
   width: 40%;
