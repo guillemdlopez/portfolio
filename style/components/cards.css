@@ -145,6 +145,15 @@
   padding: 5px;
 }
 
+.paulus .linkedin-link {
+  margin-top: 20px;
+  color: var(--color-principal);
+}
+
+.linkedin-link i {
+  color: var(--color-principal);
+}
+
 .opinions .mum p:first-child, .paulus p:first-child {
   font-weight: 500;
   margin-bottom: 20px;

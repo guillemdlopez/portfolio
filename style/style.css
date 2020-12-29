@@ -464,6 +464,12 @@ a:hover {
     width: 100%;
   }
 
+  .modal-unfinished-project {
+    left: 28%;
+    top: 15%;
+    width: 40%;
+  }
+
   .goodbye-content {
     text-align: center;
   }
@@ -611,10 +617,10 @@ a:hover {
     background-size: cover;
   }
 
-  .modal-instagram-copycat {
+  .modal-unfinished-project {
     left: 23%;
-    top: 21%;
-    width: 52%;
+    top: 15%;
+    width: 54%;
   }
 
   /* PROJECT PAGES */

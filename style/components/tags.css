@@ -16,3 +16,33 @@
   font-weight: bold;
   border-radius: 4px;
 }
+
+#scss {
+  border: 1px solid pink;
+  color: #ff98aa;
+}
+
+#css {
+  border: 1px solid #68dffa;
+  color: #1990ab;
+}
+
+#html {
+  border: 1px solid #ffdca7;
+  color: #eb971a;
+}
+
+#javascript {
+  border: 1px solid #F7DF1E;
+  color: #F7DF1E;
+}
+
+#bootstrap {
+  border: 1px solid #fa88fa;
+  color: #e11fe1;
+}
+
+#rails {
+  border: 1px solid #ff8a8a;
+  color: #ed1d1d;
+}
