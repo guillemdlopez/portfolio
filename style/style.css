@@ -226,7 +226,7 @@ a:hover {
 .answer {
   padding-bottom: 20px;
   margin-left: 22px;
-  scroll-margin-top: 50vh;
+  scroll-margin-top: 150px;
 }
 
 .answer p {
