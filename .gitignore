@@ -1,4 +1,7 @@
 .DS_Store
 
+# Where the MAP BOX API KEY is stored
+javascript/initMap.js
+
 #node_modules
 node_modules/

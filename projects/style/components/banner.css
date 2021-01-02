@@ -27,6 +27,10 @@
   color: var(--color-headers);
 }
 
+.banner-project-description {
+  margin-top: 40px;
+}
+
 .project-info {
   margin-right: 20px;
 }
@@ -47,10 +51,15 @@
   box-shadow: none;
 }
 
-.project-link {
+.project-link, .type-application {
   border-top: 1px solid lightgrey;
   padding: 10px 0px 10px 0px;
   transition: all 0.5s;
+}
+
+
+.type-application {
+  margin-top: 40px;
 }
 
 .project-links p {
@@ -67,12 +76,28 @@
   text-decoration: underline;
 }
 
-.project-link:first-child {
-  margin-top: 40px;
+.project-links a {
+  display: inline-block;
+}
+
+.project-link:hover a {
+  text-decoration: underline;
 }
 
 .project-link:last-child {
    border-bottom: 1px solid lightgrey;
+}
+
+.project-links p, .type-application p:first-child {
+  font-size: small;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.type-application p:last-child {
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .banner-flatify {
