@@ -57,8 +57,23 @@
   transition: all 0.5s;
 }
 
+
 .type-application {
   margin-top: 40px;
+}
+
+.project-links p {
+  font-size: small;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.project-links a {
+  display: inline-block;
+}
+
+.project-link:hover a {
+  text-decoration: underline;
 }
 
 .project-links a {
@@ -84,7 +99,6 @@
   font-size: 16px;
   font-weight: normal;
 }
-
 
 .banner-flatify {
   margin: 250px 0px;
