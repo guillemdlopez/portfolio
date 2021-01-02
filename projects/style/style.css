@@ -195,7 +195,7 @@ a:hover {
 }
 
 .expense-img {
-  width: 28%;
+  max-width: 28%;
   margin-left: 20px;
 }
 
