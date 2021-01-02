@@ -57,7 +57,7 @@
   transition: all 0.5s;
 }
 
-.project-links p, .type-application p:first-child {
+.project-links p {
   font-size: small;
   letter-spacing: 3px;
   font-weight: 100;
@@ -79,6 +79,18 @@
 
 .project-link:last-child {
    border-bottom: 1px solid lightgrey;
+}
+
+.project-links p, .type-application p:first-child {
+  font-size: small;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.type-application p:last-child {
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .banner-flatify {
