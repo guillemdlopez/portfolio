@@ -53,9 +53,16 @@ a:hover {
   color: black;
 }
 
+.project-links p {
+  font-size: small;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
 .project-description .subtitle {
   font-weight: bold;
   font-family: sofia-pro, sans-serif;
+  opacity: 0.7;
 }
 
 .project-description {
@@ -93,6 +100,7 @@ a:hover {
 .searching-system a {
   display: inline;
   font-weight: bold;
+  color: var(--color-principal);
 }
 
 /* IMAGES */
@@ -404,7 +412,6 @@ a:hover {
     width: 40%;
   }
 
-
   #games-master .project-description {
     display: block;
   }
@@ -487,12 +494,12 @@ a:hover {
     margin-left: 0;
   }
 
-  .wrapper-screenshots {
-    height
-  }
-
   .scrolling-wrapper {
     margin-top: 70px;
+  }
+
+  #games-master .go-to-projects {
+    margin-top: 280px;
   }
 }
 

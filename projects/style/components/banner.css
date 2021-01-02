@@ -45,17 +45,13 @@
 }
 
 .project-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-top: 1px solid lightgrey;
   padding: 10px 0px 10px 0px;
   transition: all 0.5s;
 }
 
-.project-link:hover {
-  transform: translateX(14px);
-  transition: transform 0.5s;
+.project-link:hover a {
+  text-decoration: underline;
 }
 
 .project-link:first-child {

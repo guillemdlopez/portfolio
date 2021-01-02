@@ -133,20 +133,17 @@ a:hover {
 }
 
 .about-me-content {
-  display: flex;
+  display: grid;
   justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
 }
 
 .about-me-img {
-  width: 58%;
+  width: 100%;
 }
 
 .bio p {
   line-height: 34px;
-}
-
-.bio {
-  width: 40%;
 }
 
 .contact-details {
@@ -348,16 +345,7 @@ a:hover {
     margin-right: 10px;
   }
 
-  .bio {
-    width: 100%;
-  }
-
   /* ABOUT ME */
-
-  .about-me-img {
-    width: 60%;
-    object-fit: contain;
-  }
 
   .card-contact-details {
     width: 100%;
@@ -441,6 +429,15 @@ a:hover {
 
   #map {
     margin: 20px auto;
+  }
+
+  /* PROJECT SECTION */
+  .link-project {
+    opacity: 1;
+  }
+
+  .project-card:hover .border-line{
+    transform: scaleX(0);
   }
 
   /* PROJECTS */
@@ -538,14 +535,12 @@ a:hover {
 
   /* ABOUT ME */
 
-  .bio {
-    width: 50%;
-  }
 
-  .about-me-content {
-    display: flex;
-    align-items: flex-start;
-  }
+/*  .about-me-content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  }*/
 
   .card-contact-details {
     width: 100%;
@@ -621,6 +616,14 @@ a:hover {
     left: 23%;
     top: 15%;
     width: 54%;
+  }
+
+  .link-project {
+    opacity: 1;
+  }
+
+  .project-card:hover .border-line{
+    transform: scaleX(0);
   }
 
   /* PROJECT PAGES */
@@ -727,22 +730,13 @@ a:hover {
     right: 139px;
   }
 
-  .contact-icons i {
-    color: white;
-    font-size: 50px;
-  }
-
-  .contact-icons {
-    left: -5%;
-    top: 478px;
-  }
-
-  .bio {
-    width: 100%;
-  }
-
   .about-me-content {
-    display: block;
+    grid-template-columns: 1fr;
+  }
+
+  .about-me-img {
+    order: -1;
+    margin-top: 20px;
   }
 
   .cv-cards {
@@ -778,6 +772,18 @@ a:hover {
     padding: 43px;
   }
 
+  .modal-education {
+    top: 0%;
+  }
+
+  .modal-experience {
+    top: 9%;
+  }
+
+  .spanish .language-level {
+    margin-top: 0px;
+  }
+
   .purple-bar {
     margin: 0 auto;
     width: 78%;
@@ -793,6 +799,7 @@ a:hover {
 
   .my-card {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .btn-download-cv {
@@ -821,7 +828,7 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .modal-instagram-copycat {
+  .modal-unfinished-project {
     left: 10%;
     top: 15%;
     width: 81%;
@@ -830,5 +837,9 @@ a:hover {
   .goodbye {
     height: 100vh;
     margin-bottom: 40px;
+  }
+
+  .goodbye .section-title {
+    font-size: 68px;
   }
 }

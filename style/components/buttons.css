@@ -7,8 +7,8 @@
 }
 
 .btn-copy, .btn-redirect-email {
-  background: #e5e5e2;
-  color: black;
+  background: black;
+  color: white;
   padding: 10px 14px;
   border-radius: 50%;
   width: 3.5%;
