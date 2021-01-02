@@ -122,7 +122,7 @@
 }
 
 .border-line {
-  height: 3px;
+  height: 2px;
   background: black;
   width: 24%;
   transform: scaleX(0);
