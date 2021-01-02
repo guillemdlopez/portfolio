@@ -497,10 +497,6 @@ a:hover {
   .scrolling-wrapper {
     margin-top: 70px;
   }
-
-  #games-master .go-to-projects {
-    margin-top: 280px;
-  }
 }
 
 @media (max-width: 414px) {
