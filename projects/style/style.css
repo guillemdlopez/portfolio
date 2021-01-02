@@ -197,6 +197,7 @@ a:hover {
 .expense-img {
   max-width: 28%;
   margin-left: 20px;
+  height: auto;
 }
 
 .expense-img:first-child {
