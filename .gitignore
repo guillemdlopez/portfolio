@@ -1,7 +1,4 @@
 .DS_Store
-videos/
-
-.env*
 
 # Where the MAP BOX API KEY is stored
 javascript/initMap.js
