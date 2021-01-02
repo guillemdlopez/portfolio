@@ -190,13 +190,13 @@ a:hover {
 
 .expense-images {
   padding-top: 40px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 24px;
 }
 
 .expense-img {
-  max-width: 28%;
-  margin-left: 20px;
+  max-width: 100%;
   height: auto;
 }
 
