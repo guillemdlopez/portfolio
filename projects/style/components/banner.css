@@ -27,12 +27,12 @@
   color: var(--color-headers);
 }
 
-.project-info {
-  margin-right: 20px;
+.banner-project-description {
+  margin-top: 40px;
 }
 
-.banner-project-content .project-info .tech-tag  {
-  margin-bottom: 30px;
+.project-info {
+  margin-right: 20px;
 }
 
 .project-pic {
@@ -47,16 +47,26 @@
   box-shadow: none;
 }
 
-.project-link {
+.type-application {
+  margin-top: 40px;
+}
+
+.project-link, .type-application {
   border-top: 1px solid lightgrey;
   padding: 10px 0px 10px 0px;
   transition: all 0.5s;
 }
 
-.project-links p {
+.project-links p, .type-application p:first-child {
   font-size: small;
   letter-spacing: 3px;
   font-weight: 100;
+}
+
+.type-application p:last-child {
+  font-size: 16px;
+  color: black;
+  font-weight: normal;
 }
 
 .project-links a {
@@ -65,10 +75,6 @@
 
 .project-link:hover a {
   text-decoration: underline;
-}
-
-.project-link:first-child {
-  margin-top: 40px;
 }
 
 .project-link:last-child {
