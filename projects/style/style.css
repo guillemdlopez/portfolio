@@ -298,12 +298,8 @@ a:hover {
   margin-right: 60px;
 }
 
-.previous:hover a {
-  color: black;
-}
-
-.go-to-projects p {
-  font-size: 14px;
+.go-to-projects .previous:hover a {
+  color: var(--color-principal);
 }
 
 #games-master .go-to-projects {
