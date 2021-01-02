@@ -298,6 +298,10 @@ a:hover {
   margin-right: 60px;
 }
 
+.previous:hover a {
+  color: black;
+}
+
 .go-to-projects p {
   font-size: 14px;
 }
