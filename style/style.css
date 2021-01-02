@@ -481,7 +481,7 @@ a:hover {
 }
 
 /* IPAD */
-@media (max-width: 768px) {
+@media (max-width: 925px) {
   /* BANNER */
   .banner h1 {
     font-size: 120px;
