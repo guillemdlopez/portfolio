@@ -50,6 +50,10 @@
   transition: all 0.5s;
 }
 
+.project-links a {
+  display: inline-block;
+}
+
 .project-link:hover a {
   text-decoration: underline;
 }
@@ -63,12 +67,9 @@
 }
 
 .project-links p {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.project-links .arrow-up {
-  font-size: 20px;
+  font-size: small;
+  letter-spacing: 3px;
+  font-weight: 100;
 }
 
 .banner-flatify {
