@@ -60,9 +60,11 @@ a:hover {
 }
 
 .project-description .subtitle {
-  font-weight: bold;
+  font-weight: 500;
   font-family: sofia-pro, sans-serif;
   opacity: 0.7;
+  font-size: small;
+  letter-spacing: 3px;
 }
 
 .project-description {
