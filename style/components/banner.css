@@ -5,6 +5,8 @@
   background-image: url(../../images/background-banner-1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  align-items: center;
 }
 
 .banner img:last-child {
