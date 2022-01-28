@@ -7,6 +7,7 @@
   background-size: cover;
   display: grid;
   align-items: center;
+  background-attachment: fixed;
 }
 
 .banner img:last-child {
